@@ -1,0 +1,47 @@
+ header {
+     height: 150px;
+     width: 400px;
+     margin: 0 auto;
+     background-color: transparent;
+     margin-bottom: 50px;
+     z-index: 1;
+     pointer-events: all;
+ }
+
+ .logo {
+     background-image: url(images/1.png);
+     background-size: cover;
+     width: 300px;
+     height: 250px;
+     position: relative;
+     top: 0;
+     left: 0;
+     background-color: transparent;
+     cursor: pointer;
+ }
+
+ .desktopNav {
+     height: 150px;
+ }
+
+
+ .desktop_nav_menu a {
+     color: var(--roed);
+     text-decoration: none;
+
+ }
+
+ nav li {
+     list-style: none;
+ }
+
+ ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     width: 60px;
+ }
+
+ li a {
+     display: block;
+ }
