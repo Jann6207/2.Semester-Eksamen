@@ -1,8 +1,100 @@
-body {
-    margin: 0;
+* {
+
+    box-sizing: border-box;
+
 }
 
-.container {
+body {
+
+    margin: 0;
+    background-color: red;
+
+}
+
+header {
+
+    background-color: blue;
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        ". . . . . . . . . . . ."
+        ". logo . . . . . nav nav . . ."
+        ". logo . . . . . nav nav . . ."
+        ". . . . . . . . . . . .";
+    background-color: #0f0f0f;
+    box-shadow: 0px 1px 10px #070707;
+
+}
+
+
+nav {
+
+    grid-area: nav;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+nav a {
+
+    font-size: 20px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+nav a:hover {}
+
+
+.galleri {
+
+    grid-area: galleri;
+
+}
+
+.om {
+
+    grid-area: om;
+
+}
+
+.kontakt {
+
+    grid-area: kontakt;
+}
+
+
+logo {
+
+    grid-area: logo;
+}
+
+/*.nav-container {
+    z-index: 30;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "logo logo logo . . . . . . . . ." "logo logo logo ikoner ikoner ikoner ikoner . . . wrap1 sprog" "logo logo logo navbar navbar navbar navbar navbar navbar navbar navbar navbar" "logo logo logo navbar navbar navbar navbar navbar navbar navbar navbar navbar";
+    background-color: #0f0f0f;
+    box-shadow: 0px 1px 10px #070707;
+    height: 60px;
+
+
+
+
+}*/
+
+
+
+/*.container {
     width: 80%;
     margin: 0 auto;
 
@@ -89,4 +181,4 @@ nav a {
 
 }
 
-nav a:hover {}
+nav a:hover {}*/
