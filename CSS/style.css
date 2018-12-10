@@ -7,24 +7,24 @@
 body {
 
     margin: 0;
-    background-color: red;
+    background-image:url(/IMG-Bank/Images/Splash_Filter.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
 header {
 
-    background-color: blue;
-    height: 150px;
+    background-color: rgb(0, 0, 0, 0.5);
+    height: 100px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
-        ". . . . . . . . . . . ."
-        ". logo . . . . . nav nav nav . ."
-        ". logo . . . . . nav nav nav . ."
-        ". . . . . . . . . . . .";
-    background-color: #0f0f0f;
-    box-shadow: 0px 1px 10px #070707;
+        "logo logo . ikoner ikoner . . . . . . ."
+        "logo logo . ikoner ikoner . . . nav nav search search"
+        "logo logo . ikoner ikoner . . . nav nav search search"
+        "logo logo . ikoner ikoner . . . . . . .";
 
 }
 
@@ -32,19 +32,17 @@ nav {
 
     grid-area: nav;
     margin: 0;
+    margin-left: -30px;
     padding: 0;
-    width: 100%;
+    width: 116.5%;
     display: grid;
     align-items: center;
     justify-content: space-evenly;
-
     grid-template-columns: repeat(3, 33%);
     grid-template-rows: repeat(1, 1fr);
     grid-template-areas:
-        "galleri om kontakt"
+        "galleri  om  kontakt"
         ;
-
-
 
 }
 
@@ -56,8 +54,6 @@ nav a {
     text-decoration: none;
     text-transform: uppercase;
 
-
-
 }
 
 nav a:hover {}
@@ -65,7 +61,7 @@ nav a:hover {}
 .galleri {
 
     grid-area: galleri;
-     text-align: left;
+    text-align: left;
 
 }
 
@@ -82,113 +78,73 @@ nav a:hover {}
     text-align: right;
 }
 
-logo {
+.logo {
 
     grid-area: logo;
-}
-
-/*.nav-container {
-    z-index: 30;
+    margin-left: 35px;
+    width: auto;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "logo logo logo . . . . . . . . ." "logo logo logo ikoner ikoner ikoner ikoner . . . wrap1 sprog" "logo logo logo navbar navbar navbar navbar navbar navbar navbar navbar navbar" "logo logo logo navbar navbar navbar navbar navbar navbar navbar navbar navbar";
-    background-color: #0f0f0f;
-    box-shadow: 0px 1px 10px #070707;
-    height: 60px;
-
-
-
-
-}*/
-
-
-
-/*.container {
-    width: 80%;
-    margin: 0 auto;
-
-
-}
-
-header {
-    background: rgba(0, 0, 0, 0.5);
-    font-family: 'Playfair Display', serif;
-    margin: 0;
-
-
-
-}
-
-header::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
-.splash {
-    background-image: url(images/splash.png);
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-    position: absolute;
-    top: 0;
-}
-
-.icons {
-    float: left;
-    height: 50%;
-
-    padding: 5px;
 
 }
 
 
+.logo img {
 
-
-.logo {
-    float: left;
-    padding: 10px 0;
-    width: 20%;
-    margin-left: -5%;
+    width: 16vw;
 
 }
 
-nav {
-    float: right;
-    font-size: 20px;
+.sociale_ikoner {
+
+    grid-area: ikoner;
     display: flex;
+    align-self: center;
+    justify-content: space-around;
+    width: 100px;
+
 
 }
 
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.sociale_ikoner img {
+    opacity: 0.9;
+    width: 27.5px;
+    height: 27.5px;
+
+}
+
+.soeg_sprog {
+    grid-area: search;
     display: flex;
+    align-self: center;
+    justify-content:space-around;
+    width: 150px;
+    margin-left: 20%;
 
 }
 
+.search {
 
-.mid {
-    margin-left: 81px;
-    margin-right: 81px;
+   width: 20px;
+   height: 20px;
 }
 
-nav li {
-    display: inline-block;
+.search img {
 
-    padding-top: 25px;
-    justify-content: center;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 20px;
+    width: 20px;
+    height: 20px;
 
 }
 
-nav a:hover {}*/
+.english {
+
+    width: 31px;
+    height: 20px;
+
+}
+
+.english img {
+
+    width: 31px;
+    height: 20px;
+
+}
