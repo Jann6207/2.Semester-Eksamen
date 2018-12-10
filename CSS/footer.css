@@ -1,0 +1,157 @@
+footer {
+    display: none;
+}
+
+
+@media only screen and (min-width: 1280px) {
+
+    .content {
+        height: 100vh;
+        font-family: "Playfair Display", serif;
+        font-size: 50px;
+        background-color: rgb(0, 0, 0, 0.5);
+        text-align: center;
+        color: white;
+        padding-top: 100px;
+
+    }
+
+    footer {
+
+        background-color: #C8C8C8;
+        height: 372px;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 1fr 1fr 66px;
+        grid-template-areas:
+            ". menu_footer kontakt_footer sociale_medier_footer udstillinger_footer sprog_search_citat_footer . "
+            ". menu_footer kontakt_footer sociale_medier_footer udstillinger_footer sprog_search_citat_footer . "
+            "copyright_footer copyright_footer copyright_footer copyright_footer copyright_footer copyright_footer copyright_footer "
+
+        ;
+
+
+    }
+
+
+    .menu_footer p,
+    .kontakt_footer p,
+    .sociale_medier_footer p,
+    .udstillinger_footer p {
+        font-family: "Playfair Display", serif;
+        font-size: 20px;
+        text-transform: uppercase;
+
+
+    }
+
+    .menu_footer a,
+    .kontakt_footer a,
+    .sociale_medier_footer a,
+    .udstillinger_footer a {
+        font-family: "Lato", sans-serif;
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        margin-top: 10px;
+        font-weight: 300;
+
+    }
+
+    .menu_footer {
+
+        grid-area: menu_footer;
+        display: inline-block;
+
+    }
+
+    .kontakt_footer {
+
+        grid-area: kontakt_footer;
+
+    }
+
+    .sociale_medier_footer {
+
+        grid-area: sociale_medier_footer;
+
+    }
+
+    .udstillinger_footer {
+
+        grid-area: udstillinger_footer;
+
+    }
+
+    .sprog_search_citat_footer {
+
+        grid-area: sprog_search_citat_footer;
+        font-family: "Lato", sans-serif;
+        display: grid;
+        align-items: center;
+
+
+    }
+
+    .sprog_search_citat_footer p{
+        font-family: "Lato", sans-serif;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 300;
+        justify-self: end;
+
+
+    }
+
+    .engelsk_flag {
+
+        width: 31px;
+        height: 20px;
+        display: grid;
+        justify-self: end;
+        margin-right: 20px;
+
+    }
+
+    .search_ikon_footer {
+
+        width: 30px;
+        height: 27px;
+        display: grid;
+        justify-self: end;
+        margin-right: 20px;
+        margin-top: -20px;
+
+
+    }
+
+    .logo_footer {
+
+        width: 152px;
+        height: 32px;
+        display: grid;
+        justify-self: end;
+        margin-top: -50px;
+
+
+    }
+
+
+    .copyright_footer {
+
+        grid-area: copyright_footer;
+        background-color: #B8B8B8;
+        font-family: "Lato", sans-serif;
+        font-size: 14px;
+        display: grid;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+
+
+
+}
+
