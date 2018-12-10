@@ -7,7 +7,7 @@
 body {
 
     margin: 0;
-    background-image: url(/IMG-Bank/Images/2_New.jpg);
+    background-image: url(/IMG-Bank/Images/outside_lawaetz.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -95,6 +95,7 @@ header {
     top: 0;
     right: 0%;
     padding-top: 50px;
+    justify-content: center;
 
 }
 
@@ -184,6 +185,63 @@ nav {
 
 }
 
+
+.sociale_ikoner2 {
+
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    margin-left: 45%;
+    margin-right: 45%;
+    border-bottom: none;
+
+}
+
+.sociale_ikoner2 img {
+
+    opacity: 1;
+    width: 27.5px;
+    height: 27.5px;
+    transition: .3s;
+    border-bottom: none;
+
+}
+
+.sociale_ikoner2 img:hover {
+
+    opacity: 0.5;
+    cursor: pointer;
+    border-bottom: none;
+    width: 27.5px;
+    height: 27.5px;
+
+}
+
+.sociale_ikoner2 a:hover {
+
+    border-bottom: none;
+
+}
+
+.search2 {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.search2 img {
+
+    display: flex;
+    width: 30px;
+    height: 27px;
+    opacity: 1;
+
+}
+
+/*DESKTOP START*/
 @media only screen and (min-width: 1280px) {
 
     .menubutton {
@@ -289,7 +347,13 @@ nav {
         opacity: 0.9;
         width: 27.5px;
         height: 27.5px;
+        transition: .3s;
 
+    }
+
+    .sociale_ikoner img:hover {
+        opacity: 0.5;
+        cursor: pointer;
     }
 
     .soeg_sprog {
@@ -307,10 +371,11 @@ nav {
 
         width: 20px;
         height: 20px;
+        display: grid;
     }
 
     .search img {
-
+        display: grid;
         width: 20px;
         height: 20px;
 
