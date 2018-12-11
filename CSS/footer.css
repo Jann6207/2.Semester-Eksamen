@@ -45,7 +45,11 @@ footer {
         margin: 0;
     }
 
-
+    .click-scroll {
+        position: absolute;
+        bottom: 4%;
+        height: 500px;
+    }
     .scroll-down p {
 
         position: absolute;
@@ -83,7 +87,7 @@ footer {
 
     .scroll-down span {
         position: absolute;
-        bottom: 12%;
+        bottom: 20%;
         left: 50%;
         width: 24px;
         height: 24px;

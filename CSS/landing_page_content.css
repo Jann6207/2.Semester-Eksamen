@@ -170,7 +170,7 @@ body {
 
     width: 100%;
 /*    padding: 10px;*/
-    transition: .4s ease;
+    transition: .5s ease-in-out;
     cursor: pointer;
 
 }
@@ -179,8 +179,16 @@ body {
 .malleri1:hover,
 .malleri2:hover,
 .malleri3:hover {
-    transform: scale(1.5);
 
+    transform: scale(1.6) translate(-18%, 15%);
+
+
+
+}
+
+.malleri2:hover {
+
+    transform: scale(1.6) translate(-15%, 14%);
 
 }
 
