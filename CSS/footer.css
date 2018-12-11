@@ -50,6 +50,7 @@ footer {
         bottom: 4%;
         height: 500px;
     }
+
     .scroll-down p {
 
         position: absolute;
@@ -140,6 +141,18 @@ footer {
     .mirror,
     .mirror2 {
         transform: scale(-1, 1);
+    }
+
+    .name_splash {
+        height: 500px;
+        display: flex;
+        /*
+        display: grid;
+        width: 100%;
+        margin-top: -200px;
+*/
+
+
     }
 
     footer {

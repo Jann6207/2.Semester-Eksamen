@@ -118,7 +118,7 @@ body {
         "box2 box2 ."
     ;
 
-     margin-top: 30px;
+    margin-top: 30px;
     overflow: hidden;
 
 }
@@ -161,7 +161,7 @@ body {
         "box3 box3 ."
     ;
 
-     margin-top: 30px;
+    margin-top: 30px;
 }
 
 .malleri1,
@@ -169,7 +169,7 @@ body {
 .malleri3 {
 
     width: 100%;
-/*    padding: 10px;*/
+    /*    padding: 10px;*/
     transition: .5s ease-in-out;
     cursor: pointer;
 
@@ -230,7 +230,7 @@ body {
 .vaerk2 {
     grid-area: box2;
     background-color: #FFFFFF;
-   /* display: grid;*/
+    /* display: grid;*/
     margin: 10px;
     margin-left: 40px;
     overflow: visible;
@@ -245,9 +245,9 @@ body {
 .vaerk3 {
     grid-area: box3;
     background-color: #FFFFFF;
-   /* display: grid;*/
+    /* display: grid;*/
     margin: 10px;
-     margin-left: 40px;
+    margin-left: 40px;
     overflow: visible;
     width: 340px;
     height: 200px;
@@ -293,9 +293,11 @@ body {
 .more:hover {
     color: #242323;
     cursor: pointer;
-    text-decoration-color:  #ffc47f;
+    text-decoration-color: #ffc47f;
 
 
 
 
 }
+
+.name_animate {}
