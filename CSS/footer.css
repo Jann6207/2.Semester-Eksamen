@@ -27,7 +27,7 @@ footer {
     .content {
 
         display: flex;
-        height: 91vh;
+        height: 94vh;
         justify-content: center;
         font-family: "Playfair Display", serif;
         font-size: 100px;
@@ -39,6 +39,7 @@ footer {
         font-weight: 200;
 
     }
+
     span {
         transform: scale(-1, 1);
     }
