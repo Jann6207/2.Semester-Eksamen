@@ -41,25 +41,43 @@ footer {
     }
 
     .content p {
+
         margin: 0;
     }
 
 
     .scroll-down p {
+
         position: absolute;
         bottom: 5%;
         margin: 0;
-        color: #bcbcbc;
-        opacity: 0.8;
+        color: #9d9d9d;
+        opacity: 0.9;
         text-decoration: none;
         font-size: 20px;
         text-transform: uppercase;
-        font-weight: 500;
+        font-weight: 400;
         left: 50%;
         margin-left: -25px;
+        transition: .2s ease-in-out;
+    }
+
+    .click-scroll:hover span {
+
+        border-left: 1.4px solid rgb(255, 228, 196, 0.6);
+        border-bottom: 1.4px solid rgb(255, 228, 196, 0.6);
+
+    }
+
+    .click-scroll:hover p {
+
+        color: #9d9d9d;
+        opacity: 0.6;
+
     }
 
     .content a {
+
         text-decoration: none;
     }
 
@@ -72,13 +90,14 @@ footer {
         width: 48px;
         height: 48px;
         margin-left: -12px;
-        border-left: 1.2px solid #fff;
-        border-bottom: 1.2px solid #fff;
+        border-left: 1.4px solid rgb(221, 221, 221, 0.8);
+        border-bottom: 1.4px solid rgb(221, 221, 221, 0.8);
         -webkit-transform: rotateZ(-45deg);
         transform: rotateZ(-45deg);
         -webkit-animation: spin 1.5s infinite;
         animation: spin 1.5s infinite;
         box-sizing: border-box;
+        transition: .2s ease-in-out;
     }
 
     @-webkit-keyframes spin {
@@ -114,8 +133,8 @@ footer {
     }
 
 
-.mirror,
- .mirror2 {
+    .mirror,
+    .mirror2 {
         transform: scale(-1, 1);
     }
 

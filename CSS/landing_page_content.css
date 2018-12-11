@@ -12,15 +12,26 @@ body {
 }
 
 #nyeste_vaerker_container {
-    height: 1000px;
+
+    /*height: 100vh;*/
     background-color: #E5E5E5;
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: 100px 1fr;
+    grid-template-areas:
+        "display display display"
+        "vaerk1 vaerk2 vaerk3"
+        "vaerk1 vaerk2 vaerk3";
 
-
-
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .display {
+
+    grid-area: display;
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 0.5fr 1fr;
     grid-template-rows: repeat(1, 1fr);
     grid-template-areas:
@@ -29,7 +40,8 @@ body {
 
     ;
 
-    padding-top: 35px;
+    margin-top: 40px;
+    margin-bottom: 35px;
 
 }
 
@@ -42,7 +54,7 @@ body {
     color: black;
     background-color: black;
     height: 2.5px;
-    width: 80%;
+    width: 100%;
 
 }
 
@@ -52,6 +64,7 @@ body {
     display: grid;
     justify-content: center;
     font-family: "Lato", sans-serif;
+    font-family: "Playfair Display", serif;
     font-weight: 300;
     font-size: 35px;
     margin: 0;
@@ -67,9 +80,214 @@ body {
     color: black;
     background-color: black;
     height: 2.5px;
-    width: 80%;
+    width: 100%;
+}
+
+.vaerk1_container {
+
+    display: grid;
+    grid-area: vaerk1;
+
+
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+
+        "img1 img1 img1"
+        "img1 img1 img1"
+        "box1 box1 ."
+    ;
+
+    margin-top: 30px;
+}
+
+.vaerk2_container {
+
+    display: grid;
+    grid-area: vaerk2;
+
+
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+
+        "img2 img2 img2"
+        "img2 img2 img2"
+        "box2 box2 ."
+    ;
+
+     margin-top: 30px;
+    overflow: hidden;
+
+}
+
+.zoom {
+
+    grid-area: img1;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.zoom2 {
+
+    grid-area: img2;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.zoom3 {
+
+    grid-area: img3;
+    overflow: hidden;
+    margin: 10px;
+
+}
+
+.vaerk3_container {
+
+    display: grid;
+    grid-area: vaerk3;
+
+
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+
+        "img3 img3 img3"
+        "img3 img3 img3"
+        "box3 box3 ."
+    ;
+
+     margin-top: 30px;
+}
+
+.malleri1,
+.malleri2,
+.malleri3 {
+
+    width: 100%;
+/*    padding: 10px;*/
+    transition: .4s ease;
+    cursor: pointer;
+
 }
 
 
+.malleri1:hover,
+.malleri2:hover,
+.malleri3:hover {
+    transform: scale(1.5);
 
 
+}
+
+.malleri1 {
+    display: grid;
+    grid-area: img1;
+
+}
+
+.malleri2 {
+    display: grid;
+    grid-area: img2;
+
+}
+
+.malleri3 {
+    display: grid;
+    grid-area: img3;
+
+}
+
+
+.vaerk1 {
+    grid-area: box1;
+    background-color: #FFFFFF;
+    /*display: grid;*/
+    margin: 10px;
+    margin-left: 40px;
+    overflow: visible;
+    width: 340px;
+    height: 200px;
+    display: grid;
+    z-index: 10;
+    margin-top: -50px;
+
+
+}
+
+.vaerk2 {
+    grid-area: box2;
+    background-color: #FFFFFF;
+   /* display: grid;*/
+    margin: 10px;
+    margin-left: 40px;
+    overflow: visible;
+    width: 340px;
+    height: 200px;
+    z-index: 10;
+    margin-top: -50px;
+
+
+}
+
+.vaerk3 {
+    grid-area: box3;
+    background-color: #FFFFFF;
+   /* display: grid;*/
+    margin: 10px;
+     margin-left: 40px;
+    overflow: visible;
+    width: 340px;
+    height: 200px;
+    z-index: 10;
+    margin-top: -50px;
+}
+
+.titel {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 40px;
+    overflow: visible;
+    margin: 0;
+    margin-top: 45px;
+    margin-left: 20px;
+    width: 110%;
+    text-align: right;
+}
+
+.size {
+
+    font-family: "Lato", serif;
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+    color: #848282;
+    height: 20px;
+    margin-top: 15px;
+
+}
+
+.more {
+
+    font-family: "Playfair Display", sans-serif;
+    font-size: 14px;
+    text-decoration: underline;
+
+    text-align: center;
+    transition: .4s ease;
+    text-decoration-skip: top;
+
+}
+
+.more:hover {
+    color: #242323;
+    cursor: pointer;
+    text-decoration-color:  #ffc47f;
+
+
+
+
+}
