@@ -9,7 +9,7 @@ footer {
 .content {
 
         display: flex;
-        height: 91vh;
+        height: 94vh;
         justify-content: center;
         font-family: "Playfair Display", serif;
         font-size: 50px;
@@ -34,7 +34,7 @@ footer {
         background-color: rgb(0, 0, 0, 0.5);
         text-align: center;
         color: white;
-        padding-top: 360px;
+        padding-top: 38vh;
         font-family: "Lato", sans-serif;
         font-weight: 200;
 

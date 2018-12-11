@@ -1,0 +1,75 @@
+* {
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    margin: 0;
+
+
+}
+
+#nyeste_vaerker_container {
+    height: 1000px;
+    background-color: #E5E5E5;
+
+
+
+}
+
+.display {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+
+        "line1 newest line2"
+
+    ;
+
+    padding-top: 35px;
+
+}
+
+.line1 {
+
+    grid-area: line1;
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    color: black;
+    background-color: black;
+    height: 2.5px;
+    width: 80%;
+
+}
+
+.newest {
+
+    grid-area: newest;
+    display: grid;
+    justify-content: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    margin: 0;
+
+}
+
+.line2 {
+
+    grid-area: line2;
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    color: black;
+    background-color: black;
+    height: 2.5px;
+    width: 80%;
+}
+
+
+
+
