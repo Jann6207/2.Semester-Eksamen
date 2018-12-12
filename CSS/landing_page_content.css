@@ -297,7 +297,7 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
-    background: url(/IMG-Bank/Images/close_up2.jpg);
+    background: url(/IMG-Bank/Images/behind_splash2.jpg);
     background-position:center;
     background-size: cover;
     height: 450px;
@@ -387,7 +387,7 @@ body {
     font-size: 24px;
     color: white;
     margin: 0;
-    margin-top: 35px;
+    margin-top: 30px;
 }
 
 .txt2 {
@@ -424,3 +424,112 @@ iframe {
 
 }
 
+#udstillinger {
+
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: 100px 1fr;
+    grid-template-areas:
+        "display3 display3 display3 display3"
+        "name show_content name2 show_content2"
+        "name show_content name2 show_content2";
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+
+    background-position:center;
+    background-size: cover;
+    height: 500px;
+    overflow: visible;
+    margin-top: -70px;
+    margin-bottom: 100px;
+
+
+}
+
+
+.display3 {
+
+    grid-area: display3;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+
+        "line5 show line6"
+
+    ;
+    margin-top: 30px;
+    margin-bottom: 35px;
+
+}
+
+.line5 {
+
+    grid-area: line5;
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    color: black;
+    background-color: black;
+    height: 2.5px;
+    width: 100%;
+
+}
+
+.line6 {
+
+    grid-area: line6;
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    color: black;
+    background-color: black;
+    height: 2.5px;
+    width: 100%;
+}
+
+
+.show {
+
+    grid-area: show;
+    display: grid;
+    justify-content: center;
+    font-family: "Lato", sans-serif;
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
+    font-size: 35px;
+    margin: 0;
+    color: black;
+
+
+}
+
+.navn_logo {
+    grid-area: name;
+    background-color: green;
+    margin: 10px;
+     margin-top: 30px;
+}
+
+.show_txt_container {
+    grid-area: show_content;
+    background-color: #190080;
+    margin: 10px;
+     margin-top: 30px;
+}
+
+.navn_logo2 {
+    grid-area: name2;
+    background-color: #80007b;
+    margin: 10px;
+     margin-top: 30px;
+}
+
+.show_txt_container2 {
+    grid-area: show_content2;
+    background-color: #b15c27;
+    margin: 10px;
+     margin-top: 30px;
+}
