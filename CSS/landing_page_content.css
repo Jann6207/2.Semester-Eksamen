@@ -7,13 +7,12 @@
 body {
 
     margin: 0;
-
+    background-color: #E5E5E5;
 
 }
 
 #nyeste_vaerker_container {
 
-    /*height: 100vh;*/
     background-color: #E5E5E5;
     display: grid;
     grid-template-columns: repeat (3, 1fr);
@@ -22,9 +21,9 @@ body {
         "display display display"
         "vaerk1 vaerk2 vaerk3"
         "vaerk1 vaerk2 vaerk3";
-
     padding-left: 30px;
     padding-right: 30px;
+
 }
 
 .display {
@@ -39,7 +38,6 @@ body {
         "line1 newest line2"
 
     ;
-
     margin-top: 40px;
     margin-bottom: 35px;
 
@@ -87,9 +85,6 @@ body {
 
     display: grid;
     grid-area: vaerk1;
-
-
-
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
@@ -106,9 +101,6 @@ body {
 
     display: grid;
     grid-area: vaerk2;
-
-
-
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
@@ -117,7 +109,6 @@ body {
         "img2 img2 img2"
         "box2 box2 ."
     ;
-
     margin-top: 30px;
     overflow: hidden;
 
@@ -149,9 +140,6 @@ body {
 
     display: grid;
     grid-area: vaerk3;
-
-
-
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
@@ -169,20 +157,16 @@ body {
 .malleri3 {
 
     width: 100%;
-    /*    padding: 10px;*/
     transition: .5s ease-in-out;
     cursor: pointer;
 
 }
-
 
 .malleri1:hover,
 .malleri2:hover,
 .malleri3:hover {
 
     transform: scale(1.6) translate(-18%, 15%);
-
-
 
 }
 
@@ -193,28 +177,30 @@ body {
 }
 
 .malleri1 {
+
     display: grid;
     grid-area: img1;
 
 }
 
 .malleri2 {
+
     display: grid;
     grid-area: img2;
 
 }
 
 .malleri3 {
+
     display: grid;
     grid-area: img3;
 
 }
 
-
 .vaerk1 {
+
     grid-area: box1;
     background-color: #FFFFFF;
-    /*display: grid;*/
     margin: 10px;
     margin-left: 40px;
     overflow: visible;
@@ -223,14 +209,14 @@ body {
     display: grid;
     z-index: 10;
     margin-top: -50px;
-
+    margin-bottom: -50px;
 
 }
 
 .vaerk2 {
+
     grid-area: box2;
     background-color: #FFFFFF;
-    /* display: grid;*/
     margin: 10px;
     margin-left: 40px;
     overflow: visible;
@@ -239,10 +225,10 @@ body {
     z-index: 10;
     margin-top: -50px;
 
-
 }
 
 .vaerk3 {
+
     grid-area: box3;
     background-color: #FFFFFF;
     /* display: grid;*/
@@ -253,9 +239,11 @@ body {
     height: 200px;
     z-index: 10;
     margin-top: -50px;
+
 }
 
 .titel {
+
     font-family: "Playfair Display", sans-serif;
     font-size: 40px;
     overflow: visible;
@@ -283,7 +271,6 @@ body {
     font-family: "Playfair Display", sans-serif;
     font-size: 14px;
     text-decoration: underline;
-
     text-align: center;
     transition: .4s ease;
     text-decoration-skip: top;
@@ -291,19 +278,14 @@ body {
 }
 
 .more:hover {
+
     color: #242323;
     cursor: pointer;
     text-decoration-color: #ffc47f;
 
-
-
-
 }
 
-
 #bag_om_vaekert_container {
-
-    /*height: 100vh;*/
 
     display: grid;
     grid-template-columns: repeat (3, 1fr);
@@ -312,22 +294,21 @@ body {
         "display2 display2 display2"
         "bag_om_content bag_om_content bag_om_content"
         "bag_om_content bag_om_content bag_om_content";
-
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
-
-    background-image: url(/IMG-Bank/Images/behind_splash.jpg);
-    background-position:center;
+    background: url(/IMG-Bank/Images/Splash_Filter2.png);
+    background-position: center;
     background-size: cover;
-    height: 500px;
+    height: 450px;
     overflow: visible;
-
-
+    margin-top: -70px;
+    margin-bottom: 300px;
 
 }
 
 .display2 {
+
     grid-area: display2;
     display: grid;
     align-items: center;
@@ -338,14 +319,10 @@ body {
         "line3 behind line4"
 
     ;
-
-    /* margin-top: 40px;
-    margin-bottom: 35px;*/
-
-
+    margin-top: 30px;
+    margin-bottom: 35px;
 
 }
-
 
 .behind {
 
@@ -360,7 +337,6 @@ body {
     color: white;
 
 }
-
 
 .line3 {
 
@@ -388,11 +364,12 @@ body {
 }
 
 .bag_om_content {
+
     display: grid;
     grid-area: bag_om_content;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
 
         "txt txt txt"
@@ -402,26 +379,50 @@ body {
 }
 
 .txt {
+
     display: grid;
     grid-area: txt;
-    font-family: "Playfair Display", serif;
+    font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 24px;
     color: white;
     margin: 0;
+    margin-top: 25px;
 }
 
 .txt2 {
-    display: grid;
-    grid-area: txt2;
-    font-family: "Playfair Display", serif;
+
+     grid-area: txt2;
+    font-family: "Lato", serif;
     font-weight: 300;
     font-size: 70px;
     color: white;
     margin: 0;
+    z-index: 2;
+    margin-top: 25px;
+
 }
 
-/*.video1 {
-    display: grid;
+.txt2 span {
+    transform: scale(-1, 1);
+}
+
+.behind_video {
+
     grid-area: vid;
-}*/
+    display: grid;
+    align-self: center;
+    justify-content: center;
+    margin-top: -40px;
+    z-index: 1;
+    height: 430px;
+
+}
+
+iframe {
+
+    width: 750px;
+    height: 430px;
+
+}
+

@@ -1,8 +1,10 @@
 footer {
+
     display: none;
 }
 
 .content {
+
     display: none;
 }
 
@@ -46,6 +48,7 @@ footer {
     }
 
     .click-scroll {
+
         position: absolute;
         bottom: 4%;
         height: 500px;
@@ -87,6 +90,7 @@ footer {
     }
 
     .scroll-down span {
+
         position: absolute;
         bottom: 20%;
         left: 50%;
@@ -107,15 +111,18 @@ footer {
 
     @-webkit-keyframes spin {
         0% {
+
             -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
             opacity: 0;
         }
 
         50% {
+
             opacity: 1;
         }
 
         100% {
+
             -webkit-transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
             opacity: 0;
         }
@@ -123,15 +130,18 @@ footer {
 
     @keyframes spin {
         0% {
+
             transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
             opacity: 0;
         }
 
         50% {
+
             opacity: 1;
         }
 
         100% {
+
             transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
             opacity: 0;
         }
@@ -140,18 +150,15 @@ footer {
 
     .mirror,
     .mirror2 {
+
         transform: scale(-1, 1);
+
     }
 
     .name_splash {
+
         height: 500px;
         display: flex;
-        /*
-        display: grid;
-        width: 100%;
-        margin-top: -200px;
-*/
-
 
     }
 
@@ -163,6 +170,7 @@ footer {
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: 1fr 1fr 66px;
         grid-template-areas:
+
             ". menu_footer kontakt_footer sociale_medier_footer udstillinger_footer sprog_search_citat_footer . "
             ". menu_footer kontakt_footer sociale_medier_footer udstillinger_footer sprog_search_citat_footer . "
             "copyright_footer copyright_footer copyright_footer copyright_footer copyright_footer copyright_footer copyright_footer "
@@ -174,6 +182,7 @@ footer {
     .kontakt_footer p,
     .sociale_medier_footer p,
     .udstillinger_footer p {
+
         font-family: "Playfair Display", serif;
         font-size: 20px;
         text-transform: uppercase;
@@ -184,6 +193,7 @@ footer {
     .kontakt_footer a,
     .sociale_medier_footer a,
     .udstillinger_footer a {
+
         font-family: "Lato", sans-serif;
         font-size: 18px;
         text-decoration: none;
@@ -226,10 +236,10 @@ footer {
         display: grid;
         align-items: center;
 
-
     }
 
     .sprog_search_citat_footer p {
+
         font-family: "Lato", sans-serif;
         font-size: 16px;
         font-style: italic;
@@ -284,8 +294,5 @@ footer {
         justify-content: space-evenly;
 
     }
-
-
-
 
 }
