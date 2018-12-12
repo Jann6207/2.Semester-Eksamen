@@ -297,8 +297,8 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
-    background: url(/IMG-Bank/Images/Splash_Filter2.png);
-    background-position: center;
+    background: url(/IMG-Bank/Images/close_up2.jpg);
+    background-position:center;
     background-size: cover;
     height: 450px;
     overflow: visible;
@@ -392,19 +392,17 @@ body {
 
 .txt2 {
 
-     grid-area: txt2;
+    grid-area: txt2;
     font-family: "Lato", serif;
+    font-family: "Playfair Display", serif;
     font-weight: 300;
-    font-size: 70px;
+    font-size: 60px;
     color: white;
     margin: 0;
     z-index: 2;
-    margin-top: 25px;
+    margin-top: 30px;
+    margin-bottom: 8px;
 
-}
-
-.txt2 span {
-    transform: scale(-1, 1);
 }
 
 .behind_video {
