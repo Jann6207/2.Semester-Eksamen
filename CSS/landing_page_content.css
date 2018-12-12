@@ -300,4 +300,128 @@ body {
 
 }
 
-.name_animate {}
+
+#bag_om_vaekert_container {
+
+    /*height: 100vh;*/
+
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: 100px 1fr;
+    grid-template-areas:
+        "display2 display2 display2"
+        "bag_om_content bag_om_content bag_om_content"
+        "bag_om_content bag_om_content bag_om_content";
+
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+
+    background-image: url(/IMG-Bank/Images/behind_splash.jpg);
+    background-position:center;
+    background-size: cover;
+    height: 500px;
+    overflow: visible;
+
+
+
+}
+
+.display2 {
+    grid-area: display2;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+
+        "line3 behind line4"
+
+    ;
+
+    /* margin-top: 40px;
+    margin-bottom: 35px;*/
+
+
+
+}
+
+
+.behind {
+
+    grid-area: behind;
+    display: grid;
+    justify-content: center;
+    font-family: "Lato", sans-serif;
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
+    font-size: 35px;
+    margin: 0;
+    color: white;
+
+}
+
+
+.line3 {
+
+    grid-area: line3;
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    color: white;
+    background-color: white;
+    height: 2.5px;
+    width: 100%;
+
+}
+
+.line4 {
+
+    grid-area: line4;
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    color: white;
+    background-color: white;
+    height: 2.5px;
+    width: 100%;
+}
+
+.bag_om_content {
+    display: grid;
+    grid-area: bag_om_content;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+
+        "txt txt txt"
+        "txt2 txt2 txt2"
+        "vid vid vid"
+    ;
+}
+
+.txt {
+    display: grid;
+    grid-area: txt;
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: white;
+    margin: 0;
+}
+
+.txt2 {
+    display: grid;
+    grid-area: txt2;
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
+    font-size: 70px;
+    color: white;
+    margin: 0;
+}
+
+/*.video1 {
+    display: grid;
+    grid-area: vid;
+}*/

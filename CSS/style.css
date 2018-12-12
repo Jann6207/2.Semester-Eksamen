@@ -9,8 +9,8 @@ body {
     margin: 0;
     background-image: url(/IMG-Bank/Images/art2.png);
     background-repeat: no-repeat;
-    background-size: cover;
-
+    background-size:contain;
+    background-position: top;
 }
 
 header {
