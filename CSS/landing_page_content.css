@@ -16,14 +16,16 @@ body {
     background-color: #E5E5E5;
     display: grid;
     grid-template-columns: repeat (3, 1fr);
-    grid-template-rows: 100px 1fr 1fr 50px;
+    grid-template-rows: 100px 1fr 1fr;
     grid-template-areas:
         "display display display"
         "vaerk1 vaerk2 vaerk3"
-        "vaerk1 vaerk2 vaerk3"
-        "arrow arrow arrow";
+        "vaerk1 vaerk2 vaerk3";
     padding-left: 30px;
     padding-right: 30px;
+    border: solid black;
+
+
 
 }
 
@@ -99,6 +101,8 @@ body {
     ;
 
     margin-top: 30px;
+
+
 }
 
 .vaerk2_container {
@@ -296,7 +300,7 @@ body {
 
 }
 
-.arrow2 {
+/*.arrow2 {
 
     display: grid;
     grid-area: arrow;
@@ -334,7 +338,7 @@ body {
     60% {
         transform: translateY(-15px);
     }
-}
+}*/
 
 #bag_om_vaekert_container {
 
@@ -353,7 +357,7 @@ body {
     background-size: cover;*/
     height: 100vh;
     overflow: visible;
-    margin-top: 0px;
+    margin-top: -4vw;
     /*margin-bottom: 300px;*/
     background-image: url(/IMG-Bank/Images/paint_filter.jpg);
     background-position: translateY(10px);
@@ -385,17 +389,17 @@ body {
     display: grid;
     justify-content: center;
     font-family: "Lato", sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 3.5em;
     margin: 0;
     color: white;
     margin-top: 20px;
-    background-image: url(/IMG-Bank/Images/art.PNG);
+    /*  background-image: url(/IMG-Bank/Images/art.PNG);
     -webkit-background-clip: text;
     color: transparent;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: top;*/
 
 }
 
@@ -434,14 +438,15 @@ body {
     grid-area: bag_om_content;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr .8fr;
 
     ;
     grid-template-areas:
 
-        ". txt txt txt2"
-        ". vid vid txt2"
-        ". vid vid ."
+        "txt txt . ."
+        "txt txt vid vid"
+        "txt2 txt2 vid vid"
+        ". . . ."
 
     ;
 
@@ -459,23 +464,47 @@ body {
     text-align: center;
     align-self: center;
 
+
 }
 
 .txt2 {
 
     grid-area: txt2;
     font-family: "Lato", sans-serif;
+     font-family: "Playfair Display", sans-serif;
     font-weight: 300;
-    font-size: 3em;
-    color: rgb(255, 255, 255, 0.6);
+    font-size: 6em;
+    color: rgb(255, 255, 255, 1);
     margin: 0;
     z-index: 2;
+height: 100%;
+    width: 100%;
     display: grid;
-    text-align: center;
+    justify-content: center;
     align-self: center;
-    transform: rotate(90deg);
-    margin-left: -70%;
+    align-items: center;
 
+    /*transform: rotate(90deg);*/
+    /*margin-left: -70%;*/
+
+    overflow: visible;
+    margin-top: -30%;
+
+}
+
+.border {
+
+    border: solid 1.5px;
+    border-color: rgb(255, 255, 255, 0.8);
+    overflow: visible;
+    width: 62%;
+    height: 80%;
+    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    overflow: visible;
 }
 
 .behind_video {
@@ -491,8 +520,9 @@ body {
 
 iframe {
 
-    width: 750px;
-    height: 430px;
+    width: 41vw;
+    height: 40vh;
+
 
 }
 

@@ -163,7 +163,7 @@ footer {
         display: flex;
         justify-content: center;
 
-        align-items: center;
+       /* align-items: center;
         background-image: url(/IMG-Bank/Images/art.PNG);
 
         -webkit-background-clip: text;
@@ -172,7 +172,7 @@ footer {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
-
+*/
 
 
 
