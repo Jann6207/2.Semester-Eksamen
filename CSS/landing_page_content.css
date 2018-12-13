@@ -16,11 +16,12 @@ body {
     background-color: #E5E5E5;
     display: grid;
     grid-template-columns: repeat (3, 1fr);
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: 100px 1fr 1fr 50px;
     grid-template-areas:
         "display display display"
         "vaerk1 vaerk2 vaerk3"
-        "vaerk1 vaerk2 vaerk3";
+        "vaerk1 vaerk2 vaerk3"
+        "arrow arrow arrow";
     padding-left: 30px;
     padding-right: 30px;
 
@@ -38,7 +39,7 @@ body {
         "line1 newest line2"
 
     ;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 35px;
 
 }
@@ -51,8 +52,9 @@ body {
     align-self: center;
     color: black;
     background-color: black;
-    height: 2.5px;
+    height: 2px;
     width: 100%;
+    border: none;
 
 }
 
@@ -77,8 +79,10 @@ body {
     align-self: center;
     color: black;
     background-color: black;
-    height: 2.5px;
+    height: 2px;
     width: 100%;
+    border: none;
+
 }
 
 .vaerk1_container {
@@ -110,8 +114,24 @@ body {
         "box2 box2 ."
     ;
     margin-top: 30px;
-    overflow: hidden;
 
+
+}
+
+.vaerk3_container {
+
+    display: grid;
+    grid-area: vaerk3;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+
+        "img3 img3 img3"
+        "img3 img3 img3"
+        "box3 box3 ."
+    ;
+
+    margin-top: 30px;
 }
 
 .zoom {
@@ -136,21 +156,7 @@ body {
 
 }
 
-.vaerk3_container {
 
-    display: grid;
-    grid-area: vaerk3;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:
-
-        "img3 img3 img3"
-        "img3 img3 img3"
-        "box3 box3 ."
-    ;
-
-    margin-top: 30px;
-}
 
 .malleri1,
 .malleri2,
@@ -200,7 +206,7 @@ body {
 .vaerk1 {
 
     grid-area: box1;
-    background-color: #FFFFFF;
+    background-color: #fafafa;
     margin: 10px;
     margin-left: 40px;
     overflow: visible;
@@ -216,29 +222,33 @@ body {
 .vaerk2 {
 
     grid-area: box2;
-    background-color: #FFFFFF;
+    background-color: #fafafa;
     margin: 10px;
     margin-left: 40px;
     overflow: visible;
     width: 340px;
     height: 200px;
+    display: grid;
     z-index: 10;
     margin-top: -50px;
+    margin-bottom: -50px;
 
 }
 
 .vaerk3 {
 
     grid-area: box3;
-    background-color: #FFFFFF;
+    background-color: #fafafa;
     /* display: grid;*/
     margin: 10px;
     margin-left: 40px;
     overflow: visible;
     width: 340px;
     height: 200px;
+    display: grid;
     z-index: 10;
     margin-top: -50px;
+    margin-bottom: -50px;
 
 }
 
@@ -269,11 +279,12 @@ body {
 .more {
 
     font-family: "Playfair Display", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: underline;
     text-align: center;
     transition: .4s ease;
     text-decoration-skip: top;
+    margin-top: 10px;
 
 }
 
@@ -283,6 +294,46 @@ body {
     cursor: pointer;
     text-decoration-color: #ffc47f;
 
+}
+
+.arrow2 {
+
+    display: grid;
+    grid-area: arrow;
+    margin-top: -50px;
+    display: grid;
+    justify-self: center;
+    width: 40px;
+    height: 40px;
+    opacity: 0.6;
+    cursor: pointer;
+    background-image: url(/IMG-Bank/Svg/arrow_black.svg);
+    background-size: contain;
+}
+
+.bounce2 {
+
+    animation: bounce2 2s infinite;
+
+}
+
+@keyframes bounce2 {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
 }
 
 #bag_om_vaekert_container {
@@ -297,13 +348,17 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
-    background: url(/IMG-Bank/Images/behind_splash2.jpg);
+    /* background: url(/IMG-Bank/Images/behind_splash2.jpg);
     background-position:center;
-    background-size: cover;
-    height: 450px;
+    background-size: cover;*/
+    height: 100vh;
     overflow: visible;
-    margin-top: -70px;
-    margin-bottom: 300px;
+    margin-top: 0px;
+    /*margin-bottom: 300px;*/
+    background-image: url(/IMG-Bank/Images/paint_filter.jpg);
+    background-position: translateY(10px);
+    background-size: cover;
+    overflow: visible;
 
 }
 
@@ -316,7 +371,7 @@ body {
     grid-template-rows: repeat(1, 1fr);
     grid-template-areas:
 
-        "line3 behind line4"
+        "behind behind behind"
 
     ;
     margin-top: 30px;
@@ -330,15 +385,21 @@ body {
     display: grid;
     justify-content: center;
     font-family: "Lato", sans-serif;
-    font-family: "Playfair Display", serif;
     font-weight: 300;
-    font-size: 35px;
+    font-size: 3.5em;
     margin: 0;
     color: white;
+    margin-top: 20px;
+    background-image: url(/IMG-Bank/Images/art.PNG);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 
 }
 
-.line3 {
+/*.line3 {
 
     grid-area: line3;
     display: grid;
@@ -346,8 +407,10 @@ body {
     align-self: center;
     color: white;
     background-color: white;
-    height: 2.5px;
+    border: none;
+    height: 1.6px;
     width: 100%;
+
 
 }
 
@@ -359,23 +422,29 @@ body {
     align-self: center;
     color: white;
     background-color: white;
-    height: 2.5px;
+    border: none;
+    height: 1.6px;
     width: 100%;
-}
+
+}*/
 
 .bag_om_content {
 
     display: grid;
     grid-area: bag_om_content;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+
+    ;
     grid-template-areas:
 
-        "txt txt txt"
-        "txt2 txt2 txt2"
-        "vid vid vid"
+        ". txt txt txt2"
+        ". vid vid txt2"
+        ". vid vid ."
+
     ;
+
 }
 
 .txt {
@@ -385,23 +454,27 @@ body {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 24px;
-    color: white;
+    color: rgb(255, 255, 255, 0.8);
     margin: 0;
-    margin-top: 30px;
+    text-align: center;
+    align-self: center;
+
 }
 
 .txt2 {
 
     grid-area: txt2;
-    font-family: "Lato", serif;
-    font-family: "Playfair Display", serif;
+    font-family: "Lato", sans-serif;
     font-weight: 300;
-    font-size: 60px;
-    color: white;
+    font-size: 3em;
+    color: rgb(255, 255, 255, 0.6);
     margin: 0;
     z-index: 2;
-    margin-top: 30px;
-    margin-bottom: 8px;
+    display: grid;
+    text-align: center;
+    align-self: center;
+    transform: rotate(90deg);
+    margin-left: -70%;
 
 }
 
@@ -409,11 +482,10 @@ body {
 
     grid-area: vid;
     display: grid;
-    align-self: center;
+    align-self: flex-start;
     justify-content: center;
-    margin-top: -40px;
     z-index: 1;
-    height: 430px;
+
 
 }
 
@@ -423,6 +495,45 @@ iframe {
     height: 430px;
 
 }
+
+.arrow {
+
+    position: relative;
+    text-align: center;
+    bottom: 5%;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    opacity: 0.6;
+    cursor: pointer;
+    background-image: url(/IMG-Bank/Svg/arrow.svg);
+    background-size: contain;
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
 
 #udstillinger {
 
@@ -437,11 +548,11 @@ iframe {
     padding-right: 30px;
     text-align: center;
 
-    background-position:center;
+    background-position: center;
     background-size: cover;
     height: 500px;
     overflow: visible;
-    margin-top: -70px;
+    margin-top: 70px;
     margin-bottom: 100px;
 
 
@@ -473,8 +584,9 @@ iframe {
     align-self: center;
     color: black;
     background-color: black;
-    height: 2.5px;
+    height: 2px;
     width: 100%;
+    border: none;
 
 }
 
@@ -486,8 +598,9 @@ iframe {
     align-self: center;
     color: black;
     background-color: black;
-    height: 2.5px;
+    height: 2px;
     width: 100%;
+    border: none;
 }
 
 
@@ -507,29 +620,33 @@ iframe {
 }
 
 .navn_logo {
+
     grid-area: name;
     background-color: green;
     margin: 10px;
-     margin-top: 30px;
+    margin-top: 30px;
 }
 
 .show_txt_container {
+
     grid-area: show_content;
     background-color: #190080;
     margin: 10px;
-     margin-top: 30px;
+    margin-top: 30px;
 }
 
 .navn_logo2 {
+
     grid-area: name2;
     background-color: #80007b;
     margin: 10px;
-     margin-top: 30px;
+    margin-top: 30px;
 }
 
 .show_txt_container2 {
+
     grid-area: show_content2;
     background-color: #b15c27;
     margin: 10px;
-     margin-top: 30px;
+    margin-top: 30px;
 }
