@@ -57,7 +57,7 @@ body {
 }
 
 .klik {
-    font-size: 1em;
+    font-size: .8em;
    grid-area: klik;
     margin: 0;
     padding: 0;
@@ -65,6 +65,7 @@ body {
     justify-content: center;
     align-self: center;
     overflow: hidden;
+    font-family: "Lato", sans-serif;
 
 
 }
@@ -77,7 +78,7 @@ body {
      display: grid;
     justify-content: center;
     align-self: center;
-    margin-top: 0px;
+    margin-top: -4px;
     overflow: hidden;
     border-bottom: solid transparent;
     transition: .3s;
@@ -94,7 +95,7 @@ body {
 
 
 .galleri2:hover {
-     border-bottom:  solid #e8c8a2;
+     border-bottom:  solid 1.5px #e8c8a2;
     overflow: hidden;
    color: grey;
     cursor: pointer;
