@@ -1,0 +1,64 @@
+#filtrerings_knapper {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    background-color: rgba(33, 25, 25, 0.95);
+    margin-bottom: 5vw;
+}
+
+.menu-item {
+    border: none;
+    border-radius: 40px;
+    margin: 7px;
+    background: transparent;
+    font-size: 10px;
+    padding: 10px;
+    color: white;
+    font-family: "Playfair Display", serif;
+}
+
+body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    background-image: url(pics/baggrund.jpg);
+}
+
+@media screen and (min-width:700px) {
+    .menu-item {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .menu-item {
+        font-size: 20px;
+    }
+
+    #filtrerings_knapper {
+        display: flex;
+        justify-content: center;
+        padding: 12px;
+        margin-bottom: 5vw;
+    }
+
+    .menu-item {
+        font-size: 25px;
+        padding: 14px;
+        color: white;
+    }
+}
+
+.menu-item:hover {
+    text-shadow: 1px 1px 2px red, 0 0 25px red, 0 0 5px darkred;
+}
+
+@media screen and (min-width:1300px) {
+    header {
+        width: 1300px;
+    }
+
+    .desktop_nav_menu {
+        margin: 0 auto;
+    }
+}

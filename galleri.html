@@ -4,10 +4,69 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="galleri.css">
+
+    <!--   Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
     <title></title>
 </head>
 
 <body>
+
+    <main id="indhold">
+        <div id="filtrerings_knapper">
+            <button class="menu-item" data-kategori="Menu">ALLE</button>
+            <button class="menu-item" data-kategori="Nyeste">NYESTEE</button>
+            <button class="menu-item" data-kategori="Størrelse">STR.</button>
+
+        </div>
+    </main>
+
+    <script>
+        let wpJSON;
+        let dest = document.querySelector(".data-container");
+        let vaerkerFilter = "Menu";
+        document.addEventListener("DOMContentLoaded, hentJson");
+        async function hentJson() {
+            let myJson = await fetch("http://oliverwinfield.dk/kea/kea/lawaetz/wordpress/wp-json/wp/v2/kunstvaerker/?per_page=50");
+            wpJSON = await myJson.json();
+            visJson();
+
+        }
+        document.querySelectorAll(".menu-item").forEach(knap => {
+            knap.addEventListener("click", filtrering);
+        });
+
+        function filtrering() {
+            dest.textContent = "";
+            vaerkerFilter = this.getAttribute("data-kategori");
+            visJson();
+        }
+
+        function visJson() {
+            let myTemplate = document.querySelector(".data-template");
+        }
+        wpJSON.forEach(post => {
+            let klon = myTemplate.cloneNode(true).content;
+            if (post.acf.events == eventFilter || eventFilter == "Menu") {
+                klon.querySelector("[data-overskrift]").textContent = post.acf.titel;
+                klon.querySelector("[data-billede]").textContent = post.acf.billede;
+                klon.querySelector("[data-str]").src = post.acf.storrelse;
+            }
+            klon.querySelector(".post-container").addEventListener("click", () => {
+                window.location.href = "modalview.html?id=" + post.id;
+            });
+            if (post.acf.solgt == true) {
+                klon.querySelector("[data-button]").style.display = "block";
+                else {
+                    klon.querySelector("[data-button]").style.display = "block;
+                }
+            }
+            dest.appendChild(klon);
+        })
+    </script>
 
 </body>
 
