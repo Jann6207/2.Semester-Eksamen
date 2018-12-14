@@ -439,11 +439,13 @@ body {
 
     display: grid;
     grid-template-columns: repeat (3, 1fr);
-    grid-template-rows: 100px 1fr 1fr .8fr;
+    grid-template-rows: 100px 1fr 1fr 50px;
     grid-template-areas:
         "display2 display2 display2"
         "bag_om_content bag_om_content bag_om_content"
+        "bag_om_content bag_om_content bag_om_content"
          ". arrow_bounce ."
+
 ;
     padding-left: 30px;
     padding-right: 30px;
@@ -453,7 +455,7 @@ body {
     background-size: cover;*/
     height: 1000px;
     overflow: visible;
-
+justify-content: center;
     /*margin-bottom: 300px;*/
     background-image: url(/IMG-Bank/Images/paint_filter.jpg);
     background-position: translateY(10px);
@@ -467,15 +469,16 @@ body {
     grid-area: display2;
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(1, 1fr);
     grid-template-areas:
 
-        "behind behind behind"
+        "behind"
 
     ;
     margin-top: 30px;
     margin-bottom: 35px;
+    height: 100%;
 
 }
 
@@ -489,60 +492,29 @@ body {
     font-size: 3.5em;
     margin: 0;
     color: white;
-    margin-top: 20px;
-    /*  background-image: url(/IMG-Bank/Images/art.PNG);
-    -webkit-background-clip: text;
-    color: transparent;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;*/
 
 }
 
-/*.line3 {
-
-    grid-area: line3;
-    display: grid;
-    justify-content: center;
-    align-self: center;
-    color: white;
-    background-color: white;
-    border: none;
-    height: 1.6px;
-    width: 100%;
-
-
-}
-
-.line4 {
-
-    grid-area: line4;
-    display: grid;
-    justify-content: center;
-    align-self: center;
-    color: white;
-    background-color: white;
-    border: none;
-    height: 1.6px;
-    width: 100%;
-
-}*/
 
 .bag_om_content {
 
     display: grid;
-    grid-area: bag_om_content;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
     align-items: center;
+    grid-area: bag_om_content;
+
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr .8fr;
+    grid-template-rows: 1fr 1fr;
 
     ;
     grid-template-areas:
 
-        "txt txt . ."
+
         "txt txt vid vid"
         "txt2 txt2 vid vid"
-        ". . . ."
+
 
     ;
 
@@ -559,7 +531,7 @@ body {
     margin: 0;
     text-align: center;
     align-self: center;
-
+    margin-top: 0%;
 
 }
 
@@ -571,25 +543,20 @@ body {
     font-weight: 300;
     font-size: 6em;
     color: rgb(255, 255, 255, 1);
-    margin: 0;
+
     z-index: 2;
 height: 100%;
     width: 100%;
     display: grid;
     justify-content: center;
-    align-self: center;
+    align-self: flex-start;
     align-items: center;
 
-    /*transform: rotate(90deg);*/
-    /*margin-left: -70%;*/
 
     overflow: visible;
-    margin-top: -30%;
 
-
-
-
-
+    opacity: 0.6;
+margin-top: -20%;
 
 }
 
@@ -598,7 +565,7 @@ height: 100%;
 .border {
 
     border: solid 1.5px;
-    border-color: rgb(255, 255, 255, 0.8);
+    border-color: rgb(255, 255, 255, 1);
     overflow: visible;
     width: 62%;
     height: 60%;
@@ -610,13 +577,14 @@ height: 100%;
     overflow: visible;
 
 
+
 }
 
 .behind_video {
 
     grid-area: vid;
     display: grid;
-    align-self: flex-start;
+    align-self: center;
     justify-content: center;
     z-index: 1;
 
@@ -625,18 +593,18 @@ height: 100%;
 
 iframe {
 
-    width: 41vw;
+    width: 40vw;
     height: 30em;
 
 
 }
 
 .arrow {
-
+display: flex;
     position: relative;
     text-align: center;
-    bottom: 180%;
-    left: 50%;
+    bottom: 25%;
+    /*left: 50%;*/
     margin-left: -20px;
     width: 40px;
     height: 40px;
@@ -649,10 +617,11 @@ iframe {
     background-size: contain;
 
 
+ grid-area: arrow_bounce;
 
-    grid-area: arrow_bounce;
 
 }
+
 
 .bounce {
     animation: bounce 2s infinite;
