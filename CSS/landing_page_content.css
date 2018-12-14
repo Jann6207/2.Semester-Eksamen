@@ -457,7 +457,7 @@ body {
     overflow: visible;
 justify-content: center;
     /*margin-bottom: 300px;*/
-    background-image: url(/IMG-Bank/Images/paint_filter.jpg);
+    background-image: url(/IMG-Bank/Images/paint_filter2.jpg);
     background-position: translateY(10px);
     background-size: cover;
     overflow: visible;
@@ -650,21 +650,20 @@ display: flex;
 #udstillinger {
 
     display: grid;
-    grid-template-columns: repeat (4, 1fr);
+    grid-template-columns: repeat (3, 1fr);
     grid-template-rows: 100px 1fr;
     grid-template-areas:
-        "display3 display3 display3 display3"
-        "name show_content name2 show_content2"
-        "name show_content name2 show_content2";
+        "display3 display3 display3"
+        "navn_logo1 navn_logo2 navn_logo3"
+      ;
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
 
-    background-position: center;
-    background-size: cover;
+
     height: 500px;
-    overflow: visible;
-    margin-top: 70px;
+
+    margin-top: 10px;
     margin-bottom: 100px;
 
 
@@ -732,34 +731,47 @@ display: flex;
 
 }
 
-.navn_logo {
+.partner_logo {
 
-    grid-area: name;
+    grid-area: navn_logo1;
     background-color: green;
     margin: 10px;
     margin-top: 30px;
+    display: grid;
+  justify-content: center;
+      align-content: center;
 }
 
-.show_txt_container {
 
-    grid-area: show_content;
+.partner_logo2 {
+
+    grid-area: navn_logo2;
     background-color: #190080;
     margin: 10px;
     margin-top: 30px;
+     display: grid;
+ justify-content: center;
+      align-content: center;
 }
 
-.navn_logo2 {
+.partner_logo3 {
 
-    grid-area: name2;
+    grid-area: navn_logo3;
     background-color: #80007b;
     margin: 10px;
     margin-top: 30px;
+     display: grid;
+    justify-content: center;
+    align-content: center;
 }
 
-.show_txt_container2 {
 
-    grid-area: show_content2;
-    background-color: #b15c27;
-    margin: 10px;
-    margin-top: 30px;
+
+.partner_logo img,
+.partner_logo2 img,
+.partner_logo3 img {
+
+    width: 300px;
 }
+
+
