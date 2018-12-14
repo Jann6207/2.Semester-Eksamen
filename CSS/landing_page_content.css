@@ -39,14 +39,14 @@ body {
     align-self: center;
     margin-top: -150px;
     overflow: hidden;
-     grid-template-columns: repeat (1, 1fr);
+    grid-template-columns: repeat (1, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
         "klik"
         "galleriknap"
-      ;
+    ;
 
- /* border: solid black 1.5px;
+    /* border: solid black 1.5px;
     background-color: white;*/
     text-transform: uppercase;
 
@@ -58,71 +58,43 @@ body {
 
 .klik {
     font-size: .8em;
-   grid-area: klik;
+    grid-area: klik;
     margin: 0;
     padding: 0;
     display: grid;
     justify-content: center;
     align-self: center;
-    overflow: hidden;
+
     font-family: "Lato", sans-serif;
 
 
 }
 
 .galleri2 {
-     font-size: 1.5em;
+    font-size: 1.5em;
     grid-area: galleriknap;
     margin: 0;
     padding: 0;
-     display: grid;
+    display: grid;
     justify-content: center;
     align-self: center;
     margin-top: -4px;
-    overflow: hidden;
+
     border-bottom: solid 1.5px transparent;
-    transition: .3s;
+    transition: .5s;
 
 }
 
-/*.klik:hover ~ .galleri2 {
-     border-bottom:  solid #e8c8a2;
-    overflow: hidden;
-    color: grey;
 
-
-}*/
 
 
 .galleri2:hover {
-     border-bottom:  solid 1.5px #e8c8a2;
+    border-bottom: solid 1.5px #e8c8a2;
     overflow: hidden;
-   color: grey;
+    color: grey;
     cursor: pointer;
+
 }
-
-
-
-/*
-.arrow5 {
-  border: solid black;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 3px;
-}
-
-.right {
-    margin-right: 20px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
-.left {
-     margin-left: 20px;
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-*/
 
 .display {
 
@@ -395,45 +367,7 @@ body {
 
 }
 
-/*.arrow2 {
 
-    display: grid;
-    grid-area: arrow;
-    margin-top: -50px;
-    display: grid;
-    justify-self: center;
-    width: 40px;
-    height: 40px;
-    opacity: 0.6;
-    cursor: pointer;
-    background-image: url(/IMG-Bank/Svg/arrow_black.svg);
-    background-size: contain;
-}
-
-.bounce2 {
-
-    animation: bounce2 2s infinite;
-
-}
-
-@keyframes bounce2 {
-
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(0);
-    }
-
-    40% {
-        transform: translateY(-30px);
-    }
-
-    60% {
-        transform: translateY(-15px);
-    }
-}*/
 
 #bag_om_vaekert_container {
 
@@ -444,19 +378,15 @@ body {
         "display2 display2 display2"
         "bag_om_content bag_om_content bag_om_content"
         "bag_om_content bag_om_content bag_om_content"
-         ". arrow_bounce ."
+        ". arrow_bounce ."
 
-;
+    ;
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
-    /* background: url(/IMG-Bank/Images/behind_splash2.jpg);
-    background-position:center;
-    background-size: cover;*/
     height: 1000px;
     overflow: visible;
-justify-content: center;
-    /*margin-bottom: 300px;*/
+    justify-content: center;
     background-image: url(/IMG-Bank/Images/paint_filter2.jpg);
     background-position: translateY(10px);
     background-size: cover;
@@ -504,7 +434,6 @@ justify-content: center;
     align-content: center;
     align-items: center;
     grid-area: bag_om_content;
-
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 
@@ -514,8 +443,6 @@ justify-content: center;
 
         "txt txt vid vid"
         "txt2 txt2 vid vid"
-
-
     ;
 
 }
@@ -539,24 +466,20 @@ justify-content: center;
 
     grid-area: txt2;
     font-family: "Lato", sans-serif;
-     font-family: "Playfair Display", sans-serif;
+    font-family: "Playfair Display", sans-serif;
     font-weight: 300;
     font-size: 6em;
     color: rgb(255, 255, 255, 1);
-
     z-index: 2;
-height: 100%;
+    height: 100%;
     width: 100%;
     display: grid;
     justify-content: center;
     align-self: flex-start;
     align-items: center;
-
-
     overflow: visible;
-
     opacity: 0.6;
-margin-top: -20%;
+    margin-top: -20%;
 
 }
 
@@ -576,8 +499,6 @@ margin-top: -20%;
     align-items: center;
     overflow: visible;
 
-
-
 }
 
 .behind_video {
@@ -588,7 +509,6 @@ margin-top: -20%;
     justify-content: center;
     z-index: 1;
 
-
 }
 
 iframe {
@@ -596,28 +516,24 @@ iframe {
     width: 40vw;
     height: 30em;
 
-
 }
 
 .arrow {
-display: flex;
+
+    display: flex;
     position: relative;
     text-align: center;
     bottom: 25%;
-    /*left: 50%;*/
     margin-left: -20px;
     width: 40px;
     height: 40px;
     opacity: 0.6;
- /* left: -50%;
-    position: relative;
-    bottom: 5%;*/
     cursor: pointer;
     background-image: url(/IMG-Bank/Svg/arrow.svg);
     background-size: contain;
 
 
- grid-area: arrow_bounce;
+    grid-area: arrow_bounce;
 
 
 }
@@ -655,17 +571,13 @@ display: flex;
     grid-template-areas:
         "display3 display3 display3"
         "navn_logo1 navn_logo2 navn_logo3"
-      ;
+    ;
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
-
-
     height: 500px;
-
     margin-top: 10px;
     margin-bottom: 100px;
-
 
 }
 
@@ -731,47 +643,56 @@ display: flex;
 
 }
 
-.partner_logo {
+.parnter_logo {
 
     grid-area: navn_logo1;
-    background-color: green;
     margin: 10px;
     margin-top: 30px;
     display: grid;
-  justify-content: center;
-      align-content: center;
-}
-
-
-.partner_logo2 {
-
-    grid-area: navn_logo2;
-    background-color: #190080;
-    margin: 10px;
-    margin-top: 30px;
-     display: grid;
- justify-content: center;
-      align-content: center;
-}
-
-.partner_logo3 {
-
-    grid-area: navn_logo3;
-    background-color: #80007b;
-    margin: 10px;
-    margin-top: 30px;
-     display: grid;
     justify-content: center;
     align-content: center;
 }
 
+.parnter_logo2 {
 
+    grid-area: navn_logo2;
+    margin: 10px;
+    margin-top: 30px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
 
-.partner_logo img,
-.partner_logo2 img,
-.partner_logo3 img {
+.parnter_logo3 {
 
-    width: 300px;
+    grid-area: navn_logo3;
+    margin: 10px;
+    margin-top: 30px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.uformel,
+.runforcover,
+.artmanager {
+
+    margin-top: 5%;
+    width: 55%;
+    transition: .5s;
+    cursor: pointer;
+    border-bottom: solid 1.5px transparent;
 }
 
 
+.uformel:hover,
+.runforcover:hover,
+.artmanager:hover {
+
+    cursor: pointer;
+    border-bottom: solid 1.5px #E8C8A2;
+    padding-bottom: 10px;
+
+
+}
