@@ -696,3 +696,113 @@ iframe {
 
 
 }
+
+#anmeldelser {
+    background-color: #b8b8b8;
+     display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+
+        "anmeld1 anmeld2"
+
+    ;
+   /* background-color: aqua;*/
+    height: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+    grid-gap: 50px;
+    color:  white;
+    background-image: url(/IMG-Bank/Images/Anmeldelser_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.anmeld1 {
+
+    grid-area: anmeld1;
+   /* background-color: green;*/
+
+      display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+
+        "citat1"
+        "name1"
+
+
+    ;
+
+    padding: 10px;
+    height: 100%;;
+
+}
+
+.citat {
+    grid-area: citat1;
+    justify-self: center;
+      font-family: "Lato", sans-serif;
+    font-style: italic;
+    align-self: flex-end;
+    height: 20px;
+
+
+}
+
+.name {
+    grid-area: name1;
+    justify-self: flex-end;
+      font-family: "Lato", sans-serif;
+     padding-right: 100px;
+
+
+}
+
+.anmeld2 {
+
+    grid-area: anmeld2;
+    /*background-color: green;*/
+
+      display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+
+        "citat2"
+        "name2"
+
+
+    ;
+     height: 100%;
+    padding: 10px;
+
+
+
+}
+
+.citat2 {
+    grid-area: citat2;
+
+      font-family: "Lato", sans-serif;
+    font-style: italic;
+     justify-self: center;
+    align-self: flex-end;
+     height: 20px;
+
+}
+
+.name2 {
+    grid-area: name2;
+    justify-self: flex-end;
+      font-family: "Lato", sans-serif;
+     padding-right: 100px;
+
+}
+
