@@ -1,39 +1,242 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/galleri.css">
-
-    <!--   Google Fonts-->
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Lato" sans-serif;
+        }
+
+
+        #filtrerings_knapper {
+            display: flex;
+            justify-content: center;
+            padding: 12px;
+            background-color: #0c100e;
+            margin-bottom: 5vw;
+
+        }
+
+        .menu-item {
+            border: none;
+            border-radius: 40px;
+            margin: 7px;
+            background: transparent;
+            font-size: 20px;
+            padding: 10px;
+            color: white;
+            font-family: "playfair display" serif;
+            cursor: pointer;
+
+
+
+        }
+
+
+        body {
+            min-height: 100%;
+            display: grid;
+            grid-template-rows: 1fr auto;
+        }
+
+        .post-container button {
+            display: none;
+            border-radius: 2em;
+            height: 40px;
+            min-width: 125px;
+            padding: 0 30px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: .5s;
+        }
+
+        .post-container button:hover {
+            background-color: #fff;
+        }
+
+        #indhold {
+            width: 100vw;
+            margin-bottom: 50px;
+        }
+
+        .data-container {
+            display: grid;
+            max-width: 400px;
+            margin: 0 auto;
+            grid-gap: 10px;
+        }
+
+        .data-container article img {
+            width: 100%
+        }
+
+        .post-container {
+            padding: 1em;
+            grid-row: span 1;
+            background-color: #Bacbdb;
+        }
+
+        .post-container p,
+        .post-container img,
+        .post-container h2,
+        .post-container button {
+            margin: 7px 0;
+        }
+
+        /*    [data-overskrift] {
+            min-height: 66px;
+        }*/
+
+        [data-overskrift] {
+            min-height: 99px;
+        }
+
+        .str {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .flex-dato {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .back {
+            cursor: pointer;
+            position: relative;
+            width: auto;
+            color: #FFF;
+            font-weight: bold;
+            font-size: 3em;
+            transition: 0.3s ease;
+            border-radius: 0 3px 3px 0;
+            margin: 0 20px;
+            background-color: transparent;
+        }
+
+        @media screen and (min-width:700px) {
+            .nyhedsbrev p {
+                padding: 0;
+                line-height: 50px;
+                font-size: 11px;
+            }
+
+            .data-container {
+                grid-template-columns: 1fr 1fr;
+                max-width: 600px;
+            }
+        }
+
+        @media screen and (min-width:1000px) {
+            .data-container {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 20px;
+            }
+
+            .data-container {
+
+                max-width: 850px;
+            }
+
+
+            [data-overskrift] {
+                min-height: 99px;
+            }
+
+            .post-container {
+                transition: .4s;
+            }
+
+            .post-container:hover {
+                border: 2px solid var #a63a55;
+                transform: scale(1.1);
+                background-color: #0c100e;
+                color: rgba(250, 250, 250, 0.81);
+            }
+            #filtrerings_knapper {
+                display: flex;
+                justify-content: center;
+                padding: 12px;
+                margin-bottom: 5vw;
+
+            }
+
+            .menu-item {
+
+                font-size: 25px;
+                padding: 14px;
+                color: white;
+
+
+
+            }
+            @media screen and (min-width:1300px) {
+
+
+                .data-container {
+
+                    max-width: 1300px;
+
+                }
+
+                header {
+                    width: 1300px;
+                }
+
+                .desktop_nav_menu {
+                    margin: 0 auto;
+                }
+                img {
+                    max-height: 388px;
+                    max-width: 388px;
+                }
+    </style>
 </head>
 
 <body>
 
+    <a class="back" onclick="goBack()">&#10094;</a>
     <main id="indhold">
         <div id="filtrerings_knapper">
-            <button class="menu-item" data-kategori="Menu">ALLE</button>
-            <button class="menu-item" data-kategori="Nyeste">NYESTEE</button>
-            <button class="menu-item" data-kategori="Størrelse">STR.</button>
+            <button class="menu-item" data-kategori="Alle">ALLE</button>
+            <button class="menu-item" data-kategori="Nyeste">NYESTE</button>
+            <button class="menu-item" data-kategori="Str">STR.</button>
+        </div>
 
+        <div class="container">
+            <section class="data-container"></section>
         </div>
     </main>
+    <template class="data-template">
+        <article class="post-container">
+            <div>
+              <h2 data-overskrift></h2>
+               <img data-billede>
+                <div class="str">
+                    <p data-storrelse></p>
+                </div>
+
+            </div>
+        </article>
+    </template>
 
     <script>
         let wpJSON;
         let dest = document.querySelector(".data-container");
-        let vaerkerFilter = "Menu";
-        document.addEventListener("DOMContentLoaded, hentJson");
+        let eventFilter = "Alle";
+        document.addEventListener("DOMContentLoaded", hentJson);
         async function hentJson() {
-            let myJson = await fetch("http://oliverwinfield.dk/kea/kea/lawaetz/wordpress/wp-json/wp/v2/kunstvaerker/?per_page=50");
+            let myJson = await fetch("http://oliverwinfield.dk/kea/kea/lawaetz/wordpress/wp-json/wp/v2/kunstvaerker");
             wpJSON = await myJson.json();
             visJson();
-
         }
         document.querySelectorAll(".menu-item").forEach(knap => {
             knap.addEventListener("click", filtrering);
@@ -43,29 +246,34 @@
             dest.textContent = "";
             vaerkerFilter = this.getAttribute("data-kategori");
             visJson();
+            console.log("filtrering");
         }
 
         function visJson() {
             let myTemplate = document.querySelector(".data-template");
-        }
-        wpJSON.forEach(post => {
-            let klon = myTemplate.cloneNode(true).content;
-            if (post.acf.events == eventFilter || eventFilter == "Menu") {
-                klon.querySelector("[data-overskrift]").textContent = post.acf.titel;
-                klon.querySelector("[data-billede]").textContent = post.acf.billede;
-                klon.querySelector("[data-str]").src = post.acf.storrelse;
-            }
-            klon.querySelector(".post-container").addEventListener("click", () => {
-                window.location.href = "modalview.html?id=" + post.id;
+            wpJSON.sort(function(a, b) {
+                return a.acf.type - b.acf.type;
             });
-            if (post.acf.solgt == true) {
-                klon.querySelector("[data-button]").style.display = "block";
-                else {
-                    klon.querySelector("[data-button]").style.display = "block;
+            console.log(wpJSON);
+            console.log("visJson");
+            wpJSON.forEach(post => {
+                if (post.acf.events == vaerkerFilter || vaerkerFilter == "Alle") {
+                    console.log("ifstatement")
+                    let klon = myTemplate.cloneNode(true).content;
+                    klon.querySelector("[data-overskrift]").textContent = post.acf.titel;
+                    klon.querySelector("[data-billede]").src = post.acf.billede;
+                    klon.querySelector("[data-storrelse]").textContent = "Størrelse: " + post.acf.storrelse;
+                    klon.querySelector(".post-container").addEventListener("click", () => {
+                        window.location.href = "modal.html?id=" + post.id;
+                    });
+                    dest.appendChild(klon);
                 }
-            }
-            dest.appendChild(klon);
-        })
+            })
+        }
+
+        function goBack() {
+            window.history.back();
+        }
     </script>
 
 </body>
