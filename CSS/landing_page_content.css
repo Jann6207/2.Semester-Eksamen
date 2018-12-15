@@ -30,8 +30,6 @@ body {
     padding-left: 30px;
     padding-right: 30px;
  /*   border: solid black;*/
-    height: 900px;
-
 
 
 }
@@ -425,17 +423,179 @@ justify-content: center;
 
 }
 
-#bag_om_vaekert_container, #partner, #anmeldelser {
+#partner, #anmeldelser {
     display: none;
 }
 
 
 
+
+
+
+
 /*-------- NYESTE VÆRKER MOBILE/TABLET - SLUT --------*/
 
+/*----------- BAG OM VÆRKET MOBILE - START ------------*/
+
+#bag_om_vaekert_container {
+
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat (1, 1fr);
+    grid-template-rows: 100px 1fr 1fr;
+    grid-template-areas:
+        "display2"
+        "bag_om_content"
+        "bag_om_content"
+
+
+    ;
+
+    text-align: center;
+
+    overflow: visible;
+    justify-content: center;
+    background-image: url(/IMG-Bank/Images/paint_filter2.jpg);
+    background-position: translateY(10px);
+    background-size: cover;
+
+
+}
+
+.display2 {
+
+    grid-area: display2;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat (1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+
+        "behind"
+
+    ;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 100%;
+
+}
+
+.behind {
+
+    grid-area: behind;
+    display: grid;
+    justify-content: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    margin: 0;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    align-self: flex-start;
+
+}
+
+
+.bag_om_content {
+
+    display: grid;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    grid-area: bag_om_content;
+    grid-template-columns: repeat (1, 1fr);
+    grid-template-rows: .5fr 175px .5fr ;
+
+    ;
+    grid-template-areas:
+
+
+        "txt"
+        "txt2"
+        "vid"
+    ;
+
+}
+
+.txt {
+
+    display: grid;
+    grid-area: txt;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: rgb(255, 255, 255, 0.8);
+    margin: 0;
+    text-align: center;
+    align-self: flex-start;
+    margin-top: 0%;
+margin-bottom: 0;
+}
+
+.txt2 {
+
+    grid-area: txt2;
+
+    font-weight: 300;
+    font-size: 2em;
+
+   color: white;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+
+    opacity: 0.6;
+
+
+}
+
+
+
+.border {
+
+    border: solid 1.5px;
+    border-color: rgb(255, 255, 255, 1);
+    overflow: visible;
+    width: 62%;
+    height: 60%;
+    margin-left: 19%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    overflow: visible;
+
+}
+
+.behind_video {
+
+    grid-area: vid;
+    display: grid;
+    align-self: center;
+    justify-content: center;
+    z-index: 1;
+    margin-bottom: 20px;
+width: 100%;
+}
+
+iframe {
+
+    width: 100%;
+
+
+}
+
+.arrow {
+    display: none;
+}
 @media only screen and (min-width: 1280px) {
 
-/*-------------- NYESTE VÆRKER DESKTOP - START --------------*/
+/*----------- NYESTE VÆRKER DESKTOP - START ------------*/
 
 #nyeste_vaerker_container {
 
@@ -942,6 +1102,7 @@ justify-content: center;
 
 iframe {
 
+    display: grid;
     width: 40vw;
     height: 30em;
 
