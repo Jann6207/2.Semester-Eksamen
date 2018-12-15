@@ -6,30 +6,56 @@ footer {
     display: none;
 }
 
+
 /*.content {
+
 
     display: none;
 }*/
 
+
+
+/*
 .content {
 
     display: flex;
-    height: 94vh;
+    height: 180px;
     justify-content: center;
     font-family: "Playfair Display", serif;
-    font-size: 50px;
+    font-size: 40px;
     background-color: rgb(0, 0, 0, 0.5);
     text-align: center;
     color: white;
-    padding-top: 40vh;
+    padding-top: 50px;
     font-family: "Lato", sans-serif;
     font-weight: 200;
 
 }
 
+
+
+.click-scroll {
+    display: none;
+}
+
+    .mirror,
+    .mirror2 {
+
+        transform: scale(-1, 1);
+
+    }
+
+    .name_splash,
+    .name_splash span {
+
+        display: inline-flex;
+        justify-content: center;
+
+    }*/
+
 @media only screen and (min-width: 1280px) {
 
-    .content {
+/*    .content {
 
         display: flex;
         height: 94vh;
@@ -52,6 +78,7 @@ footer {
 
     .click-scroll {
 
+        display: grid;
         position: absolute;
         bottom: 4%;
         height: 500px;
@@ -162,24 +189,11 @@ footer {
     .name_splash span {
 
 
-
         display: inline-flex;
         justify-content: center;
 
-       /* align-items: center;
-        background-image: url(/IMG-Bank/Images/art.PNG);
 
-        -webkit-background-clip: text;
-        color: transparent;
-
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom;
-*/
-
-
-
-    }
+    }*/
 
     footer {
 
