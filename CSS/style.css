@@ -15,6 +15,11 @@ body {
 
 }
 
+/* -------- MOBILE/TABLET START -------- */
+
+
+/*HEADER - MOBILE/TABLET - START*/
+
 header {
 
     background-color: rgb(0, 0, 0, 0.6);
@@ -30,6 +35,10 @@ header {
     ;
 
 }
+
+/*HEADER - MOBILE/TABLET - END*/
+
+/*MENU - MOBILE/TABLET - START*/
 
 .menubutton {
 
@@ -87,6 +96,10 @@ header {
 
 }
 
+/*MENU - MOBILE/TABLET - SLUT*/
+
+/*NAVBAR - MOBILE/TABLET - START*/
+
 .navbar_mobile {
 
     display: none;
@@ -137,7 +150,9 @@ header {
     background-color: #8D4D42;
 
 }
+/*NAVBAR - MOBILE/TABLET - SLUT*/
 
+/*ENGELSK SPROG - MOBILE/TABLET - START*/
 .english {
 
     grid-area: sprog;
@@ -156,6 +171,10 @@ header {
 
 }
 
+/*NAVBAR - MOBILE/TABLET - SLUT*/
+
+/*LOGO - MOBILE/TABLET - START*/
+
 .logo {
 
     grid-area: logo;
@@ -171,6 +190,10 @@ header {
     width: 210px;
 
 }
+
+/*LOGO - MOBILE/TABLET - slut*/
+
+/*Nav + Ikoner - Desktop = Display None  - start*/
 
 nav {
 
@@ -189,6 +212,9 @@ nav {
     display: none;
 
 }
+/*Nav + Ikoner - Desktop = Display None  - slut*/
+
+/* SOCIALE IKONER - MOBILE/TABLET - START */
 
 .sociale_ikoner2 {
 
@@ -227,6 +253,10 @@ nav {
 
 }
 
+/* SOCIALE IKONER - MOBILE/TABLET - SLUT */
+
+/* SØGE FUNKTION - MOBILE/TABLET - START */
+
 .search2 {
 
     width: 100%;
@@ -245,14 +275,23 @@ nav {
 
 }
 
-/*DESKTOP START*/
+/* SØGE FUNKTION - MOBILE/TABLET - SLUT */
+
+
+/* -------- MOBILE/TABLET START -------- */
+
+/*DESKTOP HEADER/NAVBAR - START*/
 @media only screen and (min-width: 1280px) {
 
+   /*MENUBAR - START - Bruges til tablet/mobile versio*/
     .menubutton {
 
         display: none;
 
     }
+/*MENUBAR - SLUT */
+
+/*HEADER DESKTOP - START*/
 
     header {
 
@@ -268,7 +307,9 @@ nav {
             "logo logo . ikoner ikoner . . . . . . .";
 
     }
+/*HEADER DESKTOP - SLUT*/
 
+/*NAVBAR DESKTOP - START*/
     nav {
 
         grid-area: nav;
@@ -331,6 +372,10 @@ nav {
         text-align: center;
     }
 
+/*NAVBAR DESKTOP - START*/
+
+/*LOGO I HEADER DESKTOP - START*/
+
     .logo {
 
         grid-area: logo;
@@ -345,6 +390,10 @@ nav {
         width: 16vw;
 
     }
+
+/*LOGO I HEADER DESKTOP - SLUT*/
+
+/*SOCIALE IKONER I HEADER DESKTOP - START*/
 
     .sociale_ikoner {
 
@@ -369,7 +418,9 @@ nav {
         opacity: 0.5;
         cursor: pointer;
     }
+/*SOCIALE IKONER I HEADER DESKTOP - SLUT*/
 
+/*ENGELSK FLAG OG SØGE IKON I HEADER DESKTOP - START*/
     .soeg_sprog {
 
         grid-area: search;
@@ -408,4 +459,9 @@ nav {
         height: 20px;
 
     }
+
+/*ENGELSK FLAG OG SØGE IKON I HEADER DESKTOP - START*/
+
 }
+
+/*DESKTOP HEADER/NAVBAR - END*/
