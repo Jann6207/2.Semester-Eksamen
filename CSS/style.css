@@ -30,10 +30,12 @@ header {
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
 
-        "sprog . . . . logo logo . . . . menubutton"
-        "sprog . . . . logo logo . . . . menubutton"
+        "sprog. . . . logo logo . . . .menubutton"
+        "sprog. . . . logo logo . . . .menubutton"
     ;
 
+    padding-left:10px ;
+    padding-right:10px;
 }
 
 /*HEADER - MOBILE/TABLET - END*/
@@ -46,9 +48,10 @@ header {
     z-index: 90;
     margin: 0px;
     display: grid;
-    justify-content: center;
+    justify-content: flex-end;
     align-self: center;
     grid-area: menubutton;
+
 
 }
 
@@ -187,7 +190,7 @@ header {
 
 .logo img {
 
-    width: 210px;
+    width: 180px;
 
 }
 
