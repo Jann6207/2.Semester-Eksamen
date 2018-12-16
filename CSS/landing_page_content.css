@@ -925,7 +925,7 @@ iframe {
         height: 1000px;
         overflow: visible;
         justify-content: center;
-        background-image: url(/IMG-Bank/Images/paint_filter2.jpg);
+        background-image: url(../IMG-Bank/Images/paint_filter2.jpg);
         background-position: translateY(10px);
         background-size: cover;
         overflow: visible;
@@ -1210,7 +1210,7 @@ iframe {
         padding-right: 50px;
         grid-gap: 50px;
         color: white;
-        background-image: url(/IMG-Bank/Images/Anmeldelser_bg.png);
+        background-image: url(../IMG-Bank/Images/Anmeldelser_bg.png);
         background-repeat: no-repeat;
         background-size: cover;
         font-size: 1.2em;
@@ -1228,8 +1228,9 @@ iframe {
             "citat1"
             "name1"
         ;
-        padding: 10px;
         height: 100%;
+        padding: 10px;
+
     }
 
     .citat {
@@ -1237,8 +1238,9 @@ iframe {
         justify-self: center;
         font-family: "Lato", sans-serif;
         font-style: italic;
-        align-self: flex-end;
-        height: 20px;
+        align-self: center;
+        margin-top: 0px;
+
     }
 
     .name {
@@ -1267,8 +1269,8 @@ iframe {
         font-family: "Lato", sans-serif;
         font-style: italic;
         justify-self: center;
-        align-self: flex-end;
-        height: 20px;
+        align-self: center;
+
     }
 
     .name2 {

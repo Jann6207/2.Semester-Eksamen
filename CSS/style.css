@@ -406,7 +406,7 @@ nav {
     .click-scroll {
         display: grid;
         position: absolute;
-        bottom: 4%;
+        bottom: 0%;
         height: 500px;
     }
 
