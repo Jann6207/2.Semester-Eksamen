@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    background-image: url(/IMG-Bank/Images/profil_splash.jpg);
+    background-image: url(../IMG-Bank/Images/profil_splash.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top;
