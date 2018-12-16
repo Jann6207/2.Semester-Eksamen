@@ -512,6 +512,10 @@ iframe {
     display: none;
 }
 
+/*----------- BAG OM VÆRKET MOBILE - SLUT ------------*/
+
+/*-------- PARNTERE MOBILE/TABLET - START --------*/
+
 #partner {
 
     display: grid;
@@ -645,6 +649,9 @@ iframe {
 
 }
 
+/*-------- PARNTERE MOBILE/TABLET - SLUT --------*/
+
+/*-------- ANMELDELSER MOBILE/TABLET - START --------*/
 #anmeldelser {
     background-color: #b8b8b8;
     display: grid;
@@ -744,6 +751,8 @@ iframe {
     font-family: "Lato", sans-serif;
 
 }
+
+/*-------- PARNTERE MOBILE/TABLET - SLUT --------*/
 
 @media only screen and (min-width: 1280px) {
 
