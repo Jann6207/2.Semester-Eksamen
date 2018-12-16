@@ -9,6 +9,7 @@ body {
     background-size: contain;
     background-position: top;
     background-color: black;
+
 }
 
 /* -------- MOBILE/TABLET START -------- */
@@ -27,7 +28,7 @@ header {
     ;
     padding-left: 10px;
     padding-right: 10px;
-    overflow: visible;
+
 }
 
 /*HEADER - MOBILE/TABLET - END*/
@@ -42,6 +43,7 @@ header {
     justify-content: flex-end;
     align-self: center;
     grid-area: menubutton;
+
 }
 
 .bar1,
@@ -63,8 +65,10 @@ header {
 
 .kryds .bar1 {
     -webkit-transform: rotate(-45deg) translate(-7px, 6px);
-    transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-46deg) translate(-5.5px, 5.5px);
     background-color: black;
+
+
 }
 
 .kryds .bar2 {
@@ -74,25 +78,31 @@ header {
 
 .kryds .bar3 {
     -webkit-transform: rotate(45deg) translate(-7px, 6px);
-    transform: rotate(45deg) translate(-5.5px, -6px);
+    transform: rotate(46deg) translate(-5.5px, -6px);
     background-color: black;
+
 }
+
+
 
 /*MENU - MOBILE/TABLET - SLUT*/
 
 /*NAVBAR - MOBILE/TABLET - START*/
+
+
 
 .navbar_mobile {
     display: none;
     position: fixed;
     background-color: rgb(237, 237, 237, 1);
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: 50;
     top: 0;
     right: 0%;
     padding-top: 50px;
     justify-content: center;
+    overflow: hidden;
 }
 
 .navbar_mobile a {
