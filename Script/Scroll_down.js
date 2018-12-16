@@ -24,7 +24,7 @@ $(document).ready(function () {
     $(function () {
         $('.arrow').click(function () {
             $('html, body').animate({
-                scrollTop: $('#udstillinger').offset().top
+                scrollTop: $('#partner').offset().top
             }, 'slow');
             return false;
         });
