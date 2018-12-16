@@ -29,7 +29,7 @@ body {
         "galleri_knap";
     padding-left: 30px;
     padding-right: 30px;
- /*   border: solid black;*/
+    /*   border: solid black;*/
 
 
 }
@@ -46,8 +46,8 @@ body {
         "line1 newest line2"
 
     ;
-justify-content: center;
-/*padding-left:5px;
+    justify-content: center;
+    /*padding-left:5px;
     padding-right:5px;*/
 }
 
@@ -73,7 +73,7 @@ justify-content: center;
     font-family: "Lato", sans-serif;
     font-family: "Playfair Display", serif;
     font-weight: 300;
-      font-size: 4vw;
+    font-size: 4vw;
     margin: 0;
 
 }
@@ -423,14 +423,10 @@ justify-content: center;
 
 }
 
-#partner, #anmeldelser {
+#partner,
+#anmeldelser {
     display: none;
 }
-
-
-
-
-
 
 
 /*-------- NYESTE VÆRKER MOBILE/TABLET - SLUT --------*/
@@ -506,7 +502,7 @@ justify-content: center;
     align-items: center;
     grid-area: bag_om_content;
     grid-template-columns: repeat (1, 1fr);
-    grid-template-rows: .5fr 175px .5fr ;
+    grid-template-rows: .5fr 175px .5fr;
 
     ;
     grid-template-areas:
@@ -531,7 +527,7 @@ justify-content: center;
     text-align: center;
     align-self: flex-start;
     margin-top: 0%;
-margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .txt2 {
@@ -541,7 +537,7 @@ margin-bottom: 0;
     font-weight: 300;
     font-size: 2em;
 
-   color: white;
+    color: white;
     height: 100%;
     width: 100%;
     display: grid;
@@ -580,7 +576,7 @@ margin-bottom: 0;
     justify-content: center;
     z-index: 1;
     margin-bottom: 20px;
-width: 100%;
+    width: 100%;
 }
 
 iframe {
@@ -593,603 +589,48 @@ iframe {
 .arrow {
     display: none;
 }
-@media only screen and (min-width: 1280px) {
 
-/*----------- NYESTE VÆRKER DESKTOP - START ------------*/
 
-#nyeste_vaerker_container {
 
-    background-color: #E5E5E5;
-    display: grid;
-    grid-template-columns: repeat (3, 1fr);
-    grid-template-rows: 100px 1fr 1fr .1fr;
-    grid-template-areas:
-        "display display display"
-        "vaerk1 vaerk2 vaerk3"
-        "vaerk1 vaerk2 vaerk3"
-        "galleri_knap galleri_knap galleri_knap";
-    padding-left: 30px;
-    padding-right: 30px;
-
-
-
-
-
-}
-
-.galleri_knap {
-    display: grid;
-    grid-area: galleri_knap;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    margin-top: -30px;
-    overflow: hidden;
-    grid-template-columns: repeat (1, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:
-        "klik"
-        "galleriknap"
-    ;
-
-    /* border: solid black 1.5px;
-    background-color: white;*/
-    text-transform: uppercase;
-
-
-    font-family: "Playfair Display", sans-serif;
-
-
-}
-
-.klik {
-    font-size: .8em;
-    grid-area: klik;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    justify-content: center;
-    align-self: center;
-
-    font-family: "Lato", sans-serif;
-
-
-}
-
-.galleri2 {
-    font-size: 1.5em;
-    grid-area: galleriknap;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    justify-content: center;
-    align-self: center;
-    margin-top: -4px;
-
-    border-bottom: solid 1.5px transparent;
-    transition: .5s;
-
-}
-
-
-
-
-.galleri2:hover {
-    border-bottom: solid 1.5px #e8c8a2;
-    overflow: hidden;
-    color: grey;
-    cursor: pointer;
-
-}
-
-.display {
-
-    grid-area: display;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 0.5fr 1fr;
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-areas:
-
-        "line1 newest line2"
-
-    ;
-    margin-top: 30px;
-    margin-bottom: 35px;
-
-}
-
-.line1 {
-
-    grid-area: line1;
-    display: grid;
-    justify-content: center;
-    align-self: center;
-    color: black;
-    background-color: black;
-    height: 2px;
-    width: 100%;
-    border: none;
-
-}
-
-.newest {
-
-    grid-area: newest;
-    display: grid;
-    justify-content: center;
-    font-family: "Lato", sans-serif;
-    font-family: "Playfair Display", serif;
-    font-weight: 300;
-    font-size: 30px;
-    margin: 0;
-
-}
-
-.line2 {
-
-    grid-area: line2;
-    display: grid;
-    justify-content: center;
-    align-self: center;
-    color: black;
-    background-color: black;
-    height: 2px;
-    width: 100%;
-    border: none;
-
-}
-
-.vaerk1_container {
-
-    display: grid;
-    grid-area: vaerk1;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:
-
-        "img1 img1 img1"
-        "img1 img1 img1"
-        "box1 box1 ."
-    ;
-
-    margin-top: 30px;
-
-
-}
-
-.vaerk2_container {
-
-    display: grid;
-    grid-area: vaerk2;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:
-
-        "img2 img2 img2"
-        "img2 img2 img2"
-        "box2 box2 ."
-    ;
-    margin-top: 30px;
-
-
-}
-
-.vaerk3_container {
-
-    display: grid;
-    grid-area: vaerk3;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:
-
-        "img3 img3 img3"
-        "img3 img3 img3"
-        "box3 box3 ."
-    ;
-
-    margin-top: 30px;
-}
-
-.zoom {
-
-    grid-area: img1;
-    overflow: hidden;
-    margin: 10px;
-}
-
-.zoom2 {
-
-    grid-area: img2;
-    overflow: hidden;
-    margin: 10px;
-}
-
-.zoom3 {
-
-    grid-area: img3;
-    overflow: hidden;
-    margin: 10px;
-
-}
-
-
-
-.malleri1,
-.malleri2,
-.malleri3 {
-
-    width: 100%;
-    transition: .5s ease-in-out;
-    cursor: pointer;
-
-}
-
-.malleri1:hover,
-.malleri2:hover,
-.malleri3:hover {
-
-    transform: scale(1.6) translate(-18%, 15%);
-
-}
-
-.malleri2:hover {
-
-    transform: scale(1.6) translate(-15%, 14%);
-
-}
-
-.malleri1 {
-
-    display: grid;
-    grid-area: img1;
-
-}
-
-.malleri2 {
-
-    display: grid;
-    grid-area: img2;
-
-}
-
-.malleri3 {
-
-    display: grid;
-    grid-area: img3;
-
-}
-
-.vaerk1 {
-
-    grid-area: box1;
-    background-color: #fafafa;
-    margin: 10px;
-    margin-left: 100px;
-    overflow: visible;
-    width: 340px;
-    height: 200px;
-    display: grid;
-    z-index: 10;
-    margin-top: -50px;
-    margin-bottom: -50px;
-
-}
-
-.vaerk2 {
-
-    grid-area: box2;
-    background-color: #fafafa;
-    margin: 10px;
-    margin-left: 100px;
-    overflow: visible;
-    width: 340px;
-    height: 200px;
-    display: grid;
-    z-index: 10;
-    margin-top: -50px;
-    margin-bottom: -50px;
-
-}
-
-.vaerk3 {
-
-    grid-area: box3;
-    background-color: #fafafa;
-    /* display: grid;*/
-    margin: 10px;
-    margin-left: 100px;
-    overflow: visible;
-    width: 340px;
-    height: 200px;
-    display: grid;
-    z-index: 10;
-    margin-top: -50px;
-    margin-bottom: -50px;
-
-}
-
-.titel {
-
-    font-family: "Playfair Display", sans-serif;
-    font-size: 40px;
-    overflow: visible;
-    margin: 0;
-    margin-top: 45px;
-    margin-left: 20px;
-    width: 110%;
-    text-align: right;
-}
-
-.size {
-
-    font-family: "Lato", serif;
-    font-size: 14px;
-    margin: 0;
-    text-align: center;
-    color: #848282;
-    height: 20px;
-    margin-top: 15px;
-
-}
-
-.more {
-
-    font-family: "Playfair Display", sans-serif;
-    font-size: 16px;
-    text-decoration: underline;
-    text-align: center;
-    transition: .4s ease;
-    text-decoration-skip: top;
-    margin-top: 10px;
-
-}
-
-.more:hover {
-
-    color: #242323;
-    cursor: pointer;
-    text-decoration-color: #ffc47f;
-
-}
-
-
-/*-------------- NYESTE VÆRKER - SLUT --------------*/
-
-/*-------------- BAG OM VÆRKET - START --------------*/
-
-#bag_om_vaekert_container {
-
-    display: grid;
-    grid-template-columns: repeat (3, 1fr);
-    grid-template-rows: 100px 1fr 1fr 50px;
-    grid-template-areas:
-        "display2 display2 display2"
-        "bag_om_content bag_om_content bag_om_content"
-        "bag_om_content bag_om_content bag_om_content"
-        ". arrow_bounce ."
-
-    ;
-    padding-left: 30px;
-    padding-right: 30px;
-    text-align: center;
-    height: 1000px;
-    overflow: visible;
-    justify-content: center;
-    background-image: url(/IMG-Bank/Images/paint_filter2.jpg);
-    background-position: translateY(10px);
-    background-size: cover;
-    overflow: visible;
-
-}
-
-.display2 {
-
-    grid-area: display2;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-areas:
-
-        "behind"
-
-    ;
-    margin-top: 30px;
-    margin-bottom: 35px;
-    height: 100%;
-
-}
-
-.behind {
-
-    grid-area: behind;
-    display: grid;
-    justify-content: center;
-    font-family: "Lato", sans-serif;
-    font-weight: 200;
-    font-size: 3.5em;
-    margin: 0;
-    color: white;
-
-}
-
-
-.bag_om_content {
-
-    display: grid;
-    height: 100%;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    grid-area: bag_om_content;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
-    ;
-    grid-template-areas:
-
-
-        "txt txt vid vid"
-        "txt2 txt2 vid vid"
-    ;
-
-}
-
-.txt {
-
-    display: grid;
-    grid-area: txt;
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-size: 24px;
-    color: rgb(255, 255, 255, 0.8);
-    margin: 0;
-    text-align: center;
-    align-self: center;
-    margin-top: 0%;
-
-}
-
-.txt2 {
-
-    grid-area: txt2;
-    font-family: "Lato", sans-serif;
-    font-family: "Playfair Display", sans-serif;
-    font-weight: 300;
-    font-size: 6em;
-    color: rgb(255, 255, 255, 1);
-    z-index: 2;
-    height: 100%;
-    width: 100%;
-    display: grid;
-    justify-content: center;
-    align-self: flex-start;
-    align-items: center;
-    overflow: visible;
-    opacity: 0.6;
-    margin-top: -20%;
-
-}
-
-
-
-.border {
-
-    border: solid 1.5px;
-    border-color: rgb(255, 255, 255, 1);
-    overflow: visible;
-    width: 62%;
-    height: 60%;
-    margin-left: 19%;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    align-items: center;
-    overflow: visible;
-
-}
-
-.behind_video {
-
-    grid-area: vid;
-    display: grid;
-    align-self: center;
-    justify-content: center;
-    z-index: 1;
-
-}
-
-iframe {
-
-    display: grid;
-    width: 40vw;
-    height: 30em;
-
-}
-
-.arrow {
-
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    bottom: 25%;
-    margin-left: -20px;
-    width: 40px;
-    height: 40px;
-    opacity: 0.6;
-    cursor: pointer;
-    background-image: url(/IMG-Bank/Svg/arrow.svg);
-    background-size: contain;
-
-
-    grid-area: arrow_bounce;
-
-
-}
-
-
-.bounce {
-    animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(0);
-    }
-
-    40% {
-        transform: translateY(-30px);
-    }
-
-    60% {
-        transform: translateY(-15px);
-    }
-}
-
-/*-------------- BAG OM VÆRKET - SLUT --------------*/
-
-
-/*-------------- PARTNER START --------------*/
 #partner {
 
     display: grid;
-    grid-template-columns: repeat (3, 1fr);
-    grid-template-rows: 100px 1fr;
+    grid-template-columns: repeat (1, 1fr);
+    grid-template-rows: 100px 1fr 1fr 1fr;
     grid-template-areas:
-        "display3 display3 display3"
-        "navn_logo1 navn_logo2 navn_logo3"
+        "display3"
+        "navn_logo1"
+        "navn_logo2"
+        "navn_logo3"
     ;
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
-    height: 500px;
+
     margin-top: 10px;
+    margin-bottom: 50px;
 
 
 }
+
 
 .display3 {
 
     grid-area: display3;
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-columns: .7fr 1fr .7fr;
     grid-template-rows: repeat(1, 1fr);
     grid-template-areas:
 
         "line5 show line6"
 
     ;
-    margin-top: 30px;
-    margin-bottom: 35px;
-
+    justify-content: center;
+    /*padding-left:5px;
+    padding-right:5px;*/
 }
+
 
 .line5 {
 
@@ -1199,9 +640,22 @@ iframe {
     align-self: center;
     color: black;
     background-color: black;
-    height: 2px;
+    height: 1.5px;
     width: 100%;
     border: none;
+
+}
+
+.show {
+
+    grid-area: show;
+    display: grid;
+    justify-content: center;
+    font-family: "Lato", sans-serif;
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
+    font-size: 4vw;
+    margin: 0;
 
 }
 
@@ -1213,27 +667,12 @@ iframe {
     align-self: center;
     color: black;
     background-color: black;
-    height: 2px;
+    height: 1.5px;
     width: 100%;
     border: none;
 
 }
 
-
-.show {
-
-    grid-area: show;
-    display: grid;
-    justify-content: center;
-    font-family: "Lato", sans-serif;
-    font-family: "Playfair Display", serif;
-    font-weight: 300;
-    font-size: 35px;
-    margin: 0;
-    color: black;
-
-
-}
 
 .parnter_logo {
 
@@ -1271,10 +710,11 @@ iframe {
 .artmanager {
 
     margin-top: 5%;
-    width: 55%;
+    width: 60%;
     transition: .5s;
     cursor: pointer;
     border-bottom: solid 1.5px transparent;
+    padding-bottom: 10px;
 }
 
 
@@ -1289,26 +729,29 @@ iframe {
 
 }
 
-/*-------------- PARTNER SLUT --------------*/
 
-/*-------------- CITAT START --------------*/
+
+
 
 #anmeldelser {
     background-color: #b8b8b8;
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
 
-        "anmeld1 anmeld2"
+        "anmeld1"
+        "anmeld2"
 
     ;
     /* background-color: aqua;*/
-    height: 300px;
+    /* height: 300px;*/
     padding-left: 50px;
     padding-right: 50px;
-    grid-gap: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-gap: 20px;
     color: white;
     background-image: url(/IMG-Bank/Images/Anmeldelser_bg.png);
     background-repeat: no-repeat;
@@ -1318,45 +761,30 @@ iframe {
     font-weight: 300;
 }
 
+
+
+
 .anmeld1 {
 
     grid-area: anmeld1;
     /* background-color: green;*/
 
     display: grid;
-    align-items: center;
+    align-items: start;
+    justify-items: center;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr 0.5fr;
     grid-template-areas:
 
-        "citat1"
+         "citat1"
         "name1"
 
 
     ;
-
+ margin-top: 20px;
     padding: 10px;
-    height: 100%;
+
     ;
-
-}
-
-.citat {
-    grid-area: citat1;
-    justify-self: center;
-    font-family: "Lato", sans-serif;
-    font-style: italic;
-    align-self: flex-end;
-    height: 20px;
-
-
-}
-
-.name {
-    grid-area: name1;
-    justify-self: flex-end;
-    font-family: "Lato", sans-serif;
-    padding-right: 100px;
 
 
 }
@@ -1367,9 +795,10 @@ iframe {
     /*background-color: green;*/
 
     display: grid;
-    align-items: center;
+    align-items: start;
+    justify-items: center;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr 0.5fr;
     grid-template-areas:
 
         "citat2"
@@ -1377,8 +806,23 @@ iframe {
 
 
     ;
-    height: 100%;
+
     padding: 10px;
+
+
+
+}
+
+
+.citat {
+    grid-area: citat1;
+    display: grid;
+    justify-self: center;
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    align-self: center;
+
+
 
 
 
@@ -1390,18 +834,838 @@ iframe {
     font-family: "Lato", sans-serif;
     font-style: italic;
     justify-self: center;
-    align-self: flex-end;
-    height: 20px;
+    align-self: center;
+
 
 }
+
+.name {
+    grid-area: name1;
+    justify-self: flex-end;
+    font-family: "Lato", sans-serif;
+
+
+}
+
+
 
 .name2 {
     grid-area: name2;
     justify-self: flex-end;
     font-family: "Lato", sans-serif;
-    padding-right: 100px;
+
 
 }
 
-/*-------------- CITAT SLUT --------------*/
+@media only screen and (min-width: 1280px) {
+
+    /*----------- NYESTE VÆRKER DESKTOP - START ------------*/
+
+    #nyeste_vaerker_container {
+
+        background-color: #E5E5E5;
+        display: grid;
+        grid-template-columns: repeat (3, 1fr);
+        grid-template-rows: 100px 1fr 1fr .1fr;
+        grid-template-areas:
+            "display display display"
+            "vaerk1 vaerk2 vaerk3"
+            "vaerk1 vaerk2 vaerk3"
+            "galleri_knap galleri_knap galleri_knap";
+        padding-left: 30px;
+        padding-right: 30px;
+
+
+
+
+
+    }
+
+    .galleri_knap {
+        display: grid;
+        grid-area: galleri_knap;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        margin-top: -30px;
+        overflow: hidden;
+        grid-template-columns: repeat (1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "klik"
+            "galleriknap"
+        ;
+
+        /* border: solid black 1.5px;
+    background-color: white;*/
+        text-transform: uppercase;
+
+
+        font-family: "Playfair Display", sans-serif;
+
+
+    }
+
+    .klik {
+        font-size: .8em;
+        grid-area: klik;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        justify-content: center;
+        align-self: center;
+
+        font-family: "Lato", sans-serif;
+
+
+    }
+
+    .galleri2 {
+        font-size: 1.5em;
+        grid-area: galleriknap;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        justify-content: center;
+        align-self: center;
+        margin-top: -4px;
+
+        border-bottom: solid 1.5px transparent;
+        transition: .5s;
+
+    }
+
+
+
+
+    .galleri2:hover {
+        border-bottom: solid 1.5px #e8c8a2;
+        overflow: hidden;
+        color: grey;
+        cursor: pointer;
+
+    }
+
+    .display {
+
+        grid-area: display;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 0.5fr 1fr;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas:
+
+            "line1 newest line2"
+
+        ;
+        margin-top: 30px;
+        margin-bottom: 35px;
+
+    }
+
+    .line1 {
+
+        grid-area: line1;
+        display: grid;
+        justify-content: center;
+        align-self: center;
+        color: black;
+        background-color: black;
+        height: 2px;
+        width: 100%;
+        border: none;
+
+    }
+
+    .newest {
+
+        grid-area: newest;
+        display: grid;
+        justify-content: center;
+        font-family: "Lato", sans-serif;
+        font-family: "Playfair Display", serif;
+        font-weight: 300;
+        font-size: 30px;
+        margin: 0;
+
+    }
+
+    .line2 {
+
+        grid-area: line2;
+        display: grid;
+        justify-content: center;
+        align-self: center;
+        color: black;
+        background-color: black;
+        height: 2px;
+        width: 100%;
+        border: none;
+
+    }
+
+    .vaerk1_container {
+
+        display: grid;
+        grid-area: vaerk1;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+
+            "img1 img1 img1"
+            "img1 img1 img1"
+            "box1 box1 ."
+        ;
+
+        margin-top: 30px;
+
+
+    }
+
+    .vaerk2_container {
+
+        display: grid;
+        grid-area: vaerk2;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+
+            "img2 img2 img2"
+            "img2 img2 img2"
+            "box2 box2 ."
+        ;
+        margin-top: 30px;
+
+
+    }
+
+    .vaerk3_container {
+
+        display: grid;
+        grid-area: vaerk3;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+
+            "img3 img3 img3"
+            "img3 img3 img3"
+            "box3 box3 ."
+        ;
+
+        margin-top: 30px;
+    }
+
+    .zoom {
+
+        grid-area: img1;
+        overflow: hidden;
+        margin: 10px;
+    }
+
+    .zoom2 {
+
+        grid-area: img2;
+        overflow: hidden;
+        margin: 10px;
+    }
+
+    .zoom3 {
+
+        grid-area: img3;
+        overflow: hidden;
+        margin: 10px;
+
+    }
+
+
+
+    .malleri1,
+    .malleri2,
+    .malleri3 {
+
+        width: 100%;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+
+    }
+
+    .malleri1:hover,
+    .malleri2:hover,
+    .malleri3:hover {
+
+        transform: scale(1.6) translate(-18%, 15%);
+
+    }
+
+    .malleri2:hover {
+
+        transform: scale(1.6) translate(-15%, 14%);
+
+    }
+
+    .malleri1 {
+
+        display: grid;
+        grid-area: img1;
+
+    }
+
+    .malleri2 {
+
+        display: grid;
+        grid-area: img2;
+
+    }
+
+    .malleri3 {
+
+        display: grid;
+        grid-area: img3;
+
+    }
+
+    .vaerk1 {
+
+        grid-area: box1;
+        background-color: #fafafa;
+        margin: 10px;
+        margin-left: 100px;
+        overflow: visible;
+        width: 340px;
+        height: 200px;
+        display: grid;
+        z-index: 10;
+        margin-top: -50px;
+        margin-bottom: -50px;
+
+    }
+
+    .vaerk2 {
+
+        grid-area: box2;
+        background-color: #fafafa;
+        margin: 10px;
+        margin-left: 100px;
+        overflow: visible;
+        width: 340px;
+        height: 200px;
+        display: grid;
+        z-index: 10;
+        margin-top: -50px;
+        margin-bottom: -50px;
+
+    }
+
+    .vaerk3 {
+
+        grid-area: box3;
+        background-color: #fafafa;
+        /* display: grid;*/
+        margin: 10px;
+        margin-left: 100px;
+        overflow: visible;
+        width: 340px;
+        height: 200px;
+        display: grid;
+        z-index: 10;
+        margin-top: -50px;
+        margin-bottom: -50px;
+
+    }
+
+    .titel {
+
+        font-family: "Playfair Display", sans-serif;
+        font-size: 40px;
+        overflow: visible;
+        margin: 0;
+        margin-top: 45px;
+        margin-left: 20px;
+        width: 110%;
+        text-align: right;
+    }
+
+    .size {
+
+        font-family: "Lato", serif;
+        font-size: 14px;
+        margin: 0;
+        text-align: center;
+        color: #848282;
+        height: 20px;
+        margin-top: 15px;
+
+    }
+
+    .more {
+
+        font-family: "Playfair Display", sans-serif;
+        font-size: 16px;
+        text-decoration: underline;
+        text-align: center;
+        transition: .4s ease;
+        text-decoration-skip: top;
+        margin-top: 10px;
+
+    }
+
+    .more:hover {
+
+        color: #242323;
+        cursor: pointer;
+        text-decoration-color: #ffc47f;
+
+    }
+
+
+    /*-------------- NYESTE VÆRKER - SLUT --------------*/
+
+    /*-------------- BAG OM VÆRKET - START --------------*/
+
+    #bag_om_vaekert_container {
+
+        display: grid;
+        grid-template-columns: repeat (3, 1fr);
+        grid-template-rows: 100px 1fr 1fr 50px;
+        grid-template-areas:
+            "display2 display2 display2"
+            "bag_om_content bag_om_content bag_om_content"
+            "bag_om_content bag_om_content bag_om_content"
+            ". arrow_bounce ."
+
+        ;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+        height: 1000px;
+        overflow: visible;
+        justify-content: center;
+        background-image: url(/IMG-Bank/Images/paint_filter2.jpg);
+        background-position: translateY(10px);
+        background-size: cover;
+        overflow: visible;
+
+    }
+
+    .display2 {
+
+        grid-area: display2;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas:
+
+            "behind"
+
+        ;
+        margin-top: 30px;
+        margin-bottom: 35px;
+        height: 100%;
+
+    }
+
+    .behind {
+
+        grid-area: behind;
+        display: grid;
+        justify-content: center;
+        font-family: "Lato", sans-serif;
+        font-weight: 200;
+        font-size: 3.5em;
+        margin: 0;
+        color: white;
+
+    }
+
+
+    .bag_om_content {
+
+        display: grid;
+        height: 100%;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        grid-area: bag_om_content;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        ;
+        grid-template-areas:
+
+
+            "txt txt vid vid"
+            "txt2 txt2 vid vid"
+        ;
+
+    }
+
+    .txt {
+
+        display: grid;
+        grid-area: txt;
+        font-family: "Lato", sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+        color: rgb(255, 255, 255, 0.8);
+        margin: 0;
+        text-align: center;
+        align-self: center;
+        margin-top: 0%;
+
+    }
+
+    .txt2 {
+
+        grid-area: txt2;
+        font-family: "Lato", sans-serif;
+        font-family: "Playfair Display", sans-serif;
+        font-weight: 300;
+        font-size: 6em;
+        color: rgb(255, 255, 255, 1);
+        z-index: 2;
+        height: 100%;
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-self: flex-start;
+        align-items: center;
+        overflow: visible;
+        opacity: 0.6;
+        margin-top: -20%;
+
+    }
+
+
+
+    .border {
+
+        border: solid 1.5px;
+        border-color: rgb(255, 255, 255, 1);
+        overflow: visible;
+        width: 62%;
+        height: 60%;
+        margin-left: 19%;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        overflow: visible;
+
+    }
+
+    .behind_video {
+
+        grid-area: vid;
+        display: grid;
+        align-self: center;
+        justify-content: center;
+        z-index: 1;
+
+    }
+
+    iframe {
+
+        display: grid;
+        width: 40vw;
+        height: 30em;
+
+    }
+
+    .arrow {
+
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        bottom: 25%;
+        margin-left: -20px;
+        width: 40px;
+        height: 40px;
+        opacity: 0.6;
+        cursor: pointer;
+        background-image: url(/IMG-Bank/Svg/arrow.svg);
+        background-size: contain;
+
+
+        grid-area: arrow_bounce;
+
+
+    }
+
+
+    .bounce {
+        animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            transform: translateY(0);
+        }
+
+        40% {
+            transform: translateY(-30px);
+        }
+
+        60% {
+            transform: translateY(-15px);
+        }
+    }
+
+    /*-------------- BAG OM VÆRKET - SLUT --------------*/
+
+
+    /*-------------- PARTNER START --------------*/
+    #partner {
+
+        display: grid;
+        grid-template-columns: repeat (3, 1fr);
+        grid-template-rows: 100px 1fr;
+        grid-template-areas:
+            "display3 display3 display3"
+            "navn_logo1 navn_logo2 navn_logo3"
+        ;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+        height: 500px;
+        margin-top: 10px;
+
+
+    }
+
+    .display3 {
+
+        grid-area: display3;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 0.5fr 1fr;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas:
+
+            "line5 show line6"
+
+        ;
+        margin-top: 30px;
+        margin-bottom: 35px;
+
+    }
+
+    .line5 {
+
+        grid-area: line5;
+        display: grid;
+        justify-content: center;
+        align-self: center;
+        color: black;
+        background-color: black;
+        height: 2px;
+        width: 100%;
+        border: none;
+
+    }
+
+    .line6 {
+
+        grid-area: line6;
+        display: grid;
+        justify-content: center;
+        align-self: center;
+        color: black;
+        background-color: black;
+        height: 2px;
+        width: 100%;
+        border: none;
+
+    }
+
+
+    .show {
+
+        grid-area: show;
+        display: grid;
+        justify-content: center;
+        font-family: "Lato", sans-serif;
+        font-family: "Playfair Display", serif;
+        font-weight: 300;
+        font-size: 35px;
+        margin: 0;
+        color: black;
+
+
+    }
+
+    .parnter_logo {
+
+        grid-area: navn_logo1;
+        margin: 10px;
+        margin-top: 30px;
+        display: grid;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .parnter_logo2 {
+
+        grid-area: navn_logo2;
+        margin: 10px;
+        margin-top: 30px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .parnter_logo3 {
+
+        grid-area: navn_logo3;
+        margin: 10px;
+        margin-top: 30px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .uformel,
+    .runforcover,
+    .artmanager {
+
+        margin-top: 5%;
+        width: 55%;
+        transition: .5s;
+        cursor: pointer;
+        border-bottom: solid 1.5px transparent;
+    }
+
+
+    .uformel:hover,
+    .runforcover:hover,
+    .artmanager:hover {
+
+        cursor: pointer;
+        border-bottom: solid 1.5px #E8C8A2;
+        padding-bottom: 10px;
+
+
+    }
+
+    /*-------------- PARTNER SLUT --------------*/
+
+    /*-------------- CITAT START --------------*/
+
+    #anmeldelser {
+        background-color: #b8b8b8;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas:
+
+            "anmeld1 anmeld2"
+
+        ;
+        /* background-color: aqua;*/
+        height: 300px;
+        padding-left: 50px;
+        padding-right: 50px;
+        grid-gap: 50px;
+        color: white;
+        background-image: url(/IMG-Bank/Images/Anmeldelser_bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        font-size: 1.2em;
+        font-weight: 300;
+    }
+
+    .anmeld1 {
+
+        grid-area: anmeld1;
+        /* background-color: green;*/
+
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+
+            "citat1"
+            "name1"
+
+
+        ;
+
+        padding: 10px;
+        height: 100%;
+        ;
+
+    }
+
+    .citat {
+        grid-area: citat1;
+        justify-self: center;
+        font-family: "Lato", sans-serif;
+        font-style: italic;
+        align-self: flex-end;
+        height: 20px;
+
+
+    }
+
+    .name {
+        grid-area: name1;
+        justify-self: flex-end;
+        font-family: "Lato", sans-serif;
+        padding-right: 100px;
+
+
+    }
+
+    .anmeld2 {
+
+        grid-area: anmeld2;
+        /*background-color: green;*/
+
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+
+            "citat2"
+            "name2"
+
+
+        ;
+        height: 100%;
+        padding: 10px;
+
+
+
+    }
+
+    .citat2 {
+        grid-area: citat2;
+
+        font-family: "Lato", sans-serif;
+        font-style: italic;
+        justify-self: center;
+        align-self: flex-end;
+        height: 20px;
+
+    }
+
+    .name2 {
+        grid-area: name2;
+        justify-self: flex-end;
+        font-family: "Lato", sans-serif;
+        padding-right: 100px;
+
+    }
+
+    /*-------------- CITAT SLUT --------------*/
 }
