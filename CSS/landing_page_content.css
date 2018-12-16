@@ -9,8 +9,6 @@ body {
     margin: 0;
     background-color: #E5E5E5;
 
-
-
 }
 
 /*-------- NYESTE VÆRKER MOBILE/TABLET - START --------*/
@@ -29,8 +27,6 @@ body {
         "galleri_knap";
     padding-left: 30px;
     padding-right: 30px;
-    /*   border: solid black;*/
-
 
 }
 
@@ -47,8 +43,7 @@ body {
 
     ;
     justify-content: center;
-    /*padding-left:5px;
-    padding-right:5px;*/
+
 }
 
 .line1 {
@@ -107,9 +102,6 @@ body {
 
     margin-top: 0px;
 
-
-
-
 }
 
 .vaerk2_container {
@@ -127,26 +119,7 @@ body {
 
     margin-top: 30px;
 
-
-
-
 }
-
-/*.vaerk3_container {
-
-    display: grid;
-    grid-area: vaerk3;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:
-
-        "img3 img3 img3"
-        "img3 img3 img3"
-        "box3 box3 ."
-    ;
-
-    margin-top: 30px;
-}*/
 
 .vaerk3_container {
 
@@ -162,9 +135,6 @@ body {
     ;
 
     margin-top: 30px;
-
-
-
 
 }
 
@@ -190,7 +160,6 @@ body {
     margin: 10px;
 
 }
-
 
 
 .malleri1,
@@ -243,17 +212,14 @@ body {
 
     grid-area: box1;
     background-color: #fafafa;
-
     justify-self: center;
     overflow: visible;
     width: 80%;
-
     height: 150px;
     display: grid;
     z-index: 10;
     margin-top: -50px;
     margin-bottom: 0px;
-
 
 }
 
@@ -263,55 +229,31 @@ body {
 
     grid-area: box2;
     background-color: #fafafa;
-
     justify-self: center;
     overflow: visible;
     width: 80%;
-
     height: 150px;
     display: grid;
     z-index: 10;
     margin-top: -50px;
     margin-bottom: 0px;
 
-
 }
-
-/*.vaerk3 {
-
-    grid-area: box3;
-    background-color: #fafafa;
-
-    margin: 10px;
-    margin-left: 40px;
-    overflow: visible;
-    width: 340px;
-    height: 200px;
-    display: grid;
-    z-index: 10;
-    margin-top: -50px;
-    margin-bottom: -50px;
-
-}*/
 
 .vaerk3 {
 
     grid-area: box3;
     background-color: #fafafa;
-
     justify-self: center;
     overflow: visible;
     width: 80%;
-
     height: 150px;
     display: grid;
     z-index: 10;
     margin-top: -50px;
     margin-bottom: 0px;
 
-
 }
-
 
 .titel {
 
@@ -373,17 +315,13 @@ body {
         "galleriknap"
     ;
 
-    /* border: solid black 1.5px;
-    background-color: white;*/
     text-transform: uppercase;
-
-
     font-family: "Playfair Display", sans-serif;
-
 
 }
 
 .klik {
+
     font-size: .8em;
     grid-area: klik;
     margin: 0;
@@ -391,13 +329,12 @@ body {
     display: grid;
     justify-content: center;
     align-self: center;
-
     font-family: "Lato", sans-serif;
-
 
 }
 
 .galleri2 {
+
     font-size: 1.5em;
     grid-area: galleriknap;
     margin: 0;
@@ -406,16 +343,13 @@ body {
     justify-content: center;
     align-self: center;
     margin-top: -4px;
-
     border-bottom: solid 1.5px transparent;
     transition: .5s;
 
 }
 
-
-
-
 .galleri2:hover {
+
     border-bottom: solid 1.5px #e8c8a2;
     overflow: hidden;
     color: grey;
@@ -444,17 +378,14 @@ body {
         "bag_om_content"
         "bag_om_content"
 
-
     ;
 
     text-align: center;
-
     overflow: visible;
     justify-content: center;
     background-image: url(/IMG-Bank/Images/paint_filter2.jpg);
     background-position: translateY(10px);
     background-size: cover;
-
 
 }
 
@@ -503,10 +434,7 @@ body {
     grid-area: bag_om_content;
     grid-template-columns: repeat (1, 1fr);
     grid-template-rows: .5fr 175px .5fr;
-
-    ;
     grid-template-areas:
-
 
         "txt"
         "txt2"
@@ -533,10 +461,8 @@ body {
 .txt2 {
 
     grid-area: txt2;
-
     font-weight: 300;
     font-size: 2em;
-
     color: white;
     height: 100%;
     width: 100%;
@@ -544,13 +470,9 @@ body {
     justify-content: center;
     align-self: center;
     align-items: center;
-
     opacity: 0.6;
 
-
 }
-
-
 
 .border {
 
@@ -583,14 +505,12 @@ iframe {
 
     width: 100%;
 
-
 }
 
 .arrow {
+
     display: none;
 }
-
-
 
 #partner {
 
@@ -606,13 +526,10 @@ iframe {
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
-
     margin-top: 10px;
     margin-bottom: 50px;
 
-
 }
-
 
 .display3 {
 
@@ -630,7 +547,6 @@ iframe {
     /*padding-left:5px;
     padding-right:5px;*/
 }
-
 
 .line5 {
 
@@ -729,10 +645,6 @@ iframe {
 
 }
 
-
-
-
-
 #anmeldelser {
     background-color: #b8b8b8;
     display: grid;
@@ -756,19 +668,13 @@ iframe {
     background-image: url(/IMG-Bank/Images/Anmeldelser_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-
     font-size: 1.2em;
     font-weight: 300;
 }
 
-
-
-
 .anmeld1 {
 
     grid-area: anmeld1;
-    /* background-color: green;*/
-
     display: grid;
     align-items: start;
     justify-items: center;
@@ -776,24 +682,17 @@ iframe {
     grid-template-rows: 1fr 0.5fr;
     grid-template-areas:
 
-         "citat1"
+        "citat1"
         "name1"
-
-
     ;
- margin-top: 20px;
+    margin-top: 20px;
     padding: 10px;
-
-    ;
-
 
 }
 
 .anmeld2 {
 
     grid-area: anmeld2;
-    /*background-color: green;*/
-
     display: grid;
     align-items: start;
     justify-items: center;
@@ -803,18 +702,14 @@ iframe {
 
         "citat2"
         "name2"
-
-
     ;
 
     padding: 10px;
 
-
-
 }
 
-
 .citat {
+
     grid-area: citat1;
     display: grid;
     justify-self: center;
@@ -822,44 +717,37 @@ iframe {
     font-style: italic;
     align-self: center;
 
-
-
-
-
 }
 
 .citat2 {
-    grid-area: citat2;
 
+    grid-area: citat2;
     font-family: "Lato", sans-serif;
     font-style: italic;
     justify-self: center;
     align-self: center;
 
-
 }
 
 .name {
+
     grid-area: name1;
     justify-self: flex-end;
     font-family: "Lato", sans-serif;
 
-
 }
 
-
-
 .name2 {
+
     grid-area: name2;
     justify-self: flex-end;
     font-family: "Lato", sans-serif;
-
 
 }
 
 @media only screen and (min-width: 1280px) {
 
-    /*----------- NYESTE VÆRKER DESKTOP - START ------------*/
+    /*--------- NYESTE VÆRKER DESKTOP - START ----------*/
 
     #nyeste_vaerker_container {
 
@@ -875,13 +763,10 @@ iframe {
         padding-left: 30px;
         padding-right: 30px;
 
-
-
-
-
     }
 
     .galleri_knap {
+
         display: grid;
         grid-area: galleri_knap;
         justify-content: center;
@@ -896,13 +781,8 @@ iframe {
             "galleriknap"
         ;
 
-        /* border: solid black 1.5px;
-    background-color: white;*/
         text-transform: uppercase;
-
-
         font-family: "Playfair Display", sans-serif;
-
 
     }
 
@@ -914,9 +794,7 @@ iframe {
         display: grid;
         justify-content: center;
         align-self: center;
-
         font-family: "Lato", sans-serif;
-
 
     }
 
@@ -929,16 +807,13 @@ iframe {
         justify-content: center;
         align-self: center;
         margin-top: -4px;
-
         border-bottom: solid 1.5px transparent;
         transition: .5s;
 
     }
 
-
-
-
     .galleri2:hover {
+
         border-bottom: solid 1.5px #e8c8a2;
         overflow: hidden;
         color: grey;
@@ -1385,13 +1260,9 @@ iframe {
         cursor: pointer;
         background-image: url(/IMG-Bank/Svg/arrow.svg);
         background-size: contain;
-
-
         grid-area: arrow_bounce;
 
-
     }
-
 
     .bounce {
         animation: bounce 2s infinite;
@@ -1434,7 +1305,6 @@ iframe {
         text-align: center;
         height: 500px;
         margin-top: 10px;
-
 
     }
 
@@ -1496,7 +1366,6 @@ iframe {
         margin: 0;
         color: black;
 
-
     }
 
     .parnter_logo {
@@ -1507,6 +1376,7 @@ iframe {
         display: grid;
         justify-content: space-between;
         align-content: center;
+
     }
 
     .parnter_logo2 {
@@ -1517,6 +1387,7 @@ iframe {
         display: grid;
         justify-content: center;
         align-content: center;
+
     }
 
     .parnter_logo3 {
@@ -1595,17 +1466,14 @@ iframe {
 
             "citat1"
             "name1"
-
-
         ;
-
         padding: 10px;
         height: 100%;
-        ;
 
     }
 
     .citat {
+
         grid-area: citat1;
         justify-self: center;
         font-family: "Lato", sans-serif;
@@ -1617,19 +1485,17 @@ iframe {
     }
 
     .name {
+
         grid-area: name1;
         justify-self: flex-end;
         font-family: "Lato", sans-serif;
         padding-right: 100px;
-
 
     }
 
     .anmeld2 {
 
         grid-area: anmeld2;
-        /*background-color: green;*/
-
         display: grid;
         align-items: center;
         grid-template-columns: 1fr;
@@ -1638,28 +1504,24 @@ iframe {
 
             "citat2"
             "name2"
-
-
         ;
         height: 100%;
         padding: 10px;
 
-
-
     }
 
     .citat2 {
-        grid-area: citat2;
 
+        grid-area: citat2;
         font-family: "Lato", sans-serif;
         font-style: italic;
         justify-self: center;
         align-self: flex-end;
         height: 20px;
-
     }
 
     .name2 {
+
         grid-area: name2;
         justify-self: flex-end;
         font-family: "Lato", sans-serif;
