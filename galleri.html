@@ -33,38 +33,14 @@
             font-size: 20px;
             padding: 10px;
             color: white;
-            font-family: "playfair display" serif;
+            font-family: "Lato" sans-serif;
             cursor: pointer;
-
-
-
         }
-
 
         body {
             min-height: 100%;
             display: grid;
             grid-template-rows: 1fr auto;
-        }
-
-        .post-container button {
-            display: none;
-            border-radius: 2em;
-            height: 40px;
-            min-width: 125px;
-            padding: 0 30px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: .5s;
-        }
-
-        .post-container button:hover {
-            background-color: #fff;
-        }
-
-        #indhold {
-            width: 100vw;
-            margin-bottom: 50px;
         }
 
         .data-container {
@@ -79,34 +55,14 @@
         }
 
         .post-container {
-            padding: 1em;
+            padding: 2em;
             grid-row: span 1;
             background-color: #Bacbdb;
         }
 
-        .post-container p,
-        .post-container img,
-        .post-container h2,
-        .post-container button {
-            margin: 7px 0;
-        }
-
-        /*    [data-overskrift] {
-            min-height: 66px;
-        }*/
 
         [data-overskrift] {
-            min-height: 99px;
-        }
-
-        .str {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .flex-dato {
-            display: flex;
-            justify-content: space-between;
+            min-height: 60px;
         }
 
         .back {
@@ -171,8 +127,8 @@
 
             .menu-item {
 
-                font-size: 25px;
-                padding: 14px;
+                font-size: 30px;
+                padding: 10px;
                 color: white;
 
 
@@ -209,29 +165,35 @@
             <button class="menu-item" data-kategori="Alle">ALLE</button>
             <button class="menu-item" data-kategori="Nyeste">NYESTE</button>
             <button class="menu-item" data-kategori="Str">STR.</button>
+
         </div>
 
         <div class="container">
             <section class="data-container"></section>
         </div>
     </main>
+
+
+
     <template class="data-template">
         <article class="post-container">
-            <div>
-              <h2 data-overskrift></h2>
-               <img data-billede>
-                <div class="str">
-                    <p data-storrelse></p>
-                </div>
-
+            <div class="vaerk_container">
+            <img class="maleri" data-billede>
+             <div class="vaerk">
+              <h2 class="titel" data-overskrift></h2>
+              <p class="size" data-storrelse></p>
+               <p class="more">Læs Mere</p>
             </div>
+                </div>
         </article>
     </template>
+
+
 
     <script>
         let wpJSON;
         let dest = document.querySelector(".data-container");
-        let eventFilter = "Alle";
+        let vaerkerFilter = "Alle";
         document.addEventListener("DOMContentLoaded", hentJson);
         async function hentJson() {
             let myJson = await fetch("http://oliverwinfield.dk/kea/kea/lawaetz/wordpress/wp-json/wp/v2/kunstvaerker");
@@ -250,14 +212,12 @@
         }
 
         function visJson() {
-            let myTemplate = document.querySelector(".data-template");
-            wpJSON.sort(function(a, b) {
-                return a.acf.type - b.acf.type;
-            });
+            let myTemplate = document.querySelector(".data-template")
+
             console.log(wpJSON);
             console.log("visJson");
             wpJSON.forEach(post => {
-                if (post.acf.events == vaerkerFilter || vaerkerFilter == "Alle") {
+                if (post.acf.type == vaerkerFilter || vaerkerFilter == "Alle") {
                     console.log("ifstatement")
                     let klon = myTemplate.cloneNode(true).content;
                     klon.querySelector("[data-overskrift]").textContent = post.acf.titel;
