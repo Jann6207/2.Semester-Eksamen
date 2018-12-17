@@ -1,16 +1,14 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
-    background-image: url(../IMG-Bank/Images/profil_splash.jpg);
+    background-image: url(../IMG-Bank/Images/Kontakt_Splash.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-color: black;
 }
-
 .content {
     display: flex;
     height: 30vh;
@@ -25,7 +23,6 @@ body {
     text-transform: uppercase;
     font-weight: 200;
 }
-
 #kontakt_container {
     background-color: #E5E5E5;
     display: grid;
@@ -33,21 +30,22 @@ body {
     align-content: center;
     align-self: center;
     grid-template-columns: .5fr 1fr .5fr;
-    grid-template-rows: .3fr 1fr 1fr;
+    grid-template-rows: .3fr 300px 1fr 300px;
     grid-template-areas:
         "display display display"
         ". kontakt_info ."
         ". kontakt_formular ."
+        ". maps ."
     ;
     /*  padding-left: 30px;
     padding-right: 30px;
     grid-gap: 20px;*/
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     /*  height: 600px;*/
     padding-left: 30px;
     padding-right: 30px;
-}
 
+}
 .display {
     grid-area: display;
     display: grid;
@@ -60,7 +58,6 @@ body {
     margin-top: 30px;
     margin-bottom: 35px;
 }
-
 .line1_kontakt {
     grid-area: line1_kontakt;
     display: grid;
@@ -72,7 +69,6 @@ body {
     width: 100%;
     border: none;
 }
-
 .line2_kontakt {
     grid-area: line2_kontakt;
     display: grid;
@@ -84,7 +80,6 @@ body {
     width: 100%;
     border: none;
 }
-
 .kontakt_display {
     grid-area: kontakt_display;
     display: grid;
@@ -97,7 +92,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 .kontakt_info {
     grid-area: kontakt_info;
     display: grid;
@@ -121,7 +115,6 @@ body {
     background-size: cover;
     background-position: center;
 }
-
 .firma {
     text-transform: uppercase;
     font-size: 22px;
@@ -129,12 +122,10 @@ body {
     color: white;
     font-weight: 300;
 }
-
 .kontakt_info a {
     text-decoration: none;
     color: white;
 }
-
 .sociale_medier_kontakt {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -144,46 +135,36 @@ body {
     ;
     grid-gap: 40px;
 }
-
 .facebook {
     grid-area: facebook;
     justify-self: flex-end;
     width: 10%;
 }
-
 .instagram {
     grid-area: instagram;
     justify-self: flex-start;
     width: 10%;
 }
-
 .facebook img,
 .instagram img {
     width: 100%;
 }
-
 .kontakt_txt {
     margin-top: 0;
 }
-
 .kontakt_formular {
     display: grid;
     grid-area: kontakt_formular;
     justify-content: center;
     background-color: white;
     background-color: #C8C8C8;
-    margin-top: -150px;
-
+    /*margin-top: -150px;*/
     background-image: url(../IMG-Bank/Images/Splash_Filter2.png);
     background-image: url(../IMG-Bank/Images/spand.png);
-
     background-repeat: no-repeat;
     background-size: cover;
-
-
-
+    margin-top: 50px;
 }
-
 .kontakt_formular input {
     background-color: transparent;
     border: none;
@@ -193,12 +174,8 @@ body {
     color: white;
     font-size: 14px;
     margin-left: 0;
-
-
 }
-
 .kontakt_formular h2 {
-
     color: white;
     font-family: "Lato", sans-serif;
     text-transform: uppercase;
@@ -208,18 +185,15 @@ body {
     margin-top: 30px;
     margin-bottom: 10px;
 }
-
 .kontakt_formular h3 {
     padding-bottom: 5px;
     padding-top: 10px;
-
     color: white;
     font-family: "Lato", sans-serif;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 300;
 }
-
 textarea {
     background-color: rgb(255, 255, 255, 0.9);
     border: none;
@@ -231,15 +205,12 @@ textarea {
     height: 150px;
     margin-top: 30px;
     margin-bottom: 20px;
-
     font-family: "Lato", sans-serif;
     font-size: 15px;
     font-weight: 300;
-  ;
+    ;
 }
-
 button {
-
     justify-self: center;
     margin-top: 5%;
     margin-bottom: 10%;
@@ -254,18 +225,25 @@ button {
     background-color: rgb(255, 255, 255, 0.9);
     border: none;
     color: black;
-
 }
-
 button:hover {
     background-color:
 }
-
 .kontaktformular :placeholder {
     color: white;
 }
-
 input::placeholder {
     color: rgb(255, 255, 255, 0.7);
+}
+.map {
+    margin-top: 50px;
+    height: 300px;
+    grid-area: maps;
+    justify-self: center;
+    -webkit-filter: grayscale(50%);
+    -moz-filter: grayscale(50%);
+    -ms-filter: grayscale(50%);
+    -o-filter: grayscale(50%);
+    filter: grayscale(50%);
 }
 
