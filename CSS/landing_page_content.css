@@ -516,14 +516,11 @@ iframe {
     align-content: center;
 }
 
- .partner_logo img,
-    .partner_logo2 img,
-    .partner_logo3 img
-        {
-        width: 80%;
-
-
-    }
+.partner_logo img,
+.partner_logo2 img,
+.partner_logo3 img {
+    width: 80%;
+}
 
 .uformel,
 .runforcover,
@@ -582,7 +579,6 @@ iframe {
         "citat1"
         "name1"
     ;
-
     padding: 10px;
 }
 
@@ -616,7 +612,6 @@ iframe {
     font-family: "Lato", sans-serif;
     font-style: italic;
     align-self: center;
-
 }
 
 .name {
@@ -632,7 +627,6 @@ iframe {
 }
 
 /*-------- PARNTERE MOBILE/TABLET - SLUT --------*/
-
 @media only screen and (min-width: 550px) {
     #nyeste_vaerker_container {
         background-color: #E5E5E5;
@@ -651,27 +645,23 @@ iframe {
     }
 
     .vaerk1_container,
-.vaerk2_container,
-.vaerk3_container
- {
-
+    .vaerk2_container,
+    .vaerk3_container {
         margin-top: 0px;
         width: 80%;
         height: 100%;
         justify-self: center;
-}
+    }
 
-
-
-     #partner {
+    #partner {
         display: grid;
         grid-template-columns: repeat (1, 1fr);
         grid-template-rows: 100px 1fr 1fr 1fr;
         grid-template-areas:
             "display3 display3 display3"
             "navn_logo1"
-             "navn_logo2"
-             "navn_logo3"
+            "navn_logo2"
+            "navn_logo3"
         ;
         padding-left: 30px;
         padding-right: 30px;
@@ -681,35 +671,31 @@ iframe {
 
     .partner_logo img,
     .partner_logo2 img,
-    .partner_logo3 img
-        {
-        width:65%;
-
-
+    .partner_logo3 img {
+        width: 65%;
     }
 
-      #anmeldelser {
-          background-color: #b8b8b8;
-          display: grid;
-          align-items: center;
-          grid-template-columns: 1fr;
-          grid-template-rows: repeat(2, 1fr);
-          grid-template-areas:
-              "anmeld1"
-              "anmeld2"
-          ;
-          padding-left: 50px;
-          padding-right: 50px;
-          grid-gap: 50px;
-          color: white;
-          background-image: url(../IMG-Bank/Images/Anmeldelser_bg.png);
-          background-repeat: no-repeat;
-          background-size: cover;
-          font-size: 1.2em;
-          font-weight: 300;
-      }
+    #anmeldelser {
+        background-color: #b8b8b8;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "anmeld1"
+            "anmeld2"
+        ;
+        padding-left: 50px;
+        padding-right: 50px;
+        grid-gap: 50px;
+        color: white;
+        background-image: url(../IMG-Bank/Images/Anmeldelser_bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 1.2em;
+        font-weight: 300;
+    }
 }
-
 
 @media only screen and (min-width: 800px) {
     #nyeste_vaerker_container {
@@ -726,17 +712,14 @@ iframe {
         grid-gap: 20px;
     }
 
-        .vaerk1_container,
-.vaerk2_container,
-.vaerk3_container
- {
-
+    .vaerk1_container,
+    .vaerk2_container,
+    .vaerk3_container {
         margin-top: 0px;
         width: 100%;
         height: 100%;
         justify-self: center;
-}
-
+    }
 
     #partner {
         display: grid;
@@ -751,7 +734,6 @@ iframe {
         text-align: center;
         margin-top: 10px;
     }
-
 
     #anmeldelser {
         background-color: #b8b8b8;
@@ -774,8 +756,6 @@ iframe {
         font-size: 1.2em;
         font-weight: 300;
     }
-
-
 }
 
 @media only screen and (min-width: 1280px) {
@@ -1391,7 +1371,6 @@ iframe {
         font-style: italic;
         justify-self: center;
         align-self: center;
-
     }
 
     .name {
