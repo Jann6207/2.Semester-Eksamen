@@ -13,21 +13,145 @@ body {
 
 .content {
     display: flex;
-    height: 47vh;
+    height: 44vh;
     justify-content: center;
     font-family: "Playfair Display", serif;
-    font-size: 10em;
+    font-size: 6em;
     background-color: rgb(0, 0, 0, 0.6);
     text-align: center;
     color: white;
-    padding-top: 10.5vh;
+    padding-top: 14.5vh;
     font-family: "Lato", sans-serif;
     font-weight: 200;
 }
 
-.kontakt_content {
+#kontakt_container {
     background-color: #E5E5E5;
-    height: 500px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    grid-template-columns: .5fr 1fr .5fr;
+    grid-template-rows: .5fr 1fr;
+    grid-template-areas:
+        "display display display"
+        ". kontakt_info ."
+    ;
+    /*  padding-left: 30px;
+    padding-right: 30px;
+    grid-gap: 20px;*/
+    padding-bottom: 50px;
+    height: 600px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
+.display {
+    grid-area: display;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+        "line1_kontakt kontakt_display line2_kontakt"
+    ;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
 
+.line1_kontakt {
+    grid-area: line1_kontakt;
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    color: black;
+    background-color: black;
+    height: 1.5px;
+    width: 100%;
+    border: none;
+}
+
+.line2_kontakt {
+    grid-area: line2_kontakt;
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    color: black;
+    background-color: black;
+    height: 1.5px;
+    width: 100%;
+    border: none;
+}
+
+.kontakt_display {
+    grid-area: kontakt_display;
+    display: grid;
+    font-size: 24px;
+    font-size: 35px;
+    font-weight: 300;
+    font-family: "Playfair Display", serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.kontakt_info {
+    grid-area: kontakt_info;
+    display: grid;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    background-color: #C8C8C8;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 300px;
+    font-size: 16px;
+}
+
+.firma {
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.kontakt_info a {
+    text-decoration: none;
+    color: black;
+}
+
+.sociale_medier_kontakt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "facebook instagram"
+    ;
+    grid-gap: 40px;
+}
+
+.facebook {
+    grid-area: facebook;
+    justify-self: flex-end;
+    width: 10%;
+}
+
+.instagram {
+    grid-area: instagram;
+    justify-self: flex-start;
+    width: 10%;
+}
+
+.facebook img,
+.instagram img {
+    width: 100%;
+}
+
+.kontakt_txt {
+    margin-top: 0;
+}
