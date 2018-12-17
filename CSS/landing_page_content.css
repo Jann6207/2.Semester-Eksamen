@@ -417,8 +417,6 @@ iframe {
     justify-content: center;
 }
 
-
-
 .arrow {
     display: none;
 }
@@ -623,6 +621,58 @@ iframe {
 }
 
 /*-------- PARNTERE MOBILE/TABLET - SLUT --------*/
+@media only screen and (min-width: 800px) {
+    #nyeste_vaerker_container {
+        background-color: #E5E5E5;
+        display: grid;
+        grid-template-columns: repeat (3, 1fr);
+        grid-template-rows: 100px 1fr 100px;
+        grid-template-areas:
+            "display display display"
+            "vaerk1 vaerk2 vaerk3"
+            "galleri_knap galleri_knap galleri_knap";
+        padding-left: 30px;
+        padding-right: 30px;
+        grid-gap: 20px;
+    }
+
+    #partner {
+        display: grid;
+        grid-template-columns: repeat (3, 1fr);
+        grid-template-rows: 100px 1fr;
+        grid-template-areas:
+            "display3 display3 display3"
+            "navn_logo1 navn_logo2 navn_logo3"
+        ;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #anmeldelser {
+        background-color: #b8b8b8;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas:
+            "anmeld1 anmeld2"
+        ;
+        /* background-color: aqua;*/
+        height: 300px;
+        padding-left: 50px;
+        padding-right: 50px;
+        grid-gap: 50px;
+        color: white;
+        background-image: url(../IMG-Bank/Images/Anmeldelser_bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 1.2em;
+        font-weight: 300;
+    }
+}
+
 @media only screen and (min-width: 1280px) {
 
     /*--------- NYESTE VÆRKER DESKTOP - START ----------*/
@@ -1033,13 +1083,11 @@ iframe {
         z-index: 1;
     }
 
-
     iframe {
         display: grid;
         align-self: center;
         align-content: flex-start;
         justify-content: center;
-
         height: 30vw;
         width: 40vw;
     }
@@ -1230,7 +1278,6 @@ iframe {
         ;
         height: 100%;
         padding: 10px;
-
     }
 
     .citat {
@@ -1240,7 +1287,6 @@ iframe {
         font-style: italic;
         align-self: center;
         margin-top: 0px;
-
     }
 
     .name {
@@ -1270,7 +1316,6 @@ iframe {
         font-style: italic;
         justify-self: center;
         align-self: center;
-
     }
 
     .name2 {

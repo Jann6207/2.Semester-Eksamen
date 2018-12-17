@@ -177,12 +177,12 @@ footer {
         background-color: #C8C8C8;
         display: grid;
         justify-items: center;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: .2fr 1fr 1fr 1fr 1fr .2fr;
         grid-template-rows: 1fr 1fr 66px;
         grid-template-areas:
-            "menu_footer kontakt_footer sociale_medier_footer udstillinger_footer"
-            "sprog_search_citat_footer sprog_search_citat_footer sprog_search_citat_footer sprog_search_citat_footer"
-            "copyright_footer copyright_footer copyright_footer copyright_footer"
+            ". menu_footer kontakt_footer sociale_medier_footer udstillinger_footer ."
+            ". sprog_search_citat_footer sprog_search_citat_footer sprog_search_citat_footer sprog_search_citat_footer ."
+            "copyright_footer copyright_footer copyright_footer copyright_footer copyright_footer copyright_footer"
         ;
         grid-gap: 0px;
         padding-top: 30px;
@@ -228,7 +228,29 @@ footer {
         font-size: 14px;
         display: flex;
         justify-content: center;
+        align-items: center;
         width: 100%;
+    }
+
+    .menu_footer {
+        grid-area: menu_footer;
+        display: inline-block;
+        text-align: left;
+    }
+
+    .kontakt_footer {
+        grid-area: kontakt_footer;
+        text-align: left;
+    }
+
+    .sociale_medier_footer {
+        grid-area: sociale_medier_footer;
+        text-align: left;
+    }
+
+    .udstillinger_footer {
+        grid-area: udstillinger_footer;
+        text-align: left;
     }
 }
 
