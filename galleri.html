@@ -7,157 +7,24 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/galleri.css">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: "Lato" sans-serif;
-        }
-
-
-        #filtrerings_knapper {
-            display: flex;
-            justify-content: center;
-            padding: 12px;
-            background-color: #0c100e;
-            margin-bottom: 5vw;
-
-        }
-
-        .menu-item {
-            border: none;
-            border-radius: 40px;
-            margin: 7px;
-            background: transparent;
-            font-size: 20px;
-            padding: 10px;
-            color: white;
-            font-family: "Lato" sans-serif;
-            cursor: pointer;
-        }
-
-        body {
-            min-height: 100%;
-            display: grid;
-            grid-template-rows: 1fr auto;
-        }
-
-        .data-container {
-            display: grid;
-            max-width: 400px;
-            margin: 0 auto;
-            grid-gap: 10px;
-        }
-
-        .data-container article img {
-            width: 100%
-        }
-
-        .post-container {
-            padding: 2em;
-            grid-row: span 1;
-            background-color: #Bacbdb;
-        }
-
-
-        [data-overskrift] {
-            min-height: 60px;
-        }
-
-        .back {
-            cursor: pointer;
-            position: relative;
-            width: auto;
-            color: #FFF;
-            font-weight: bold;
-            font-size: 3em;
-            transition: 0.3s ease;
-            border-radius: 0 3px 3px 0;
-            margin: 0 20px;
-            background-color: transparent;
-        }
-
-        @media screen and (min-width:700px) {
-            .nyhedsbrev p {
-                padding: 0;
-                line-height: 50px;
-                font-size: 11px;
-            }
-
-            .data-container {
-                grid-template-columns: 1fr 1fr;
-                max-width: 600px;
-            }
-        }
-
-        @media screen and (min-width:1000px) {
-            .data-container {
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-gap: 20px;
-            }
-
-            .data-container {
-
-                max-width: 850px;
-            }
-
-
-            [data-overskrift] {
-                min-height: 99px;
-            }
-
-            .post-container {
-                transition: .4s;
-            }
-
-            .post-container:hover {
-                border: 2px solid var #a63a55;
-                transform: scale(1.1);
-                background-color: #0c100e;
-                color: rgba(250, 250, 250, 0.81);
-            }
-            #filtrerings_knapper {
-                display: flex;
-                justify-content: center;
-                padding: 12px;
-                margin-bottom: 5vw;
-
-            }
-
-            .menu-item {
-
-                font-size: 30px;
-                padding: 10px;
-                color: white;
-
-
-
-            }
-            @media screen and (min-width:1300px) {
-
-
-                .data-container {
-
-                    max-width: 1300px;
-
-                }
-
-                header {
-                    width: 1300px;
-                }
-
-                .desktop_nav_menu {
-                    margin: 0 auto;
-                }
-                img {
-                    max-height: 388px;
-                    max-width: 388px;
-                }
-    </style>
 </head>
 
 <body>
+
+    <section id="modal">
+
+        <div id="modal-content">
+            <button>close</button>
+
+            <h2 class="modal-navn" data-overkskrift></h2>
+            <img class="modal-billede" data-billede>
+            <p class="size" data-storrelse></p>
+            <p class="digt" data-digt>
+        </div>
+    </section>
+
 
     <a class="back" onclick="goBack()">&#10094;</a>
     <main id="indhold">
@@ -174,72 +41,25 @@
     </main>
 
 
-
     <template class="data-template">
         <article class="post-container">
             <div class="vaerk_container">
-            <img class="maleri" data-billede>
-             <div class="vaerk">
-              <h2 class="titel" data-overskrift></h2>
-              <p class="size" data-storrelse></p>
-               <p class="more">Læs Mere</p>
-            </div>
+                <div class="zoom">
+                    <img class="malleri" data-billede> </div>
+                <div class="vaerk">
+                    <h2 class="titel" data-overskrift></h2>
+                    <p class="size" data-storrelse></p>
+                    <p class="more">Læs Mere</p>
                 </div>
+            </div>
         </article>
     </template>
 
-
-
-  <!--  <script>
-        let wpJSON;
-        let dest = document.querySelector(".data-container");
-        let vaerkerFilter = "Alle";
-        document.addEventListener("DOMContentLoaded", hentJson);
-        async function hentJson() {
-            let myJson = await fetch("http://oliverwinfield.dk/kea/kea/lawaetz/wordpress/wp-json/wp/v2/kunstvaerker");
-            wpJSON = await myJson.json();
-            visJson();
-        }
-        document.querySelectorAll(".menu-item").forEach(knap => {
-            knap.addEventListener("click", filtrering);
-        });
-
-        function filtrering() {
-            dest.textContent = "";
-            vaerkerFilter = this.getAttribute("data-kategori");
-            visJson();
-            console.log("filtrering");
-        }
-
-        function visJson() {
-            let myTemplate = document.querySelector(".data-template")
-
-            console.log(wpJSON);
-            console.log("visJson");
-            wpJSON.forEach(post => {
-                if (post.acf.type == vaerkerFilter || vaerkerFilter == "Alle") {
-                    console.log("ifstatement")
-                    let klon = myTemplate.cloneNode(true).content;
-                    klon.querySelector("[data-overskrift]").textContent = post.acf.titel;
-                    klon.querySelector("[data-billede]").src = post.acf.billede;
-                    klon.querySelector("[data-storrelse]").textContent = "Størrelse: " + post.acf.storrelse;
-                    klon.querySelector(".post-container").addEventListener("click", () => {
-                        window.location.href = "modal.html?id=" + post.id;
-                    });
-                    dest.appendChild(klon);
-                }
-            })
-        }
-
-        function goBack() {
-            window.history.back();
-        }
-    </script>-->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
- <script src="Script/galleri.js"></script>
+    <script src="Script/galleri.js"></script>
 </body>
 
 </html>

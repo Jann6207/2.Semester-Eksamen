@@ -329,11 +329,11 @@ body {
     align-self: center;
     font-family: "Lato", sans-serif;
     font-weight: 200;
-    font-size: 5vw;
+    font-size: 1.7em;
     margin: 0;
     color: white;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .bag_om_content {
@@ -362,7 +362,7 @@ body {
     grid-area: txt;
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    font-size: 3vw;
+    font-size: 1.2em;
     color: rgb(255, 255, 255, 0.8);
     margin: 0;
     height: 100%;
@@ -373,7 +373,7 @@ body {
 .txt2 {
     grid-area: txt2;
     font-weight: 300;
-    font-size: 5vw;
+    font-size: 2.5em;
     color: white;
     height: 100%;
     width: 100%;
@@ -407,7 +407,7 @@ body {
     margin-bottom: 5vw;
     z-index: 1;
     height: 80%;
-    width: 90vw;
+
 }
 
 iframe {
@@ -695,6 +695,10 @@ iframe {
         font-size: 1.2em;
         font-weight: 300;
     }
+
+    .txt {
+        font-size: 1.2em;
+    }
 }
 
 @media only screen and (min-width: 800px) {
@@ -744,7 +748,6 @@ iframe {
         grid-template-areas:
             "anmeld1 anmeld2"
         ;
-        /* background-color: aqua;*/
         height: 300px;
         padding-left: 50px;
         padding-right: 50px;
@@ -753,9 +756,33 @@ iframe {
         background-image: url(../IMG-Bank/Images/Anmeldelser_bg.png);
         background-repeat: no-repeat;
         background-size: cover;
-        font-size: 1.2em;
+        font-size: 1.5e;
         font-weight: 300;
     }
+
+
+
+    .txt {
+        font-size: 1.5em;
+    }
+
+    .txt2 {
+        font-size: 4em;
+    }
+
+    .behind {
+    grid-area: behind;
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    font-size: 5vw;
+    margin: 0;
+    color: white;
+    padding-left: 2px;
+    padding-right: 2px;
+}
 }
 
 @media only screen and (min-width: 1280px) {
@@ -1121,6 +1148,7 @@ iframe {
         align-items: center;
         margin-top: 0%;
         margin-bottom: -20%;
+
     }
 
     .txt2 {
