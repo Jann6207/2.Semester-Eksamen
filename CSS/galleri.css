@@ -21,7 +21,41 @@ body {
     min-height: 100%;
     display: grid;
     grid-template-rows: 1fr auto;
-    background-image: url(pics/baggrund.jpg);
+}
+
+#modal {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .7);
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s;
+}
+
+#modal-content {
+    background-color: rgba(250, 250, 250, 1);
+    height: 70vh;
+    width: 70vw;
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 4em;
+}
+
+#modal.vis {
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s;
+}
+
+.modal-billede {
+    height: 50%;
+    width: auto;
+}
+
+#modal button {
+    margin-top: 10px;
 }
 
 @media screen and (min-width:700px) {
