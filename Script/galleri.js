@@ -1,4 +1,4 @@
-
+$('document').ready(function(){});
 
 let wpJSON;
         let dest = document.querySelector(".data-container");

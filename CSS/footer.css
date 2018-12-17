@@ -1,5 +1,4 @@
 /*------------- FOOTER MOBIL/TABLET - START -------------*/
-
 footer {
     background-color: #C8C8C8;
     display: grid;
@@ -40,6 +39,7 @@ footer {
     display: inline-block;
     margin-top: 10px;
     font-weight: 300;
+    align-self: flex-start;
 }
 
 .menu_footer {
@@ -104,6 +104,7 @@ footer {
     display: grid;
     justify-self: center;
     align-self: center;
+    width: 100%;
 }
 
 .logo_footer {
@@ -126,8 +127,112 @@ footer {
     width: 100%;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 600px) {
+    footer {
+        background-color: #C8C8C8;
+        display: grid;
+        justify-items: center;
+        text-align: left;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: .5fr .5fr .5fr 66px;
+        grid-template-areas:
+            "menu_footer kontakt_footer"
+            "sociale_medier_footer udstillinger_footer"
+            "sprog_search_citat_footer sprog_search_citat_footer"
+            "copyright_footer copyright_footer"
+        ;
+        grid-gap: 30px;
+        padding-top: 30px;
+    }
 
+    .sprog_search_citat_footer {
+        grid-area: sprog_search_citat_footer;
+        font-family: "Lato", sans-serif;
+        display: grid;
+        grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+        grid-template-rows: 2fr;
+        grid-template-areas:
+            ". search_ikon . citat_footer. "
+            ". engelsk_flag .logo_footer ."
+        ;
+        width: 100%;
+    }
+
+    .sprog_search_citat_footer p {
+        grid-area: citat_footer;
+        font-family: "Lato", sans-serif;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 300;
+        display: grid;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        width: 125%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    footer {
+        background-color: #C8C8C8;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 66px;
+        grid-template-areas:
+            "menu_footer kontakt_footer sociale_medier_footer udstillinger_footer"
+            "sprog_search_citat_footer sprog_search_citat_footer sprog_search_citat_footer sprog_search_citat_footer"
+            "copyright_footer copyright_footer copyright_footer copyright_footer"
+        ;
+        grid-gap: 0px;
+        padding-top: 30px;
+    }
+
+    .sprog_search_citat_footer {
+        grid-area: sprog_search_citat_footer;
+        font-family: "Lato", sans-serif;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 32px;
+        grid-template-areas:
+            "search_ikon engelsk_flag citat_footer"
+            ". . logo_footer"
+        ;
+    }
+
+    .sprog_search_citat_footer p {
+        grid-area: citat_footer;
+        display: grid;
+        justify-self: start;
+        align-self: center;
+        text-align: center;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .logo_footer {
+        grid-area: logo_footer;
+        width: 152px;
+        height: 32px;
+        display: grid;
+        justify-self: center;
+        align-self: center;
+        margin-bottom: 10px;
+        margin-top: -70px
+    }
+
+    .copyright_footer {
+        grid-area: copyright_footer;
+        background-color: #B8B8B8;
+        font-family: "Lato", sans-serif;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
     footer {
         padding-top: 50px;
         background-color: #C8C8C8;
@@ -190,9 +295,19 @@ footer {
         font-family: "Lato", sans-serif;
         display: grid;
         align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            ". engelsk_flag"
+            ". search_ikon"
+            "citat_footer citat_footer "
+            ". logo_footer "
+        ;
+        width: 100%;
     }
 
     .engelsk_flag {
+        grid-area: engelsk_flag;
         width: 31px;
         height: 20px;
         display: grid;
@@ -204,23 +319,26 @@ footer {
         width: 30px;
         height: 27px;
         display: grid;
+        grid-area: search_ikon;
         justify-self: end;
         margin-right: 20px;
-        margin-top: -20px;
+        margin-top: 0px;
     }
 
     .sprog_search_citat_footer p {
         font-family: "Lato", sans-serif;
-        font-size: 14px;
+        font-size: 16px;
         font-style: italic;
         font-weight: 300;
         justify-self: start;
-        text-align: right;
+        text-align: left;
         display: grid;
-        width: 100%;
+        width: 120%;
+        grid-area: citat_footer;
     }
 
     .logo_footer {
+        grid-area: logo_footer;
         width: 152px;
         height: 32px;
         display: grid;
