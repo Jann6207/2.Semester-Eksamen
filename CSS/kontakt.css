@@ -1,84 +1,33 @@
-   * {
-       margin: 0;
-       padding: 0;
-       font-family: "Playfair"sans-serif;
-   }
+* {
+    box-sizing: border-box;
+}
 
-   body {
-       min-height: 100%;
-       display: grid;
-       grid-template-rows: 1fr auto;
-       background-image: url(pics/baggrund.jpg);
-   }
+body {
+    margin: 0;
+    background-image: url(../IMG-Bank/Images/profil_splash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-color: black;
+}
 
-   p {
-       font-family: "Lato"sans-serif;
-   }
+.content {
+    display: flex;
+    height: 47vh;
+    justify-content: center;
+    font-family: "Playfair Display", serif;
+    font-size: 10em;
+    background-color: rgb(0, 0, 0, 0.6);
+    text-align: center;
+    color: white;
+    padding-top: 10.5vh;
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+}
 
-   .kontakt {
-       max-width: 350px;
-       margin: 0 auto;
-       color: black;
-   }
+.kontakt_content {
+    background-color: #E5E5E5;
+    height: 500px;
+}
 
-   .kontakt p {
-       padding: 10px;
-   }
 
-   .kontakt h1 {
-       padding: 10px;
-   }
-
-   .kontakt a {
-       color: black;
-   }
-
-   .google_maps_kort {
-       display: flex;
-       justify-content: center;
-       margin-top: 40px;
-       margin-bottom: 40px;
-   }
-
-   .google_maps_kort iframe {
-       height: 500px;
-       width: 600px;
-   }
-
-   .kontakt_formular input {
-       background-color: transparent;
-       border: none;
-       border-bottom: 1px solid white;
-       width: 300px;
-       margin-left: 10px;
-   }
-
-   .kontakt_formular {
-       max-width: 325px;
-       margin: 0 auto;
-       background-color: black;
-   }
-
-   .kontakt_formular h2 {
-       margin-left: 10px;
-       color: white;
-   }
-
-   .kontakt_formular h3 {
-       padding-bottom: 5px;
-       padding-top: 15px;
-       margin-left: 10px;
-       color: white;
-   }
-
-   textarea {
-       background-color: white;
-       border: none;
-       border-bottom: 1px solid white;
-       padding-top: 20px;
-       color: grey;
-       resize: none;
-       width: 300px;
-       margin-bottom: 20px;
-       margin-left: 10px;
-   }
