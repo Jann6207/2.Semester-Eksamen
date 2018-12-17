@@ -192,12 +192,13 @@ body {
     margin-left: 10px;
     color: white;
     font-size: 14px;
+    margin-left: 0;
 
 
 }
 
 .kontakt_formular h2 {
-    margin-left: 10px;
+
     color: white;
     font-family: "Lato", sans-serif;
     text-transform: uppercase;
@@ -211,7 +212,7 @@ body {
 .kontakt_formular h3 {
     padding-bottom: 5px;
     padding-top: 10px;
-    margin-left: 10px;
+
     color: white;
     font-family: "Lato", sans-serif;
     font-size: 18px;
@@ -230,10 +231,11 @@ textarea {
     height: 150px;
     margin-top: 30px;
     margin-bottom: 20px;
-    margin-left: 10px;
+
     font-family: "Lato", sans-serif;
     font-size: 15px;
     font-weight: 300;
+  ;
 }
 
 button {
