@@ -11,11 +11,9 @@ body {
     background-color: black;
 }
 
-.content {
-    font-size: 3em;
-}
 
-@media only screen and (max-width: 799px) {
+
+@media only screen and (max-width: 1029px) {
     #kontakt_container {
         background-color: #E5E5E5;
         display: grid;
@@ -262,9 +260,20 @@ body {
         -o-filter: grayscale(50%);
         filter: grayscale(50%);
     }
+
+    .content {
+
+        height: 30vh;
+
+        font-size: 3em;
+
+        padding-top: 10vh;
+
+    }
+
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1030px) {
     .content {
         display: flex;
         height: 30vh;
