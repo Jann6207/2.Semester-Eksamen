@@ -45,6 +45,7 @@ function visJson() {
                 visModal(post);
             });
             dest.appendChild(klon);
+            str(post);
         }
     })
 }
@@ -71,5 +72,11 @@ function goBack() {
 function shuffle(array) {
     array.sort(() => {
         return 0.5 - Math.random()
+    });
+}
+
+function str() {
+    wpJSON.sort(function (a, b) {
+        return a.acf.str_id - b.acf.str_id;
     });
 }
