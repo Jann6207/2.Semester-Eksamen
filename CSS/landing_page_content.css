@@ -276,7 +276,14 @@ body {
     transition: .5s;
 }
 
-.galleri2:hover {
+.galleri2 a {
+    text-decoration: none;
+    border-bottom: solid 1.5px transparent;
+    color: black;
+    transition: .5s;
+}
+
+.galleri2 a:hover {
     border-bottom: solid 1.5px #e8c8a2;
     overflow: hidden;
     color: grey;
@@ -407,7 +414,6 @@ body {
     margin-bottom: 5vw;
     z-index: 1;
     height: 80%;
-
 }
 
 iframe {
@@ -760,8 +766,6 @@ iframe {
         font-weight: 300;
     }
 
-
-
     .txt {
         font-size: 1.5em;
     }
@@ -771,18 +775,18 @@ iframe {
     }
 
     .behind {
-    grid-area: behind;
-    display: grid;
-    justify-self: center;
-    align-self: center;
-    font-family: "Lato", sans-serif;
-    font-weight: 200;
-    font-size: 5vw;
-    margin: 0;
-    color: white;
-    padding-left: 2px;
-    padding-right: 2px;
-}
+        grid-area: behind;
+        display: grid;
+        justify-self: center;
+        align-self: center;
+        font-family: "Lato", sans-serif;
+        font-weight: 200;
+        font-size: 5vw;
+        margin: 0;
+        color: white;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -962,16 +966,19 @@ iframe {
         width: 100%;
         transition: .5s ease-in-out;
         cursor: pointer;
+        overflow: hidden;
     }
 
     .malleri1:hover,
     .malleri2:hover,
     .malleri3:hover {
-        transform: scale(1.6) translate(-18%, 15%);
+        transform: scale(1.5) translateY(15%);
+        overflow: hidden;
     }
 
     .malleri2:hover {
-        transform: scale(1.6) translate(-15%, 14%);
+        transform: scale(1.45) translate(10%, 15%);
+        overflow: hidden;
     }
 
     .malleri1 {
@@ -1034,13 +1041,14 @@ iframe {
 
     .titel {
         font-family: "Playfair Display", sans-serif;
-        font-size: 40px;
+        font-size: 39px;
         overflow: visible;
         margin: 0;
         margin-top: 45px;
-        margin-left: 20px;
+        margin-left: 10%;
+        ;
         width: 110%;
-        text-align: right;
+        text-align: center;
     }
 
     .size {
@@ -1131,7 +1139,6 @@ iframe {
         grid-template-areas:
             "txt txt vid vid"
             "txt2 txt2 vid vid"
-
         ;
     }
 
@@ -1148,7 +1155,6 @@ iframe {
         align-items: center;
         margin-top: 0%;
         margin-bottom: -20%;
-
     }
 
     .txt2 {
@@ -1206,7 +1212,6 @@ iframe {
         justify-content: center;
         height: 23vw;
         width: 40vw;
-
     }
 
     .arrow {
