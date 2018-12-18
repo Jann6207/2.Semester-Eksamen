@@ -411,7 +411,7 @@ body {
 }
 
 iframe {
-    width: 90vw;
+    width: 60vw;
     height: 35vw;
     align-self: center;
     justify-content: center;
@@ -1204,7 +1204,7 @@ iframe {
         align-self: center;
         align-content: flex-start;
         justify-content: center;
-        height: 40vw;
+        height: 23vw;
         width: 40vw;
 
     }
