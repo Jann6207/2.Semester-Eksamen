@@ -28,6 +28,12 @@ footer {
     margin-top: 0;
 }
 
+ .kontakt_footer p {
+        margin-bottom: -5px;
+    }
+
+.navn_footer,
+.adresse_footer,
 .menu_footer a,
 .kontakt_footer a,
 .sociale_medier_footer a,
@@ -40,6 +46,10 @@ footer {
     margin-top: 10px;
     font-weight: 300;
     align-self: flex-start;
+}
+
+.navn_footer {
+    margin-top: -10px;
 }
 
 .menu_footer {
@@ -278,6 +288,12 @@ footer {
         text-transform: uppercase;
     }
 
+    .kontakt_footer p {
+        margin-bottom: -20px;
+    }
+
+    .navn_footer,
+    .adresse_footer,
     .menu_footer a,
     .kontakt_footer a,
     .sociale_medier_footer a,
@@ -290,6 +306,8 @@ footer {
         margin-top: 10px;
         font-weight: 300;
     }
+
+
 
     .menu_footer {
         grid-area: menu_footer;
