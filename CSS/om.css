@@ -464,7 +464,7 @@ body {
         display: grid;
         align-items: center;
         grid-template-columns: 1fr;
-        grid-template-rows: 300ox 1fr;
+        grid-template-rows: 300px 1fr;
         grid-template-areas:
             "txt"
             "video"
