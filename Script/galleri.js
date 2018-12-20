@@ -82,16 +82,10 @@ function visModal(post) {
 
 }
 
-function sortNumber(a, b) {
-    return a - b;
-}
-
 function skjulmodal() {
     modal.classList.remove("vis");
     //window.scrollTo(0)
 }
-
-
 
 function shuffle(array) {
     array.sort(() => {
