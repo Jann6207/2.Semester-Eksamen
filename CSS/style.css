@@ -14,7 +14,7 @@ body {
 /* -------- MOBILE/TABLET START -------- */
 /*HEADER - MOBILE/TABLET - START*/
 header {
-    background-color: rgb(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     height: 60px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -78,7 +78,7 @@ header {
 .navbar_mobile {
     display: none;
     position: fixed;
-    background-color: rgb(237, 237, 237, 1);
+    background-color: rgba(237, 237, 237, 1);
     width: 100%;
     height: 100vh;
     z-index: 50;
@@ -214,7 +214,7 @@ nav {
     justify-content: center;
     font-family: "Playfair Display", serif;
     font-size: 10vw;
-    background-color: rgb(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     text-align: center;
     color: white;
     padding-top: 15vw;
@@ -298,7 +298,7 @@ nav {
         border-bottom: solid .8px bisque;
         margin-bottom: 10px;
         display: inline-block;
-        padding-bottom: -5px;
+
     }
 
     .galleri {
@@ -391,7 +391,7 @@ nav {
         justify-content: center;
         font-family: "Playfair Display", serif;
         font-size: 10em;
-        background-color: rgb(0, 0, 0, 0.6);
+        background-color: rgba(0, 0, 0, 0.6);
         text-align: center;
         color: white;
         padding-top: 22vh;
@@ -426,8 +426,8 @@ nav {
     }
 
     .click-scroll:hover span {
-        border-left: 1.4px solid rgb(255, 228, 196, 0.6);
-        border-bottom: 1.4px solid rgb(255, 228, 196, 0.6);
+        border-left: 1.4px solid rgba(255, 228, 196, 0.6);
+        border-bottom: 1.4px solid rgba(255, 228, 196, 0.6);
     }
 
     .click-scroll:hover p {
@@ -448,8 +448,8 @@ nav {
         width: 48px;
         height: 48px;
         margin-left: -12px;
-        border-left: 1.4px solid rgb(221, 221, 221, 0.8);
-        border-bottom: 1.4px solid rgb(221, 221, 221, 0.8);
+        border-left: 1.4px solid rgba(221, 221, 221, 0.8);
+        border-bottom: 1.4px solid rgba(221, 221, 221, 0.8);
         -webkit-transform: rotateZ(-45deg);
         transform: rotateZ(-45deg);
         -webkit-animation: spin 1.5s infinite;

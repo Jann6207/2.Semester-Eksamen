@@ -1,4 +1,8 @@
-$('document').ready(function () {});
+$('document').ready(function () {
+    console.log("Page loadet")
+});
+
+
 
 let wpJSON = [];
 let dest = document.querySelector(".data-container");
@@ -33,7 +37,6 @@ function visJson() {
     let myTemplate = document.querySelector(".data-template")
 
     console.log("visJson");
-    console.log();
 
     if (vaerkerFilter == "Alle") {
         shuffle(wpJSON);
@@ -79,7 +82,6 @@ function visModal(post) {
     modal.querySelector("[data-storrelse]").textContent = "Størrelse: " + post.acf.storrelse;
     modal.querySelector("[data-digt]").textContent = post.acf.digt;
 
-    modal
     modal.querySelector("button").addEventListener("click", skjulmodal);
 
 }
