@@ -32,10 +32,32 @@ function filtrering() {
 function visJson() {
     let myTemplate = document.querySelector(".data-template")
 
-    console.log(wpJSON);
     console.log("visJson");
+    console.log();
+
+    if (vaerkerFilter == "Alle") {
+        shuffle(wpJSON);
+    }
+    if (vaerkerFilter == "Str") {
+        str(wpJSON);
+    }
     wpJSON.forEach(post => {
-        if (post.acf.type == vaerkerFilter || vaerkerFilter == "Alle") {
+        if (vaerkerFilter == "Nyeste") {
+
+            if (post.acf.type == vaerkerFilter) {
+
+
+                console.log("ifstatement")
+                let klon = myTemplate.cloneNode(true).content;
+                klon.querySelector("[data-overskrift]").textContent = post.acf.titel;
+                klon.querySelector("[data-billede]").src = post.acf.billede;
+                klon.querySelector("[data-storrelse]").textContent = "Størrelse: " + post.acf.storrelse;
+                klon.querySelector(".post-container").addEventListener("click", () => {
+                    visModal(post);
+                });
+                dest.appendChild(klon);
+            }
+        } else {
             console.log("ifstatement")
             let klon = myTemplate.cloneNode(true).content;
             klon.querySelector("[data-overskrift]").textContent = post.acf.titel;
@@ -45,7 +67,7 @@ function visJson() {
                 visModal(post);
             });
             dest.appendChild(klon);
-            str(post);
+
         }
     })
 }
@@ -60,14 +82,16 @@ function visModal(post) {
 
 }
 
+function sortNumber(a, b) {
+    return a - b;
+}
+
 function skjulmodal() {
     modal.classList.remove("vis");
     //window.scrollTo(0)
 }
 
-function goBack() {
-    window.history.back();
-}
+
 
 function shuffle(array) {
     array.sort(() => {
