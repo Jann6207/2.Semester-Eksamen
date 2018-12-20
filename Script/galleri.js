@@ -78,6 +78,8 @@ function visModal(post) {
     modal.querySelector(".modal-billede").src = post.acf.billede;
     modal.querySelector("[data-storrelse]").textContent = "Størrelse: " + post.acf.storrelse;
     modal.querySelector("[data-digt]").textContent = post.acf.digt;
+
+    modal
     modal.querySelector("button").addEventListener("click", skjulmodal);
 
 }
