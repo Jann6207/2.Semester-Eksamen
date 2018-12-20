@@ -429,8 +429,7 @@ body {
 
     .size {
         grid-area:
-
-        font-family: "Lato", serif;
+            font-family: "Lato", serif;
         font-size: 14px;
         margin: 0;
         text-align: center;
@@ -716,15 +715,14 @@ body {
 
     #modal-content {
         display: grid;
-        grid-template-columns: 1fr .3fr .5fr;
-        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr .2fr .2fr .5fr;
         grid-template-areas:
             "modal_img modal_img modal_img"
-            "modal_titel modal_titel modal_titel"
+            "navn navn navn"
+            "size size size"
             "modal_digt modal_digt modal_digt"
         ;
-
-
         justify-content: center;
         justify-self: center;
         background-color: rgba(250, 250, 250, 1);
@@ -741,31 +739,43 @@ body {
         transition: 0.5s;
     }
 
-     .modal_navn {
-        grid-area: modal_titel;
-    }
-
     .modal-billede {
-        height: 50%;
+        height: 100%;
         width: auto;
+        justify-self: center;
         grid-area: modal_img;
     }
 
+    /*.navn_size {
+        grid-area: navn_size;
+        display: grid;
+    }*/
+    .modal-navn {
+        display: grid;
+        text-align: center;
+        font-size: 24px;
+       z-index: 90;
+        color: black;
+        grid-area: navn;
+    }
+
     .modal_size {
-        grid-area: modal_titel;
+        text-align: center;
+        grid-area: size;
+        height: 100%;
     }
 
     .modal_digt {
         grid-area: modal_digt;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
     }
-
-
-
-
-
 
     #modal button {
         margin-top: 10px;
+        position: absolute;
+        top: 1%;
+        right: 2%;
     }
 
     .maleri img {
