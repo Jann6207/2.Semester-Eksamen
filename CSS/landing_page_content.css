@@ -310,7 +310,7 @@ body {
     text-align: center;
     overflow: visible;
     justify-content: center;
-    background-image: url(../IMG-Bank/Images/paint_filter2.jpg);
+    background-image: url(../IMG-Bank/Images/home/mennesket_og_kunstneren_splash.jpg);
     /* background-position: translateY(10);*/
     background-size: cover;
 }
@@ -568,7 +568,7 @@ iframe {
     padding-bottom: 20px;
     grid-gap: 20px;
     color: white;
-    background-image: url(../IMG-Bank/Images/Anmeldelser_bg.png);
+    background-image: url(../IMG-Bank/Images/home/anmeldelser/Anmeldelser_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 1.2em;
@@ -696,7 +696,7 @@ iframe {
         padding-right: 50px;
         grid-gap: 50px;
         color: white;
-        background-image: url(../IMG-Bank/Images/Anmeldelser_bg.png);
+        background-image: url(../IMG-Bank/Images/home/anmeldelser/Anmeldelser_bg.png);
         background-repeat: no-repeat;
         background-size: cover;
         font-size: 1.2em;
@@ -760,7 +760,7 @@ iframe {
         padding-right: 50px;
         grid-gap: 50px;
         color: white;
-        background-image: url(../IMG-Bank/Images/Anmeldelser_bg.png);
+        background-image: url(../IMG-Bank/Images/home/anmeldelser/Anmeldelser_bg.png);
         background-repeat: no-repeat;
         background-size: cover;
         font-size: 1.5em;
@@ -1096,7 +1096,7 @@ iframe {
         height: 1000px;
         overflow: visible;
         justify-content: center;
-        background-image: url(../IMG-Bank/Images/paint_filter2.jpg);
+        background-image: url(../IMG-Bank/Images/home/mennesket_og_kunstneren_splash.jpg);
         /*background-position: translateY(10px);*/
         background-size: cover;
         overflow: visible;
@@ -1382,7 +1382,7 @@ iframe {
         padding-right: 50px;
         grid-gap: 50px;
         color: white;
-        background-image: url(../IMG-Bank/Images/Anmeldelser_bg.png);
+        background-image: url(../IMG-Bank/Images/home/anmeldelser/Anmeldelser_bg.png);
         background-repeat: no-repeat;
         background-size: cover;
         font-size: 1.2em;

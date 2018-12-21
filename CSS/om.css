@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    background-image: url(../IMG-Bank/Images/om_lawaetz_splash.JPG);
+    background-image: url(../IMG-Bank/Images/om/om_lawaetz_splash.JPG);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -115,7 +115,7 @@ body {
         ;
         color: white;
         font-weight: 300;
-        background-image: url(../IMG-Bank/Images/Om_BG.jpg);
+        background-image: url(../IMG-Bank/Images/om/om_info_baggrund.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
@@ -301,7 +301,7 @@ body {
         ;
         color: white;
         font-weight: 300;
-        background-image: url(../IMG-Bank/Images/Om_BG.jpg);
+        background-image: url(../IMG-Bank/Images/om/om_info_baggrund.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
@@ -476,7 +476,7 @@ body {
         ;
         color: white;
         font-weight: 300;
-        background-image: url(../IMG-Bank/Images/Om_BG.jpg);
+        background-image: url(../IMG-Bank/Images/om/om_info_baggrund.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
