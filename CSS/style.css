@@ -41,6 +41,8 @@ header {
     justify-content: flex-end;
     align-self: center;
     grid-area: menubutton;
+
+    z-index: 100;
 }
 
 .bar1,
@@ -51,7 +53,8 @@ header {
     margin: 3px 0;
     transition: 0.4s;
     background-color: #efefef;
-    z-index: 99;
+    z-index: 100;
+
 }
 
 .bar2 {
@@ -64,6 +67,8 @@ header {
     -webkit-transform: rotate(-45deg) translate(-7px, 6px);
     transform: rotate(-46deg) translate(-5.5px, 5.5px);
     background-color: black;
+    z-index: 100;
+
 }
 
 .kryds .bar2 {
@@ -75,6 +80,7 @@ header {
     -webkit-transform: rotate(45deg) translate(-7px, 6px);
     transform: rotate(46deg) translate(-5.5px, -6px);
     background-color: black;
+     z-index: 100;
 }
 
 /*MENU - MOBILE/TABLET - SLUT*/
@@ -90,6 +96,8 @@ header {
     right: 0%;
     padding-top: 50px;
     justify-content: center;
+    position: fixed;
+    z-index: 99;
 }
 
 .navbar_mobile a {
