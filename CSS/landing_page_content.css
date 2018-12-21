@@ -421,6 +421,7 @@ iframe {
     height: 35vw;
     align-self: center;
     justify-content: center;
+    border: none;
 }
 
 .arrow {
@@ -1212,6 +1213,7 @@ iframe {
         justify-content: center;
         height: 23vw;
         width: 40vw;
+        border: none;
     }
 
     .arrow {
