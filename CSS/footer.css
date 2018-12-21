@@ -1,9 +1,12 @@
 /*------------- FOOTER MOBIL/TABLET - START -------------*/
 footer {
     background-color: #C8C8C8;
+    display: -ms-grid;
     display: grid;
     justify-items: center;
+    -ms-grid-columns: 1fr;
     grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: 1fr 30px 1fr 30px 1fr 30px 1fr 30px 1fr 30px 66px;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 66px;
     grid-template-areas:
         "menu_footer"
@@ -28,9 +31,9 @@ footer {
     margin-top: 0;
 }
 
- .kontakt_footer p {
-        margin-bottom: -5px;
-    }
+.kontakt_footer p {
+    margin-bottom: -5px;
+}
 
 .navn_footer,
 .adresse_footer,
@@ -45,6 +48,7 @@ footer {
     display: inline-block;
     margin-top: 10px;
     font-weight: 300;
+    -ms-flex-item-align: start;
     align-self: flex-start;
 }
 
@@ -53,31 +57,43 @@ footer {
 }
 
 .menu_footer {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: menu_footer;
     text-align: center;
 }
 
 .kontakt_footer {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: kontakt_footer;
     display: inline-block;
     text-align: center;
 }
 
 .sociale_medier_footer {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
     grid-area: sociale_medier_footer;
     text-align: center;
 }
 
 .udstillinger_footer {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
     grid-area: udstillinger_footer;
     text-align: center;
 }
 
 .sprog_search_citat_footer {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
     grid-area: sprog_search_citat_footer;
     font-family: "Lato", sans-serif;
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "engelsk_flag"
@@ -88,51 +104,77 @@ footer {
 }
 
 .engelsk_flag {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: engelsk_flag;
     width: 31px;
     height: 20px;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-column-align: center;
     justify-self: center;
+    -ms-grid-row-align: center;
     align-self: center;
 }
 
 .search_ikon_footer {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: search_ikon;
     width: 30px;
     height: 27px;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-column-align: center;
     justify-self: center;
+    -ms-grid-row-align: center;
     align-self: center;
 }
 
 .sprog_search_citat_footer p {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: citat_footer;
     font-family: "Lato", sans-serif;
     font-size: 16px;
     font-style: italic;
     font-weight: 300;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-column-align: center;
     justify-self: center;
+    -ms-grid-row-align: center;
     align-self: center;
     width: 100%;
 }
 
 .logo_footer {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
     grid-area: logo_footer;
     width: 152px;
     height: 32px;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-column-align: center;
     justify-self: center;
+    -ms-grid-row-align: center;
     align-self: center;
     margin-bottom: 10px;
 }
 
 .copyright_footer {
+    -ms-grid-row: 11;
+    -ms-grid-column: 1;
     grid-area: copyright_footer;
     background-color: #B8B8B8;
     font-family: "Lato", sans-serif;
     font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
 }
@@ -140,10 +182,13 @@ footer {
 @media only screen and (min-width: 600px) {
     footer {
         background-color: #C8C8C8;
+        display: -ms-grid;
         display: grid;
         justify-items: center;
         text-align: left;
+        -ms-grid-columns: 1fr 30px 1fr;
         grid-template-columns: repeat(2, 1fr);
+        -ms-grid-rows: .5fr 30px .5fr 30px .5fr 30px 66px;
         grid-template-rows: .5fr .5fr .5fr 66px;
         grid-template-areas:
             "menu_footer kontakt_footer"
@@ -156,10 +201,15 @@ footer {
     }
 
     .sprog_search_citat_footer {
+        -ms-grid-row: 9;
+        -ms-grid-column: 1;
         grid-area: sprog_search_citat_footer;
         font-family: "Lato", sans-serif;
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: .5fr 1fr 1fr 1fr .5fr;
         grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+        -ms-grid-rows: 2fr;
         grid-template-rows: 2fr;
         grid-template-areas:
             ". search_ikon . citat_footer. "
@@ -169,25 +219,75 @@ footer {
     }
 
     .sprog_search_citat_footer p {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
         grid-area: citat_footer;
         font-family: "Lato", sans-serif;
         font-size: 14px;
         font-style: italic;
         font-weight: 300;
+        display: -ms-grid;
         display: grid;
+        -ms-grid-column-align: center;
         justify-self: center;
+        -ms-grid-row-align: center;
         align-self: center;
         text-align: center;
         width: 125%;
+    }
+
+    .menu_footer {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .kontakt_footer {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .sociale_medier_footer {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .udstillinger_footer {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
+
+    .sprog_search_citat_footer {
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+    }
+
+    .engelsk_flag {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+
+    .search_ikon_footer {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+    .copyright_footer {
+        -ms-grid-row: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
     }
 }
 
 @media only screen and (min-width: 800px) {
     footer {
         background-color: #C8C8C8;
+        display: -ms-grid;
         display: grid;
         justify-items: center;
+        -ms-grid-columns: .2fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr 0px .2fr;
         grid-template-columns: .2fr 1fr 1fr 1fr 1fr .2fr;
+        -ms-grid-rows: 1fr 0px 1fr 0px 66px;
         grid-template-rows: 1fr 1fr 66px;
         grid-template-areas:
             ". menu_footer kontakt_footer sociale_medier_footer udstillinger_footer ."
@@ -199,10 +299,15 @@ footer {
     }
 
     .sprog_search_citat_footer {
+        -ms-grid-row: 9;
+        -ms-grid-column: 1;
         grid-area: sprog_search_citat_footer;
         font-family: "Lato", sans-serif;
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+        -ms-grid-rows: 1fr 32px;
         grid-template-rows: 1fr 32px;
         grid-template-areas:
             "search_ikon engelsk_flag citat_footer"
@@ -211,9 +316,14 @@ footer {
     }
 
     .sprog_search_citat_footer p {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
         grid-area: citat_footer;
+        display: -ms-grid;
         display: grid;
+        -ms-grid-column-align: start;
         justify-self: start;
+        -ms-grid-row-align: center;
         align-self: center;
         text-align: center;
         font-size: 16px;
@@ -221,46 +331,130 @@ footer {
     }
 
     .logo_footer {
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;
         grid-area: logo_footer;
         width: 152px;
         height: 32px;
+        display: -ms-grid;
         display: grid;
+        -ms-grid-column-align: center;
         justify-self: center;
+        -ms-grid-row-align: center;
         align-self: center;
         margin-bottom: 10px;
         margin-top: -70px
     }
 
     .copyright_footer {
+        -ms-grid-row: 11;
+        -ms-grid-column: 1;
         grid-area: copyright_footer;
         background-color: #B8B8B8;
         font-family: "Lato", sans-serif;
         font-size: 14px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         width: 100%;
     }
 
     .menu_footer {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
         grid-area: menu_footer;
         display: inline-block;
         text-align: left;
     }
 
     .kontakt_footer {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
         grid-area: kontakt_footer;
         text-align: left;
     }
 
     .sociale_medier_footer {
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
         grid-area: sociale_medier_footer;
         text-align: left;
     }
 
     .udstillinger_footer {
+        -ms-grid-row: 7;
+        -ms-grid-column: 1;
         grid-area: udstillinger_footer;
         text-align: left;
+    }
+
+    .menu_footer {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .kontakt_footer {
+        -ms-grid-row: 1;
+        -ms-grid-column: 5;
+    }
+
+    .sociale_medier_footer {
+        -ms-grid-row: 1;
+        -ms-grid-column: 7;
+    }
+
+    .udstillinger_footer {
+        -ms-grid-row: 1;
+        -ms-grid-column: 9;
+    }
+
+    .sprog_search_citat_footer {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 7;
+    }
+
+    .engelsk_flag {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+    .search_ikon_footer {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .sprog_search_citat_footer p {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .logo_footer {
+        -ms-grid-row: 2;
+        -ms-grid-column: 3;
+    }
+
+    .copyright_footer {
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 11;
+    }
+
+    .sprog_search_citat_footer {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 7;
+    }
+
+    .sprog_search_citat_footer p {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
     }
 }
 
@@ -269,8 +463,11 @@ footer {
         padding-top: 50px;
         background-color: #C8C8C8;
         height: 372px;
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr;
         grid-template-columns: repeat(7, 1fr);
+        -ms-grid-rows: 1fr 0px 1fr 0px 66px;
         grid-template-rows: 1fr 1fr 66px;
         grid-template-areas:
             ". menu_footer kontakt_footer sociale_medier_footer udstillinger_footer sprog_search_citat_footer . "
@@ -307,35 +504,48 @@ footer {
         font-weight: 300;
     }
 
-
-
     .menu_footer {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
         grid-area: menu_footer;
         display: inline-block;
         text-align: left;
     }
 
     .kontakt_footer {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
         grid-area: kontakt_footer;
         text-align: left;
     }
 
     .sociale_medier_footer {
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
         grid-area: sociale_medier_footer;
         text-align: left;
     }
 
     .udstillinger_footer {
+        -ms-grid-row: 7;
+        -ms-grid-column: 1;
         grid-area: udstillinger_footer;
         text-align: left;
     }
 
     .sprog_search_citat_footer {
+        -ms-grid-row: 9;
+        -ms-grid-column: 1;
         grid-area: sprog_search_citat_footer;
         font-family: "Lato", sans-serif;
+        display: -ms-grid;
         display: grid;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+        -ms-grid-rows: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-areas:
             ". engelsk_flag"
@@ -347,52 +557,438 @@ footer {
     }
 
     .engelsk_flag {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
         grid-area: engelsk_flag;
         width: 31px;
         height: 20px;
+        display: -ms-grid;
         display: grid;
+        -ms-grid-column-align: end;
         justify-self: end;
         margin-right: 20px;
     }
 
     .search_ikon_footer {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
         width: 30px;
         height: 27px;
+        display: -ms-grid;
         display: grid;
         grid-area: search_ikon;
+        -ms-grid-column-align: end;
         justify-self: end;
         margin-right: 20px;
         margin-top: 0px;
     }
 
     .sprog_search_citat_footer p {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
         font-family: "Lato", sans-serif;
         font-size: 16px;
         font-style: italic;
         font-weight: 300;
+        -ms-grid-column-align: start;
         justify-self: start;
         text-align: left;
+        display: -ms-grid;
         display: grid;
         width: 120%;
         grid-area: citat_footer;
     }
 
     .logo_footer {
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;
         grid-area: logo_footer;
         width: 152px;
         height: 32px;
+        display: -ms-grid;
         display: grid;
+        -ms-grid-column-align: end;
         justify-self: end;
         margin-top: -40px;
     }
 
     .copyright_footer {
+        -ms-grid-row: 11;
+        -ms-grid-column: 1;
         grid-area: copyright_footer;
         background-color: #B8B8B8;
         font-family: "Lato", sans-serif;
         font-size: 14px;
+        display: -ms-grid;
         display: grid;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
         justify-content: space-evenly;
+    }
+
+    .menu_footer {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 3;
+    }
+
+    .kontakt_footer {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 5;
+    }
+
+    .sociale_medier_footer {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+    }
+
+    .udstillinger_footer {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 9;
+    }
+
+    .sprog_search_citat_footer {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 11;
+        -ms-grid-column-span: 1;
+    }
+
+    .engelsk_flag {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+    .search_ikon_footer {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+
+    .sprog_search_citat_footer p {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+    }
+
+    .logo_footer {
+        -ms-grid-row: 4;
+        -ms-grid-column: 2;
+    }
+
+    .copyright_footer {
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 13;
+    }
+
+    .sprog_search_citat_footer {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 11;
+        -ms-grid-column-span: 1;
+    }
+
+    .sprog_search_citat_footer p {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+    }
+
+    .sprog_search_citat_footer {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 11;
+        -ms-grid-column-span: 1;
+    }
+
+    .sprog_search_citat_footer p {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+    }
+
+    .logo_footer {
+        -ms-grid-row: 4;
+        -ms-grid-column: 2;
+    }
+
+    .copyright_footer {
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 13;
+    }
+
+    .menu_footer {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 3;
+    }
+
+    .kontakt_footer {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 5;
+    }
+
+    .sociale_medier_footer {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+    }
+
+    .udstillinger_footer {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 9;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .engelsk_flag {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+
+    .search_ikon_footer {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .sprog_search_citat_footer p {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .logo_footer {
+        -ms-grid-row: 2;
+        -ms-grid-column: 3;
+    }
+
+    .engelsk_flag {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+    .search_ikon_footer {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .sprog_search_citat_footer p {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .logo_footer {
+        -ms-grid-row: 2;
+        -ms-grid-column: 3;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .engelsk_flag {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+    .search_ikon_footer {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+
+    .sprog_search_citat_footer p {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+    }
+
+    .logo_footer {
+        -ms-grid-row: 4;
+        -ms-grid-column: 2;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .sprog_search_citat_footer {
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+    }
+
+    .sprog_search_citat_footer {
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+    }
+
+    .copyright_footer {
+        -ms-grid-row: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+    }
+
+    .menu_footer {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .kontakt_footer {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .sociale_medier_footer {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .udstillinger_footer {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
+
+    .menu_footer {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .kontakt_footer {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .sociale_medier_footer {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .udstillinger_footer {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
+
+    .sprog_search_citat_footer {
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+    }
+
+    .copyright_footer {
+        -ms-grid-row: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .sprog_search_citat_footer {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 7;
+    }
+
+    .copyright_footer {
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 11;
+    }
+
+    .menu_footer {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .kontakt_footer {
+        -ms-grid-row: 1;
+        -ms-grid-column: 5;
+    }
+
+    .sociale_medier_footer {
+        -ms-grid-row: 1;
+        -ms-grid-column: 7;
+    }
+
+    .udstillinger_footer {
+        -ms-grid-row: 1;
+        -ms-grid-column: 9;
+    }
+
+    .menu_footer {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .kontakt_footer {
+        -ms-grid-row: 1;
+        -ms-grid-column: 5;
+    }
+
+    .sociale_medier_footer {
+        -ms-grid-row: 1;
+        -ms-grid-column: 7;
+    }
+
+    .udstillinger_footer {
+        -ms-grid-row: 1;
+        -ms-grid-column: 9;
+    }
+
+    .sprog_search_citat_footer {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 7;
+    }
+
+    .copyright_footer {
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 11;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .menu_footer {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 3;
+    }
+
+    .kontakt_footer {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 5;
+    }
+
+    .sociale_medier_footer {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+    }
+
+    .udstillinger_footer {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 9;
+    }
+
+    .sprog_search_citat_footer {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 11;
+        -ms-grid-column-span: 1;
+    }
+
+    .copyright_footer {
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 13;
     }
 }
