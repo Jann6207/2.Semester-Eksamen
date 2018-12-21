@@ -17,7 +17,6 @@ function start() {
 
 }
 
-
 async function hentJson() {
     let myJson = await fetch("http://oliverwinfield.dk/kea/kea/lawaetz/wordpress/wp-json/wp/v2/kunstvaerker");
     wpJSON = await myJson.json();
@@ -41,9 +40,11 @@ function visJson() {
     if (vaerkerFilter == "Alle") {
         shuffle(wpJSON);
     }
+
     if (vaerkerFilter == "Str") {
         str(wpJSON);
     }
+
     wpJSON.forEach(post => {
         if (vaerkerFilter == "Nyeste") {
 
@@ -61,7 +62,7 @@ function visJson() {
                 dest.appendChild(klon);
             }
         } else {
-            console.log("ifstatement")
+            console.log("elsestatement")
             let klon = myTemplate.cloneNode(true).content;
             klon.querySelector("[data-overskrift]").textContent = post.acf.titel;
             klon.querySelector("[data-billede]").src = post.acf.billede;
@@ -88,7 +89,6 @@ function visModal(post) {
 
 function skjulmodal() {
     modal.classList.remove("vis");
-    //window.scrollTo(0)
 }
 
 function shuffle(array) {
