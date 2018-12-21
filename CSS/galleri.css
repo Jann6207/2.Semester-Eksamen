@@ -338,6 +338,12 @@ body {
     align-self: center;
     margin-bottom: 0;
     margin: 0;
+    color: black;
+}
+
+.modal_sociale_links a {
+    text-decoration: none;
+    text-decoration-color: black;
 }
 
 #modal button {
@@ -1027,6 +1033,8 @@ body {
         align-self: center;
         margin-bottom: 0;
         margin: 0;
+        padding-bottom: 5px;
+        cursor: pointer;
     }
 
     #modal button {
@@ -1042,7 +1050,14 @@ body {
         font-family: "Lato", sans-serif;
         font-weight: 300;
         font-size: 20px;
+        cursor: pointer;
+        transition: .3s;
     }
+
+        #modal button:hover {
+            opacity: 0.8;
+            color: grey;
+        }
 }
 
   /*  .maleri img {
