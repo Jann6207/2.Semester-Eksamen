@@ -5,6 +5,7 @@
 body {
     margin: 0;
     background-color: #E5E5E5;
+    overflow: hidden;
 }
 
 /*-------- NYESTE VÆRKER MOBILE/TABLET - START --------*/
@@ -138,17 +139,15 @@ body {
     justify-self: center;
 }
 
-/*
 .malleri1:hover,
 .malleri2:hover,
 .malleri3:hover {
-    transform: scale(1.2);
+    transform: scale(1);
 }
 
 .malleri2:hover {
-    transform: scale(1.2);
+    transform: scale(1);
 }
-*/
 
 .malleri1 {
     display: grid;
