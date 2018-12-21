@@ -183,7 +183,7 @@ body {
 .titel {
     font-family: "Playfair Display", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     overflow: visible;
     margin: 0;
     width: 80%;
@@ -326,7 +326,7 @@ body {
     text-align: center;
     align-self: center;
     font-family: "Lato", sans-serif;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 300;
     margin-top: 0px;
     padding-bottom: 10px;
