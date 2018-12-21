@@ -4,11 +4,12 @@
 
 body {
     margin: 0;
-    background-image: url(../IMG-Bank/Images/Galleri_Splash/Galleri_splash4.png);
+    background-image: url(../IMG-Bank/Images/Galleri_Splash/galleri_andreas_splash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: center;
     background-color: black;
+    height: 500px;
 }
 
 .content {

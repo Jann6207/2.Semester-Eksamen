@@ -4,11 +4,12 @@
 
 body {
     margin: 0;
-    background-image: url(../IMG-Bank/Images/Om_Andreas_Splash.jpg);
+    background-image: url(../IMG-Bank/Images/om_lawaetz_splash.JPG);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-color: black;
+    height: 500px;
 }
 
 @media only screen and (max-width: 1029px) {
