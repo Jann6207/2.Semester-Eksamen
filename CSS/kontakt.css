@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    background-image: url(../IMG-Bank/Images/Kontakt_Splash.png);
+    background-image: url(../IMG-Bank/Images/kontakt/Kontakt_Splash.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -102,8 +102,7 @@ body {
         padding-right: 30px;
         height: 300px;
         font-size: 20px;
-        background-image: url(../IMG-Bank/Images/Splash_Filter2.png);
-        background-image: url(../IMG-Bank/Images/Kontakt_bg.png);
+        background-image: url(../IMG-Bank/Images/kontakt/kontaktinfo_baggrund.png);
         color: white;
         background-repeat: no-repeat;
         background-size: cover;
@@ -163,8 +162,7 @@ body {
         background-color: white;
         background-color: #C8C8C8;
         /*margin-top: -150px;*/
-        background-image: url(../IMG-Bank/Images/Splash_Filter2.png);
-        background-image: url(../IMG-Bank/Images/spand.png);
+        background-image: url(../IMG-Bank/Images/kontakt/kontakformular_baggrund.png);
         background-repeat: no-repeat;
         background-size: cover;
         margin-top: 50px;
@@ -385,8 +383,7 @@ body {
         padding-right: 30px;
         height: 300px;
         font-size: 20px;
-        background-image: url(../IMG-Bank/Images/Splash_Filter2.png);
-        background-image: url(../IMG-Bank/Images/Kontakt_bg.png);
+        background-image: url(../IMG-Bank/Images/kontakt/kontaktinfo_baggrund.png);
         color: white;
         background-repeat: no-repeat;
         background-size: cover;
@@ -444,8 +441,7 @@ body {
         background-color: white;
         background-color: #C8C8C8;
         /*margin-top: -150px;*/
-        background-image: url(../IMG-Bank/Images/Splash_Filter2.png);
-        background-image: url(../IMG-Bank/Images/spand.png);
+        background-image: url(../IMG-Bank/Images/kontakt/kontakformular_baggrund.png);
         background-repeat: no-repeat;
         background-size: cover;
         margin-top: 50px;
@@ -652,8 +648,7 @@ body {
         padding-right: 30px;
         height: 300px;
         font-size: 20px;
-        background-image: url(../IMG-Bank/Images/Splash_Filter2.png);
-        background-image: url(../IMG-Bank/Images/Kontakt_bg.png);
+        background-image: url(../IMG-Bank/Images/kontakt/kontaktinfo_baggrund.png);
         color: white;
         background-repeat: no-repeat;
         background-size: cover;
@@ -711,8 +706,7 @@ body {
         background-color: white;
         background-color: #C8C8C8;
         /*margin-top: -150px;*/
-        background-image: url(../IMG-Bank/Images/Splash_Filter2.png);
-        background-image: url(../IMG-Bank/Images/spand.png);
+        background-image: url(../IMG-Bank/Images/kontakt/kontakformular_baggrund.png);
         background-repeat: no-repeat;
         background-size: cover;
         margin-top: 50px;

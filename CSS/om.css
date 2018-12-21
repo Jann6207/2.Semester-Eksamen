@@ -4,11 +4,12 @@
 
 body {
     margin: 0;
-    background-image: url(../IMG-Bank/Images/Kontakt_Splash.png);
+    background-image: url(../IMG-Bank/Images/om/om_lawaetz_splash.JPG);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     background-color: black;
+    height: 500px;
 }
 
 @media only screen and (max-width: 1029px) {
@@ -114,7 +115,7 @@ body {
         ;
         color: white;
         font-weight: 300;
-        background-image: url(../IMG-Bank/Images/Om_BG.jpg);
+        background-image: url(../IMG-Bank/Images/om/om_info_baggrund.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
@@ -158,6 +159,7 @@ body {
     iframe {
         width: 75vw;
         height: 40vw;
+        border: none;
     }
 
     .video-container {
@@ -299,7 +301,7 @@ body {
         ;
         color: white;
         font-weight: 300;
-        background-image: url(../IMG-Bank/Images/Om_BG.jpg);
+        background-image: url(../IMG-Bank/Images/om/om_info_baggrund.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
@@ -342,6 +344,7 @@ body {
     iframe {
         width: 50vw;
         height: 25vw;
+        border: none;
     }
 
     .video-container {
@@ -473,7 +476,7 @@ body {
         ;
         color: white;
         font-weight: 300;
-        background-image: url(../IMG-Bank/Images/Om_BG.jpg);
+        background-image: url(../IMG-Bank/Images/om/om_info_baggrund.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
@@ -516,17 +519,9 @@ body {
     iframe {
         width: 560px;
         height: 315px;
+        border: none;
     }
 
-    /*#om_timelapse_container {
-    width: 100vw;
-}
-.om_timelapse {
-    width: 100vw;
-}
-video {
-    width: 100%;
-}*/
     .video-container {
         overflow: hidden;
         height: 400px;
